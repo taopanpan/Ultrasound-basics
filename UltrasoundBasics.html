@@ -50,7 +50,7 @@ img
   <li><a href="#imaging">Глава 2: Получение изображения с помощью ультразвука</a></li>
   <ul>
     <li><a href="#reflection">Отражение и рассеивание</a></li>
-    <li><a href="#absorption">Поглащение</a></li>
+    <li><a href="#absorption">Поглощение</a></li>
     <li><a href="#powerMI">Сила ультразвука / Механический индекс</a></li>
     <li><a href="#attenuation">Затухание</a></li>
     <li><a href="#gain">Усиление</a></li>
@@ -394,7 +394,7 @@ img
       <small>
       <span style="font-weight: bold;">Рис 3b.</span>
       Отраженные сигналы могут отображаться в трех различных режимах. A-Режим (Амплитуда) показывает глубину и количество отраженной энергии от каждого объекта-рассеивателя. В-режиме (Яркость) показывает энергию сигнала или амплитуду как яркость (в данном случае, чем выше энергия, тем точка изображения темнее) точки. Объект-рассеиватель движется. Если глубину представить в виде функции от времени, то в М-режиме.график движения рассматривается как кривая, (для неподвижных объектов - горизонтальная линия).
-	  </small>
+      </small>
       </td>
 
     </tr>
@@ -406,387 +406,318 @@ img
 </p>
 
 <p>
-The reflecting structures does not only reflect directly back to the transmitter, but scatters the ultrasound in more directions. Thus, the reflecting structures are usually termed . It's important to realise that the actual amount of energy that is reflected back to the probe; i.e. the amplitude of the reflected signal, is not only dependent on the reflection coefficient. The direction of the reflected signal is also important.</span>
-
-Стурктуры отражают ультразвук не только в обратном направлении к зонду-излучателю, но и рассеивают ультразвуковой сигнал в нескольких направлениях. Поэтому, такие структуры обычно именуются как <span style="text-decoration: underline;">объекты-рассеиватели</span> (scatterers). 
+Стурктуры отражают ультразвук не только в обратном направлении к зонду-излучателю, но и рассеивают ультразвуковой сигнал в нескольких направлениях. Поэтому, такие структуры обычно именуются как <span style="text-decoration: underline;">объекты-рассеиватели</span> (scatterers). Важно понимать, что фактическое количество энергии, отраженное от зонда (например амплитуда отраженного сигнала), зависит не тольео от коффициента отражения. Направление отраженного сигнала также имеет значение.
 </p>
 
-Thus:
-- An irregular scatterer will reflect only a portion
-back to the probe.
-- A more regular scatterer will reflect more if the
-reflecting surfaces are perpendicular to the ultrasound beam.<br>
-<table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
-  <tbody>
-    <tr>
-      <td colspan="2" rowspan="1" style="vertical-align: top; text-align: center;"><img style="width: 830px; height: 329px;" alt="" src="./UltrasoundBasics/Scatterers.GIF"><br>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2" rowspan="1" style="vertical-align: top;"><small><span style="font-weight: bold;">Effect of size and direction of the
-reflecting surface.&nbsp; The two images on the left shows a perfect
-reflecting surface. Most of the energy (but not all, as the wavefront
-is not flat), will reflect back to the transducer resulting in a high
-amplitude echo, when the surface is perpendicular to the ultrasound
-beam. On the other hand, if this surface is tilted 45º, almost all
-energy will be reflected away from the surface, resulting in a <span style="text-decoration: underline;">very</span> low amplitude return
-echo to the probe.&nbsp; The next two images shows a scatterer with a
-more curved surface, resulting in more energy being spread out in
-different directions, this will give a lower amplitude signal back to
-the probe,&nbsp; but may reflect more energy back towards the probe if
-it is tilted, as for instance when the heart contracts, walls changing
-direction. Finally, to the left, a totally irregylar surface will
-reflect the sound in all directioons, butt very little net
-reflectionstoward the probe. </span></small><small><span style="font-weight: bold;"><br>
-      <br>
-      </span></small></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top; text-align: center;"><img style="width: 313px; height: 334px;" alt="" src="./UltrasoundBasics/reflected direction.JPG"></td>
-      <td style="vertical-align: top; text-align: center;"><img style="width: 490px; height: 334px;" alt="" src="./UltrasoundBasics/Tissuechar.jpg"></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;"><small><span style="font-weight: bold;">The effect of the direction of the
-reflecting surface in a&nbsp; long axix image of the left
-ventricle.&nbsp; The echo resulting from the&nbsp; septum-blood
-interface (arrows) is&nbsp; far&nbsp; stronger in the regions where the
-surfaces are perpendicular to the ultrasound beamns (blue arrows),
-compared to the region between where the surface is slanted compared to
-the ultrasound beams.</span></small></td>
-      <td style="vertical-align: top;"><small><span style="font-weight: bold;">Cyclic variations in the amplitude in
-reflected ultrasound (integrated backscatter) with heart cycle. This
-reflect the variations in reflexivity, but not myocardial density, as
-the myocardium is incompressible. Thus, most of the amplitude
-variations must be due to changes in fibre directions. </span></small></td>
-    </tr>
-  </tbody>
+<p>
+Поэтому:
+<ul>
+  <li>Неоднородная структура отразит только часть энергии сигнала обратно к зонду;</li>
+  <li>Более однородные структуры отразят больше если отражающая поверхность перпендикулярна ультразвуковому лучу.</li>
+</ul>
+</p>
+
+<table border="0" cellpadding="2" cellspacing="2">
+  <tr>
+    <td colspan="2" rowspan="1">
+      <img src="./UltrasoundBasics/Scatterers.GIF">
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" rowspan="1">
+      <small>
+Эффект размера и направления отражающей поверхности. Два изображени слева показывают идеальную отражающую поверхность. Большая часть энергии отразится назад к трансдьюсеру, что приведет к появлению эха с большой амплитудой если поверхность перпендикулярна к ультразвуковому лучу. С другой стороны, если поверхность под наклоном в 45º, почти вся энергия отразится в другую сторону, что приведет к очень слобому эху в сторону зонда.
+Следующие два изображения показывают рассеиватели с более изогнутыми поверхностями, что приводит к рассеиванию большего количества энергии в разных направлениях. Впоследствии обратно к зонду вернется сигнал с более низкой ампитудой. Но если поверхность именит положения вернетс сигнал с большей энергией, как например во время бияни сердца, когда стенки сердца меняют направление\положение.
+Наконец, последнее изображение представляет собой сильно неоднородную поверхность, которая отражает сигнал во всех возможных направлениях с очень маленькой нитью эха в сторону зонда.
+      </small>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="./UltrasoundBasics/reflected direction.JPG">
+    </td>
+    <td>
+      <img src="./UltrasoundBasics/Tissuechar.jpg">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <small>
+Эффект направления отражающей поверхности на изображении левого желудочка по длинной оси. Результирующее эхо от перегородки (стрелки) намного сильнее в областях где поверхность перпендикулярна к ультразвуковому лучу (синие стрелки) по сравнению с областью где поверхность под углом к лучу.
+      </small>
+    </td>
+    <td>
+      <small>
+Cyclic variations in the amplitude in reflected ultrasound (integrated backscatter) with heart cycle. This reflect the variations in reflexivity, but not myocardial density, as the myocardium is incompressible. Thus, most of the amplitude variations must be due to changes in fibre directions. </small>
+    </td>
+  </tr>
 </table>
-<br>
-The term: <span style="font-weight: bold;">Reflection</span> is used
-about the return signal, while <span style="font-weight: bold;">scattering</span>
-is used about dispersion of the reflected signal, but as the figure
-above shows, it's the same process. <br>
-<br>
-<span style="font-weight: bold;">Thus, the apparent density of the
-tissue on the ultrasound image is as dependent on the wall and fibre
-direction. </span>A part of the heart where the fibres run mainly in a
-direction across the ultrasound beams, will look much denser.
-Variations in amplitude (brightness of the reflected signal) do not
-necessarily mean differences in density, but may also mean variations
-in reflectivity due to variation in the direction of the reflections.
-Thus, integrated backscatter can be used for studying of cyclicity, but
-it is not useful for tissue characterisation. <br>
-<br>
-<h4><a name="absorption"></a>Absorption</h4>
+
+<p>
+Термин: <span style="text-decoration: underline">отражение</span> применяется к возвращаемому сигналу, в то врем как <span style="text-decoration: underline">рассеивание</span> означает дисперсию отраженного сигнала, но, как показано на изображении сверху, это один и тот же процесс
+</p>
+
+<p>
+<span style="font-weight: bold;">
+Поэтому, видимая плотность ткани на ультразвуковом изображении также зависит от наклона ткани относительно луча.</span>
+</p>
+
+<p>
+A part of the heart where the fibres run mainly in a direction across the ultrasound beams, will look much denser. Variations in amplitude (brightness of the reflected signal) do not necessarily mean differences in density, but may also mean variations in reflectivity due to variation in the direction of the reflections. Thus, integrated backscatter can be used for studying of cyclicity, but it is not useful for tissue characterisation. </p>
+
+<a name="absorption"></a>
+<h4>Absorption</h4>
+
+<p>
 Some of the energy of the ultrasound is absorbed by the tissues, and
 converted to heat. This indicates that it may have biological effects,
-if the absorbed energy is high enough. <br>
-Absorption is important for two reasons:<br>
+if the absorbed energy is high enough.
+</p>
+
+<p>
+Absorption is important for two reasons:
+  <ul>
+    <li>
+The heating of the tissue is the safety limitation on ultrasound equipment. The absorbed energy has to remain within limits that does not heat the tissue to dangerous temperatures. The absorption can be calculated, and in commercial equipment today, the limitation is imposed in the limitation of the total energy that can be transmitted (which is expressed by the mechanical index).
+    </li>
+    <li>
+The attenuation, which is mainly due to absorption, is the limiting factor for the <span style="font-weight: bold; text-decoration: underline;">depth penetration of the beam</span>, i.e. the depth to which the beam can be transmitted. 
+    </li>
+  </ul>
+</p>
+
+<p>
+The absorption is dependent on many factors [<a href="http://folk.ntnu.no/stoylen/strainrate/References.html#r117">117</a>]:
 <ul>
-  <li>The heating of the tissue is the safety limitation on ultrasound
-equipment. The absorbed energy has to remain within limits that does
-not heat the tissue to dangerous temperatures. The absorption can be
-calculated, and in commercial equipment today, the limitation is
-imposed in the limitation of the total energy that can be transmitted
-(which is expressed by the mechanical index). <br>
+  <li>
+The density of the tissue. The higher the density, the more absorption. Thus the attenuation is fluid &lt; fat &lt; muscle &lt; fibrous tissue &lt; calcifications and bone.
   </li>
-  <li>The attenuation, which is mainly due to absorption, is the
-limiting factor for the <span style="font-weight: bold; text-decoration: underline;">depth
-penetration of the beam</span>, i.e. the depth to which the beam can be
-transmitted. <br>
+  <li>
+The frequency of the ultrasound beam. The higher the frequency, the more absorption. In human tissue, a general approximation is that the attenuation is 1 dB/cm MHz. (however, that is for one way, in imaging the distance is 2* the depth). Thus, the desired depth to be imaged, sets the limit for how high frequency that can be used.&nbsp;As can be seen, penetration might be increased by increasing the transmitted energy, but this would increase the total absorbed energy as well, which has to stay below the safety limits.
   </li>
 </ul>
-The absorption is dependent on many factors (<a href="http://folk.ntnu.no/stoylen/strainrate/References.html#r117">117</a>):<br>
-<ol>
-  <li>The density of the tissue. The higher the density, the more
-absorption. Thus the attenuation is fluid &lt; fat &lt; muscle &lt;
-fibrous tissue &lt; calcifications and bone.</li>
-  <li>The frequency of the ultrasound beam. The higher the frequency,
-the more absorption. In human tissue, a general approximation is that
-the attenuation is 1 dB/cm MHz. (however, that is for one way, in
-imaging the distance is 2* the depth). Thus, the desired depth to be
-imaged, sets the limit for how high frequency that can be used.&nbsp;As
-can be seen, penetration might be increased by increasing the
-transmitted energy, but this would increase the total absorbed energy
-as well, which has to stay below the safety limits. </li>
-</ol>
-<h4><a name="PowerMI"></a>Ultrasound Power / mechanical index<br>
-</h4>
-The ultrasound power is the amplitude of the transmitted signal, at the
-probe. I.e. The total energy that is transmitted into the patient. This
-is measured in deciBels. <br>
-<br>
-The mechanical index, is the amount of energy that is absorbed by the
-patient. This, howver is not inly dependent on the power, but also on
-the focussing of the beam, and is highest where the beam is focussed,
-but it also decreases with depth. Thus, the mechanical index is a
-measure of the possible biological effects of the ultrtasound, and is
-usually calculated and given as a maximal theoretical entity, by the
-equipment. Usually, it may vary between 1.5 (in B-mode) and 0.1 (in
-contrast applications). <br>
-<br>
-<br>
-<h4><a name="Attenuation"></a>Attenuation</h4>
-It follows that the ultrasound waves are attenuated as some of the
-energy is reflected or scattered. Thus, in passing through tissue, the
-energy is attenuated due to the reflection that is necessary to build
-an image. <br>
-<br>
+</p>
+
+<a name="powerMI"></a>
+<h4>Ultrasound Power / mechanical index</h4>
+
+<p>
+The ultrasound power is the amplitude of the transmitted signal, at the probe. I.e. The total energy that is transmitted into the patient. This is measured in deciBels. 
+</p>
+
+<p>
+The mechanical index, is the amount of energy that is absorbed by the patient. This, howver is not inly dependent on the power, but also on the focussing of the beam, and is highest where the beam is focussed, but it also decreases with depth. Thus, the mechanical index is a measure of the possible biological effects of the ultrtasound, and is usually calculated and given as a maximal theoretical entity, by the equipment. Usually, it may vary between 1.5 (in B-mode) and 0.1 (in contrast applications).
+</p>
+
+<a name="attenuation"></a>
+<h4>Attenuation</h4>
+
+<p>
+It follows that the ultrasound waves are attenuated as some of the energy is reflected or scattered. Thus, in passing through tissue, the energy is attenuated due to the reflection that is necessary to build an image.
+</p>
+
+<p>
 Attenuation will have effect on the image in other ways, as shown blow.
-<br>
-<table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
-  <tbody>
-    <tr>
-      <td style="vertical-align: top; text-align: center;"><img style="width: 397px; height: 274px;" alt="" src="./UltrasoundBasics/attenuation.GIF" height="233" width="306"></td>
-      <td style="vertical-align: top; text-align: center;"><img style="width: 322px; height: 290px;" alt="" src="./UltrasoundBasics/Ultrasound gallstones.JPG" height="290" width="322"><br>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;"><small><span style="font-weight: bold;">Attenuation. Imaging of a homogeneous
-tissue, f.i. liver will change the apparent density behind structures
-with different attenuation. </span></small><small><span style="font-weight: bold;"><br>
-Behind a structure with high reflexivity (e.g. a calcification), there
-will be high attenuation, (white; left). Hence, the sector behind
-receives less energy, and appears less dense (darker), the area behind
-may even be a full shadow. </span></small><small><span style="font-weight: bold;"><br>
-Behind a strcture with low reflexivity (e.g. a fluid) there is little
-attenuation (black; right), the tissue receives more energy and appears
-denser (brighter - "colouring") than the surrounding tissue.&nbsp;<br>
-      </span></small></td>
-      <td style="vertical-align: top;"><small><span style="font-weight: bold;">Liver with a gallbladder in front,
-containing gallstones. The gallstones are dense, with a shadow behind.
-The rest of the gallbladdeer is fluid filled, thus the sector behind
-the fluid appears denser than the neighbouring tissue due to
-"colouring". <br>
-      </span></small></td>
-    </tr>
-  </tbody>
+</p>
+
+<table border="0" cellpadding="2" cellspacing="2">
+  <tr>
+    <td>
+      <img src="./UltrasoundBasics/attenuation.GIF">
+    </td>
+    <td>
+      <img src="./UltrasoundBasics/Ultrasound gallstones.JPG">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <small>
+Attenuation. Imaging of a homogeneous tissue, f.i. liver will change the apparent density behind structures with different attenuation.  Behind a structure with high reflexivity (e.g. a calcification), there will be high attenuation, (white; left). Hence, the sector behind receives less energy, and appears less dense (darker), the area behind may even be a full shadow. Behind a strcture with low reflexivity (e.g. a fluid) there is little attenuation (black; right), the tissue receives more energy and appears denser (brighter - "colouring") than the surrounding tissue.
+      </small>
+    </td>
+    <td>
+      <small>
+Liver with a gallbladder in front, containing gallstones. The gallstones are dense, with a shadow behind. The rest of the gallbladdeer is fluid filled, thus the sector behind the fluid appears denser than the neighbouring tissue due to "colouring".
+      </small>
+    </td>
+  </tr>
 </table>
-<br>
-<br>
-<br>
-This is about 10% of the total energy loss. In addition, the ultrasound
-waves are diffracted, resulting in further diffusion of the waves out
-into the surrounding tissue and loss in the energy available for
-reflection (imaging). However, the most important factor is the the
-ultrasound energy is attenuated due to absorption in the tissue, this
-absorption process generates heating of the tissue. It follows that as
-attenuation is energy loss, this means that the attenuation increases
-with increasing depth. ( And the reflections are further attenuated in
-passing back toward the probe). <br>
-<br>
-<br>
-The attenuation is the limiting factor for the depth penetration of the
-beam, i.e. the depth to which the beam can be transmitted, and still
-give useful signals back. Basically, the shorter the wavelength, the
-higher the attenuation (and thus the shorter the depth penetration).
-The effective range can be said to be about 200 - 300 x <img style="width: 11px; height: 13px;" alt="" src="./UltrasoundBasics/lambda.GIF">. For
-practical medical purposes, the penetration for good imaging is about
-10 - 20 cm at 3.5 MHz (adult cardiac), 5 - 10 cm at about 5 MHZ
-(pediatric cardiac), 2-5 cm at 7.5 MHz, 1-4 cm at 10 MHZ, the last two
-frequencies being in the vascular domain. However, one method to bypass
-some of the attenuation problem is by <a href="file:///Volumes/stoylen/strainrate/Ultrasound/index.html#Harmonic">harmonic
-imaging</a>. Thus the beam is transmitted at a certain frequency, and
-the received signal is analysed at twice that frequency (Fourier
-analysis). This increases the signal to noise ratio of the reflected
-signal, especially at the deepest parts of the image, without a similar
-loss of resolution. <br>
-<br>
-<h4> </h4>
-<h4>Gain </h4>
-<div style="text-align: center;"><small><span style="font-weight: bold;"></span></small><br>
-</div>
-<a name="Gain"></a>Attenuation can be dealt with by <span style="font-weight: bold;">gain, </span>increasing gain amplifies the
+
+<p>
+This is about 10% of the total energy loss. In addition, the ultrasound waves are diffracted, resulting in further diffusion of the waves out into the surrounding tissue and loss in the energy available for reflection (imaging). However, the most important factor is the the ultrasound energy is attenuated due to absorption in the tissue, this absorption process generates heating of the tissue. It follows that as attenuation is energy loss, this means that the attenuation increases with increasing depth. ( And the reflections are further attenuated in passing back toward the probe). 
+</p>
+
+<p>
+The attenuation is the limiting factor for the depth penetration of the beam, i.e. the depth to which the beam can be transmitted, and still give useful signals back. Basically, the shorter the wavelength, the higher the attenuation (and thus the shorter the depth penetration). The effective range can be said to be about 200 - 300 x λ. For practical medical purposes, the penetration for good imaging is about 10 - 20 cm at 3.5 MHz (adult cardiac), 5 - 10 cm at about 5 MHZ (pediatric cardiac), 2-5 cm at 7.5 MHz, 1-4 cm at 10 MHZ, the last two frequencies being in the vascular domain. However, one method to bypass some of the attenuation problem is by <a href="file:///Volumes/stoylen/strainrate/Ultrasound/index.html#Harmonic">harmonic imaging</a>. Thus the beam is transmitted at a certain frequency, and the received signal is analysed at twice that frequency (Fourier analysis). This increases the signal to noise ratio of the reflected signal, especially at the deepest parts of the image, without a similar loss of resolution.
+</p>
+
+<a name="gain"></a>
+<h4>Gain</h4>
+
+<p>
+Attenuation can be dealt with by <span style="text-decoration: underline;">gain</span>, increasing gain amplifies the
 reflected signal in post processing. However, increased gain increases
-signal and noise in the same manner.<span style="font-weight: bold;"></span>
-Gain can be done at acquisition, or in post processing.<br>
-<br>
-<table border="0" cellpadding="2" cellspacing="2" width="100%">
-  <tbody>
-    <tr>
-      <td align="center" valign="top"><img alt="" src="./UltrasoundBasics/attenuation.jpg" height="310" width="355"></td>
-      <td align="center" valign="top"><img alt="" src="./UltrasoundBasics/attenuation gain.jpg" height="310" width="370"><br>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top"><small><b>Uncompensated image, showing
-decreasing signal intensity (and, hence, visibility) with depth, due to
-attenuation.</b></small><br>
-      </td>
-      <td valign="top"><small><b>Increasing over all gain, will
-increase the amplitude<small> </small></b><b>of the signal, and<small>
-      </small></b><b>the structures at the bottom of the sector becomes
-more visible. But the gain in the top of the sector are also increased,
-including the cavity noise, thus decreasing contast in this part of the
-image. </b></small><br>
-      </td>
-    </tr>
-  </tbody>
+signal and noise in the same manner.
+</p>
+
+<p>
+Gain can be done at acquisition, or in post processing.
+</p>
+
+<table border="0" cellpadding="2" cellspacing="2">
+  <tr>
+    <td>
+      <img src="./UltrasoundBasics/attenuation.jpg" />
+    </td>
+    <td src="./UltrasoundBasics/attenuation gain.jpg">
+      <img src="./UltrasoundBasics/attenuation gain.jpg" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <small>
+Uncompensated image, showing decreasing signal intensity (and, hence, visibility) with depth, due to attenuation. 
+      </small>
+    </td>
+    <td>
+      <small>
+Increasing over all gain, will increase the amplitude of the signal, and the structures at the bottom of the sector becomes more visible. But the gain in the top of the sector are also increased, including the cavity noise, thus decreasing contast in this part of the image.
+      </small>
+    </td>
+  </tr>
 </table>
-<br>
-<h4> <a name="TGC"></a>Time gain compensation (TGC)<br>
-</h4>
-All commercial equipment today has a <span style="font-weight: bold;">time
-gain compensation (TGC)</span>. This&nbsp; increases the gain of the
-reflected signals with increasing time from the transmitted pulse;
-equivalent to increasing the gain with increasing depth. However, this
-is not a perfect solution, as the signal-to-noise ratio may decrease,
-if the noise does not decrease similarly with depth. However, it will
-give a better balance in the picture, and compensate for much of the
-attenuation effects. This is a pre processing function, and has to be
-set at acquisition. <br>
-<br>
-<table border="0" cellpadding="2" cellspacing="2" width="100%">
-  <tbody>
-    <tr>
-      <td align="center" valign="top"><small><b>TGC controls.
+
+<a name="tgc"></a>
+<h4>Time gain compensation (TGC)</h4>
+
+<p>
+All commercial equipment today has a <span style="text-decoration: underline;">time gain compensation (TGC)</span>. This increases the gain of the reflected signals with increasing time from the transmitted pulse; equivalent to increasing the gain with increasing depth. However, this is not a perfect solution, as the signal-to-noise ratio may decrease, if the noise does not decrease similarly with depth. However, it will give a better balance in the picture, and compensate for much of the attenuation effects. This is a pre processing function, and has to be set at acquisition.
+</p>
+
+<table border="0" cellpadding="2" cellspacing="2">
+  <tr>
+    <td><small><b>TGC controls.
 Basically, each slider controls gain selectively at a certain depth</b></small>:<br>
-      </td>
-      <td align="center" valign="top"><small><b>In older models, the
+    </td>
+    <td><small><b>In older models, the
 TGC should be set manually to achieve a balanced image</b></small>:<br>
-      </td>
-    </tr>
-    <tr>
-      <td align="center" valign="top"><img alt="" src="./UltrasoundBasics/TGC1.jpg" height="310" width="250"><br>
-      </td>
-      <td align="center" valign="top"><img alt="" src="./UltrasoundBasics/TGC2.jpg" height="307" width="260"></td>
-    </tr>
-    <tr>
-      <td align="center" valign="top"><img alt="" src="./UltrasoundBasics/attenuation.jpg" height="310" width="355"><br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      </td>
-      <td align="center" valign="top"><img alt="" src="./UltrasoundBasics/attenuation tgc.jpg" height="310" width="361"><br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      </td>
-    </tr>
-    <tr>
-      <td align="center" valign="top"><small><b>Present models,
-however, have automatic TGC. Thus the default control setting should be
-neutral to achieve a balanced picture:</b></small></td>
-      <td align="center" valign="top"><small><b>Using</b><b> manual
-setting by old habit will result in a double compensation, with too
-much gain in the bottom, too little in the top:</b></small><br>
-      </td>
-    </tr>
-    <tr>
-      <td align="center" valign="top"><img alt="" src="./UltrasoundBasics/TGC1.jpg" height="310" width="250"><br>
-      </td>
-      <td align="center" valign="top"><img alt="" src="./UltrasoundBasics/TGC2.jpg" height="307" width="260"></td>
-    </tr>
-    <tr>
-      <td align="center" valign="top"><img alt="" src="./UltrasoundBasics/attenuation tgc.jpg" height="310" width="361"><br>
-      </td>
-      <td align="center" valign="top"><img alt="" src="./UltrasoundBasics/double tgc.jpg" height="310" width="383"></td>
-    </tr>
-  </tbody>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="./UltrasoundBasics/TGC1.jpg" />
+    </td>
+    <td>
+      <img src="./UltrasoundBasics/TGC2.jpg" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="./UltrasoundBasics/attenuation.jpg">
+    </td>
+    <td>
+      <img src="./UltrasoundBasics/attenuation tgc.jpg">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <small>
+Present models, however, have automatic TGC. Thus the default control setting should be neutral to achieve a balanced picture:
+      </small>
+    </td>
+    <td>
+      <small>
+Using manual setting by old habit will result in a double compensation, with too much gain in the bottom, too little in the top:
+      </small>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="./UltrasoundBasics/TGC1.jpg" />
+    </td>
+    <td>
+      <img alt="" src="./UltrasoundBasics/TGC2.jpg" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="./UltrasoundBasics/attenuation tgc.jpg" />
+    </td>
+    <td>
+      <img src="./UltrasoundBasics/double tgc.jpg" />
+    </td>
+  </tr>
 </table>
-<br>
-<br>
-<br>
-<br>
-<h4><a name="Compr_rej"></a>Compress and reject:<br>
-</h4>
-<br>
-Low amplitude signals can be filtered away, resulting in filtering out
-cavity noise, however at the price of risking to loose low amplitude
-signals (e.g. from valves.) by the <span style="font-weight: bold;">reject
-function.</span><br>
-Finally, the grey scale can be <span style="font-weight: bold;">compressed</span>,
-resulting in a steeper saturation curve. This means that the picture
-goes to full saturation (pure white) at a lower amplitude, while the
-brightness of low amplitude signals are reduced. <br>
-<br>
-It is important to realise that all these are post-processing functions
-that manipulates the image on the screen, without improving the signal
-quality itself, or the fundamental signal to noise ratio. <br>
-<br>
-<br>
-<table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
-  <tbody>
-    <tr>
-      <td style="vertical-align: top; text-align: center;"><img style="width: 439px; height: 299px;" alt="" src="./UltrasoundBasics/default.jpg"><small><span style="font-weight: bold;"></span></small></td>
-      <td style="vertical-align: top; text-align: center;"><img style="width: 433px; height: 296px;" alt="" src="./UltrasoundBasics/Gain and reject.GIF"></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;"><small><span style="font-weight: bold;">Image with default gain, reject and
-compress settings</span></small></td>
-      <td style="vertical-align: top;"><small><span style="font-weight: bold;">Principle of gain, reject and
-compress.&nbsp; All curves display brightness of the display in
-relation to the amplitude of the rejected signal. An ordinary gain
-curve is shown in black, using a linear brightness scale, displays the
-full range of amplitudes. Increasing gain (red curve), will increase
-all signals, including the weakest, as in the noise. The disadvantage,
-in addition to increasing noise, is that the strongest signals will be
-saturated, so details may disappear. Compress is shown as the blue
-curve. This results in a steeper brightness curve, resulting in less
-brightness of the weakest echoes, and more brightness of the strongest.
-Thus, weak echoes may disappear together with background noise, while
-strong echoes will be saturated, resulting in loss of detail.&nbsp;
-Finally reject is shown by the light grey zone, siply displaying all
-signals below a certain amplitude as black. (The black brightnes curve
-drops abruptly to zero at the reject limit (dark grey line).&nbsp; A
-combination of high gain and reject will give an effect </span></small><small><span style="font-weight: bold;">fairly similar to the compress function.</span></small></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top; text-align: center;"><img style="width: 439px; height: 299px;" alt="" src="./UltrasoundBasics/higain.jpg"><br>
-      </td>
-      <td style="vertical-align: top; text-align: center;"><img style="width: 439px; height: 299px;" alt="" src="./UltrasoundBasics/reject.jpg"><br>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top; text-align: center;"><img style="width: 439px; height: 299px;" alt="" src="./UltrasoundBasics/logain.jpg"><br>
-      </td>
-      <td style="vertical-align: top; text-align: center;"><img style="width: 439px; height: 299px;" alt="" src="./UltrasoundBasics/compr.jpg"></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;"><small><span style="font-weight: bold;">Same image with high gain (top) showing
-increased density of the endocardium, but loss of detail due to
-brightness saturation and a corresponding increase in cavity noise and
-low gain (bottom), showing reduction in cavity noise, but loss of
-detail (see endocardium in lateral wall).</span></small><br>
-      </td>
-      <td style="vertical-align: top;"><small><span style="font-weight: bold;">Same image with increased reject (top)
-showing reduction in cavity noise, but also with slight loss of detail
-(endocardium in lateral wall) and compress function (bottom) with less
-detail in the myocardium due to increased brightness. </span></small><br>
-      </td>
-    </tr>
-  </tbody>
+
+<a name="compr_rej"></a>
+<h4>Compress and reject:</h4>
+
+<p>
+Low amplitude signals can be filtered away, resulting in filtering out cavity noise, however at the price of risking to loose low amplitude signals (e.g. from valves.) by the <span style="text-decoration: underline">reject function.</span> Finally, the grey scale can be <span style="text-decoration: underline">compressed</span>, resulting in a steeper saturation curve. This means that the picture goes to full saturation (pure white) at a lower amplitude, while the brightness of low amplitude signals are reduced.
+</p>
+
+<p>
+It is important to realise that all these are post-processing functions that manipulates the image on the screen, without improving the signal quality itself, or the fundamental signal to noise ratio.
+</p>
+
+<table border="0" cellpadding="2" cellspacing="2">
+  <tr>
+    <td>
+      <img src="./UltrasoundBasics/default.jpg" />
+    </td>
+    <td>
+      <img src="./UltrasoundBasics/Gain and reject.GIF" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <small>
+Image with default gain, reject and compress settings 
+      </small>
+    </td>
+    <td>
+      <small>
+Principle of gain, reject and compress.&nbsp; All curves display brightness of the display in relation to the amplitude of the rejected signal. An ordinary gain curve is shown in black, using a linear brightness scale, displays the full range of amplitudes. Increasing gain (red curve), will increase all signals, including the weakest, as in the noise. The disadvantage, in addition to increasing noise, is that the strongest signals will be saturated, so details may disappear. Compress is shown as the blue curve. This results in a steeper brightness curve, resulting in less brightness of the weakest echoes, and more brightness of the strongest. Thus, weak echoes may disappear together with background noise, while strong echoes will be saturated, resulting in loss of detail.&nbsp; Finally reject is shown by the light grey zone, siply displaying all signals below a certain amplitude as black. (The black brightnes curve drops abruptly to zero at the reject limit (dark grey line).&nbsp; A combination of high gain and reject will give an effect fairly similar to the compress function.
+      </small>
+    </td> 
+</tr>
+  <tr>
+    <td>
+      <img src="./UltrasoundBasics/higain.jpg" />
+    </td>
+    <td>
+      <img src="./UltrasoundBasics/reject.jpg" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="./UltrasoundBasics/logain.jpg" />
+    </td>
+    <td>
+      <img src="./UltrasoundBasics/compr.jpg" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <small>
+Same image with high gain (top) showing increased density of the endocardium, but loss of detail due to brightness saturation and a corresponding increase in cavity noise and low gain (bottom), showing reduction in cavity noise, but loss of detail (see endocardium in lateral wall).
+      </small>
+    </td>
+    <td>
+      <small>
+Same image with increased reject (top) showing reduction in cavity noise, but also with slight loss of detail (endocardium in lateral wall) and compress function (bottom) with less detail in the myocardium due to increased brightness.
+      </small>
+    </td>
+  </tr>
 </table>
-<br>
-<br>
-<br>
-All commercial equipment today has a <span style="font-weight: bold;">time
-gain compensation (TGC)</span>, increasing the gain of the reflected
-signals with increasing time from the transmitted pulse. This is
-equivalent to increasing the gain with increasing depth. However, this
-is not a perfect solution, as the noise is constant with depth, while
-the reflected signals become weaker, and with TGC, the noise will be
-gained as well as the signal, and the signal-to-noise ratio will
-decrease, thus the resulting signal will end up as a grey blur at a
-certain depth. This effect can be seen <a href="http://folk.ntnu.no/stoylen/strainrate/Ultrasound/#TGC_and_FR_latres">below</a>.
-Before <a href="http://folk.ntnu.no/stoylen/strainrate/Ultrasound/#Harmonic">harmonic
-imaging</a>, the TGC was adjustable, relying on the operator to
-optimise the visibility. AS the greater part of cavity noise is removed
-by the harmonic imaging, most modern equipment has automated TGC, but
-retains the possibility of manual adjustment. <br>
-<br>
-<br>
-<br>
-<h4><a name="M-mode"></a>M-mode<br>
-</h4>
+
+<p>
+All commercial equipment today has a <span style="text-decoration: underline;">time gain compensation (TGC)</span>, increasing the gain of the reflected signals with increasing time from the transmitted pulse. This is equivalent to increasing the gain with increasing depth. However, this is not a perfect solution, as the noise is constant with depth, while the reflected signals become weaker, and with TGC, the noise will be gained as well as the signal, and the signal-to-noise ratio will decrease, thus the resulting signal will end up as a grey blur at a certain depth. This effect can be seen <a href="#TGC_and_FR_latres">below</a>. Before <a href="#Harmonic">harmonic imaging</a>, the TGC was adjustable, relying on the operator to optimise the visibility. AS the greater part of cavity noise is removed by the harmonic imaging, most modern equipment has automated TGC, but retains the possibility of manual adjustment.
+</p>
+
+<a name="M-mode"></a>
+<h4>M-mode</h4>
+
 The M-mode was the first ultrasound modality to record display moving
 echoes from the heart (<a href="http://folk.ntnu.no/stoylen/strainrate/References.html#r118">118</a>), and
 thus the motion could be interpreted in terms of myocardial and
@@ -1567,9 +1498,9 @@ is illustrated below.<br>
 <table border="0" cellpadding="2" cellspacing="2" width="100%">
   <tbody>
     <tr>
-      <td align="center" valign="top"><img style="width: 461px; height: 453px;" alt="" src="./UltrasoundBasics/2Dsector.gif"><br>
+      <td><img style="width: 461px; height: 453px;" alt="" src="./UltrasoundBasics/2Dsector.gif"><br>
       </td>
-      <td align="center" valign="top"><img style="width: 490px; height: 526px;" alt="" src="./UltrasoundBasics/3D volume.gif"><br>
+      <td><img style="width: 490px; height: 526px;" alt="" src="./UltrasoundBasics/3D volume.gif"><br>
       </td>
     </tr>
     <tr>
