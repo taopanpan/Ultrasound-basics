@@ -187,35 +187,35 @@ img
       <td style="vertical-align: top; font-weight: bold; text-align: right;">Скорость (m/s)</td>
     </tr>
     <tr>
-      <td style="vertical-align: top;">Воздух</td>
+      <td>Воздух</td>
       <td style="vertical-align: top; text-align: right;">330</td>
     </tr>
     <tr>
-      <td style="vertical-align: top;">Вода</td>
+      <td>Вода</td>
       <td style="vertical-align: top; text-align: right;">1497</td>
     </tr>
     <tr>
-      <td style="vertical-align: top;">Жировые ткани</td>
+      <td>Жировые ткани</td>
       <td style="vertical-align: top; text-align: right;">1440</td>
     </tr>
     <tr>
-      <td style="vertical-align: top;">Мягкие ткани</td>
+      <td>Мягкие ткани</td>
       <td style="vertical-align: top; text-align: right;">1540</td>
     </tr>
     <tr>
-      <td style="vertical-align: top;">Кровь</td>
+      <td>Кровь</td>
       <td style="vertical-align: top; text-align: right;">1570</td>
     </tr>
     <tr>
-      <td style="vertical-align: top;">Мышечные ткани</td>
+      <td>Мышечные ткани</td>
       <td style="vertical-align: top; text-align: right;">1500 - 1630</td>
     </tr>
     <tr>
-      <td style="vertical-align: top;">Кость</td>
+      <td>Кость</td>
       <td style="vertical-align: top; text-align: right;">2700 - 4100</td>
     </tr>
     <tr>
-      <td style="vertical-align: top;">Метал</td>
+      <td>Метал</td>
       <td style="vertical-align: top; text-align: right;">3000 - 6000 </td>
     </tr>
   </tbody>
@@ -280,13 +280,13 @@ img
     </tr>
 
     <tr>
-      <td style="vertical-align: top;">
+      <td>
       <small>
 В основном, отраженный ультразвуковой импульс имеет форму сигнала. Тем не менее, хранения полной волны, называемой RF-data, является затратным с точки зрения объемов, так как каждая точка на кривой должны быть представлены в той или иной форме. Однако, если есть RF-data, то амплитуда и частота могут быть рассчитаны в процессе постобработки сигнала.
       </small>
 
       </td>
-      <td style="vertical-align: top;">
+      <td>
       <small>
 
 Отраженный ультразвуковой импульс обладает частотой (или спектром частот), которая может быть представлена числом на каждый пиксель изображения, как описано в <a href="#doppler">Допплерографии</a>. В таком случае объем данных меньше чем при хранении RF-data.
@@ -311,7 +311,7 @@ img
     </tr>
 
     <tr>
-      <td style="vertical-align: top;" colspan="2">
+      <td  colspan="2">
       <small>
 
 Пульс имеет определенную амплитуду. Хранение только амплитуды менее затратно чем RF-data. Это единственные данные, которые используются для построения серого изображения, где амплитуда изображена как яркость точки рассеивания сигнала, как в <a href="#2в">B-mode</a> и <a href="#m-mode">M-mode</a>.
@@ -383,14 +383,14 @@ img
 
     <tr>
 
-      <td style="vertical-align: top;">
+      <td>
       <small>
       <span style="font-weight: bold;">Рис. 3a. </span>
       Ультразвуковое изображение строится как линия отраженного эха на основе временной задержки и амплитуды отраженных сигналов.
       </small>
       </td>
 
-      <td style="vertical-align: top;">
+      <td>
       <small>
       <span style="font-weight: bold;">Рис 3b.</span>
       Отраженные сигналы могут отображаться в трех различных режимах. A-Режим (Амплитуда) показывает глубину и количество отраженной энергии от каждого объекта-рассеивателя. В-режиме (Яркость) показывает энергию сигнала или амплитуду как яркость (в данном случае, чем выше энергия, тем точка изображения темнее) точки. Объект-рассеиватель движется. Если глубину представить в виде функции от времени, то в М-режиме.график движения рассматривается как кривая, (для неподвижных объектов - горизонтальная линия).
@@ -493,7 +493,7 @@ The absorption is dependent on many factors [<a href="http://folk.ntnu.no/stoyle
 The density of the tissue. The higher the density, the more absorption. Thus the attenuation is fluid &lt; fat &lt; muscle &lt; fibrous tissue &lt; calcifications and bone.
   </li>
   <li>
-The frequency of the ultrasound beam. The higher the frequency, the more absorption. In human tissue, a general approximation is that the attenuation is 1 dB/cm MHz. (however, that is for one way, in imaging the distance is 2* the depth). Thus, the desired depth to be imaged, sets the limit for how high frequency that can be used.&nbsp;As can be seen, penetration might be increased by increasing the transmitted energy, but this would increase the total absorbed energy as well, which has to stay below the safety limits.
+The frequency of the ultrasound beam. The higher the frequency, the more absorption. In human tissue, a general approximation is that the attenuation is 1 dB/cm MHz. (however, that is for one way, in imaging the distance is 2* the depth). Thus, the desired depth to be imaged, sets the limit for how high frequency that can be used.As can be seen, penetration might be increased by increasing the transmitted energy, but this would increase the total absorbed energy as well, which has to stay below the safety limits.
   </li>
 </ul>
 </p>
@@ -677,7 +677,7 @@ Image with default gain, reject and compress settings
     </td>
     <td>
       <small>
-Principle of gain, reject and compress.&nbsp; All curves display brightness of the display in relation to the amplitude of the rejected signal. An ordinary gain curve is shown in black, using a linear brightness scale, displays the full range of amplitudes. Increasing gain (red curve), will increase all signals, including the weakest, as in the noise. The disadvantage, in addition to increasing noise, is that the strongest signals will be saturated, so details may disappear. Compress is shown as the blue curve. This results in a steeper brightness curve, resulting in less brightness of the weakest echoes, and more brightness of the strongest. Thus, weak echoes may disappear together with background noise, while strong echoes will be saturated, resulting in loss of detail.&nbsp; Finally reject is shown by the light grey zone, siply displaying all signals below a certain amplitude as black. (The black brightnes curve drops abruptly to zero at the reject limit (dark grey line).&nbsp; A combination of high gain and reject will give an effect fairly similar to the compress function.
+Principle of gain, reject and compress. All curves display brightness of the display in relation to the amplitude of the rejected signal. An ordinary gain curve is shown in black, using a linear brightness scale, displays the full range of amplitudes. Increasing gain (red curve), will increase all signals, including the weakest, as in the noise. The disadvantage, in addition to increasing noise, is that the strongest signals will be saturated, so details may disappear. Compress is shown as the blue curve. This results in a steeper brightness curve, resulting in less brightness of the weakest echoes, and more brightness of the strongest. Thus, weak echoes may disappear together with background noise, while strong echoes will be saturated, resulting in loss of detail. Finally reject is shown by the light grey zone, siply displaying all signals below a certain amplitude as black. (The black brightnes curve drops abruptly to zero at the reject limit (dark grey line). A combination of high gain and reject will give an effect fairly similar to the compress function.
       </small>
     </td> 
 </tr>
@@ -745,7 +745,7 @@ The M-mode was the first ultrasound modality to record display moving echoes fro
 </table>
 
 <small>
-<span style="font-weight: bold;">Fig.&nbsp; 4.&nbsp;</span>
+<span style="font-weight: bold;">Fig. 4.</span>
 Typical M-mode images. a from left ventricle, b from the mitral valve and c from the aortic valve as indicated on the 2D long axis image above. Here the amplitude is displayed in white on dark background.
 </small>
 
@@ -760,742 +760,452 @@ The depth resolution of the ultrasound beam, is the resolution along the beam. T
 Ideally, the pulse length in imaging (B- and M-mode) should be as short as possible, but this is dependent on the physical properties of the probe. Most probes will ring in the resonance frequency for a few oscillations, and thus produce a pulse with a length of several oscillations. By Fourier analysis, the frequency content of the pulse will be less dispersed, the longer the pulse is. Thus, the pulse length is inversely proportional with the spread of the frequency, i.e. the <span style="text-decoration: underline;">bandwidth</span> <span style="font-weight: bold;"></span> of the pulse, as shown below. This will have consequences for <a href="#doppler">Doppler imaging</a>, where frequencies, and not amplitudes are analysed.
 </p>
 
-<div style="text-align: center;">
-  <img style="width: 740px; height: 479px;" src="./UltrasoundBasics/Bandwidth.GIF">
-  <br>
-  <small>
-    <span style="font-weight: bold;">
-      Two different pulses with the
-same frequency, but different duration (pulse length), i.e. Number of
-oscillations. The shortest pulse has a wider dispersion of frequencies,
-i.e. a greater bandwidth. After Angelsen
-    </span>
-    (
-    <a href="http://folk.ntnu.no/stoylen/strainrate/References.html#r117">117</a>
-    )
-  </small>
-  <small>
-    <span style="font-weight: bold;">.</span>
-  </small>
-</div>
+<img src="./UltrasoundBasics/Bandwidth.GIF" />
+<small>
+Two different pulses with the same frequency, but different duration (pulse length), i.e. Number of oscillations. The shortest pulse has a wider dispersion of frequencies, i.e. a greater bandwidth. After Angelsen [<a href="http://folk.ntnu.no/stoylen/strainrate/References.html#r117">117</a>].
+</small>
 
-
-
-<br>
 <a name="pulse_length_frequency"></a>
-Higher frequencies will result in
-shorter pulses for the same number of oscillations, i.e. reduce pulse
-length without increasing bandwidth to the same degree.&nbsp; Thus, for
-imaging, the ideal pulse would be highest possible frequency (depending
-on the required
-<a href="http://folk.ntnu.no/stoylen/strainrate/Ultrasound/#Attenuation">depth penetration</a>
-) and the
-shortest possible pulse length. However, as noise is unevenly
-distributed in different frequency domains,
-<a href="http://folk.ntnu.no/stoylen/strainrate/Ultrasound/#Harmonic">
-  harmonic
-imaging
-</a>
-, which analyses at half the frequency, will result in less
-noise. Harmonic imaging thus doubles the pulse length for a given
-frequency, and results in thicker echoes.
-<br>
-<div style="text-align: center;">
-  <img style="width: 489px; height: 378px;" src="./UltrasoundBasics/pulse length vs frequency.GIF">
-  <br>
-  <small>
-    <span style="font-weight: bold;">
-      Halving the frequency results
-in half the number of oscillations per time unit, or longer time (=
-pulse length) for the same number of oscillations. Thus halving the
-frequency, as in
-      <a href="http://folk.ntnu.no/stoylen/strainrate/Ultrasound/#Harmonic">second harmonic analysis,</a>
-      will result in longer pulse length. However, the
-      <a href="http://folk.ntnu.no/stoylen/strainrate/Ultrasound/#Depth_res">bandwidth</a>
-      is far less affected.
-    </span>
-  </small>
-  <br></div>
+<p>
+Higher frequencies will result in shorter pulses for the same number of oscillations, i.e. reduce pulse length without increasing bandwidth to the same degree. Thus, for imaging, the ideal pulse would be highest possible frequency (depending on the required <a href="#attenuation">depth penetration</a>) and the shortest possible pulse length. However, as noise is unevenly distributed in different frequency domains, <a href="#harmonic">harmonic imaging</a>, which analyses at half the frequency, will result in less noise. Harmonic imaging thus doubles the pulse length for a given frequency, and results in thicker echoes.
+</p>
+
+
+
+<img src="./UltrasoundBasics/pulse length vs frequency.GIF" />
+<small>
+Halving the frequency results in half the number of oscillations per time unit, or longer time (= pulse length) for the same number of oscillations. Thus halving the frequency, as in <a href="http://folk.ntnu.no/stoylen/strainrate/Ultrasound/#Harmonic">second harmonic analysis,</a> will result in longer pulse length. However, the <a href="http://folk.ntnu.no/stoylen/strainrate/Ultrasound/#Depth_res">bandwidth</a> is far less affected.
+</small>
+
 <table border="0" cellpadding="2" cellspacing="2">
-  <tbody>
-    <tr>
-      <td>
-        <img src="./UltrasoundBasics/2harmsurface.JPG">
-        <br></td>
-      <td>
-        <img src="./UltrasoundBasics/leadingtoleading.JPG">
-        <br></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;">
-        <small>
-          <span style="font-weight: bold;">Second harmonic (1.7/3.5 MHz) left</span>
-        </small>
-        <small>
-          <span style="font-weight: bold;">and</span>
-        </small>
-        <small>
-          <span style="font-weight: bold;">
-            fundmental (3.5 MHz) right images of LV
-  septum, showing how the echo from the blood/septum interface (arrows)
-  is thicker in harmonic imaging, due to the reduction in frequency.
-  Observe, however, how cavity noise is much reduced in harmonic imaging,
-  resulting in a far more favorable signal-to-noise ratio.
-            <br></span>
-        </small>
-      </td>
-      <td style="vertical-align: top;">
-        <small>
-          <span style="font-weight: bold;">
-            The thickness of the surtface echoes is
-  dependent n the pulse length, and thus also on the frequency.&nbsp;
-  This picture of the septum illustrates how the leading-to-leading ASE
-  convention shown in red, eliminates the pulse length in measurement (as
-  the echo blooms in both directions), while the Penn convention will
-  result in increasing overestimation of the thickness by increasing
-pulse length as it incorporates the interface on both sides.
-          </span>
-        </small>
-        <br></td>
-    </tr>
-  </tbody>
+  <tr>
+    <td>
+      <img src="./UltrasoundBasics/2harmsurface.JPG">
+    </td>
+    <td>
+      <img src="./UltrasoundBasics/leadingtoleading.JPG">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <small>
+Second harmonic (1.7/3.5 MHz) left and fundmental (3.5 MHz) right images of LV septum, showing how the echo from the blood/septum interface (arrows) is thicker in harmonic imaging, due to the reduction in frequency. Observe, however, how cavity noise is much reduced in harmonic imaging, resulting in a far more favorable signal-to-noise ratio.
+      </small>
+    </td>
+    <td>
+      <small>
+The thickness of the surtface echoes is dependent n the pulse length, and thus also on the frequency. This picture of the septum illustrates how the leading-to-leading ASE convention shown in red, eliminates the pulse length in measurement (as the echo blooms in both directions), while the Penn convention will result in increasing overestimation of the thickness by increasing pulse length as it incorporates the interface on both sides.
+     </small>
+    </td>
+  </tr>
 </table>
-<br>
-<span style="font-weight: bold;">
-  The most important point is that the
-echo from an interface reflects the pulse length, and is NOT a picture
-of the endothelium.
-</span>
-<br>
-<h4>
-  <a name="2D"></a>
-  2-dimensional imaging:
-</h4>
-A 2-dimensional image is built up by firing a beam vertically, waiting
-for the return echoes, maintaining the information and then firing a
-new line from a neighboring transducer along a tambourine line in a
-sequence of&nbsp; B-mode lines. In a linear array of ultrasound
-crystals, the electronic phased array shoot parallel beams in sequence,
-creating a field that is as wide as the probe length (footprint). A
-curvilinear array has a curved surface, creating a field in the depth
-that is wider than the footprint of the probe, making it possible to
-create a&nbsp; smaller footprint for easier access through small
-windows. This will result in a wider field in depth, but at the cost of
-reduced lateral resolution as the scan lines diverge.
-<span style="font-weight: bold;">
-  <br></span>
-<span style="font-weight: bold;">
-  <br></span>
+
+<p>
+The most important point is that the echo from an interface reflects the pulse length, and is NOT a picture of the endothelium.
+</p>
+
+<a name="2D"></a>
+<h4>2-dimensional imaging</h4>
+
+<p>
+A 2-dimensional image is built up by firing a beam vertically, waiting for the return echoes, maintaining the information and then firing a new line from a neighboring transducer along a tambourine line in a sequence of B-mode lines. In a linear array of ultrasound crystals, the electronic phased array shoot parallel beams in sequence, creating a field that is as wide as the probe length (footprint). A curvilinear array has a curved surface, creating a field in the depth that is wider than the footprint of the probe, making it possible to create a smaller footprint for easier access through small windows. This will result in a wider field in depth, but at the cost of reduced lateral resolution as the scan lines diverge.
+</p>
+
 <table border="0" cellpadding="2" cellspacing="2">
-  <tbody>
-    <tr>
-      <td>
-        <img src="./UltrasoundBasics/sektor_puls1.gif" style="width: 114px; height: 379px;"></td>
-      <td>
-        <img style="width: 255px; height: 243px;" src="./UltrasoundBasics/2D11.gif"></td>
-      <td>
-        <span style="font-weight: bold;">
-          <img src="./UltrasoundBasics/Linear1.gif" style="width: 301px; height: 263px;"></span>
-      </td>
-      <td>
-        <img src="./UltrasoundBasics/curvilinear.jpg" style="width: 301px; height: 263px;">
-        <br></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;">
-        <small>
-          A pulse is sent out,
-ultrasound is reflected, and the B-mode line is built up&nbsp; from the
-reflected signals.
-        </small>
-      </td>
-      <td style="vertical-align: top;">
-        <br></td>
-      <td style="vertical-align: top;">
-        <small>
-          <span style="font-weight: bold;"></span>
-          Linear array.
-        </small>
-        <br></td>
-      <td style="vertical-align: top;">
-        <small>
-          <span style="font-weight: bold;">C</span>
-          urvilinear array
-        </small>
-        <br></td>
-    </tr>
-  </tbody>
+  <tr>
+    <td>
+      <img src="./UltrasoundBasics/sektor_puls1.gif" />
+    </td>
+    <td>
+      <img src="./UltrasoundBasics/2D11.gif" />
+    </td>
+    <td>
+      <img src="./UltrasoundBasics/Linear1.gif" />
+    </td>
+    <td>
+      <img src="./UltrasoundBasics/curvilinear.jpg" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <small>
+A pulse is sent out, ultrasound is reflected, and the B-mode line is built up from the reflected signals.
+      </small>
+    </td>
+    <td>
+      <small>
+Linear array.
+      </small>
+    </td>
+    <td>
+      <small>
+Curvilinear array
+      </small>
+    </td>
+  </tr>
 </table>
+
+<p>
 The linear array gives a large probe surface (footprint) and near
 field, and a narrow sector. A curvilinear array will also give a large
 footprint and near field, but with a wide sector.
-<br>
-<span style="font-weight: bold;">
-  <br></span>
-But in order to achieve a footprint sufficiently small to get
-access to the heart between the ribs, and with a sufficiently wide far
-field, the beams has to diverge from virtually the same point. This
-means that the image has to be generated by a single beam originating
-from the same point, being deflected in different angles to build a
-sector image (cf. figs. 6 and 7).
-<br>
+</p>
+
+<p>
+But in order to achieve a footprint sufficiently small to get access to the heart between the ribs, and with a sufficiently wide far field, the beams has to diverge from virtually the same point. This means that the image has to be generated by a single beam originating from the same point, being deflected in different angles to build a sector image (see figs. 6 and 7).
+</p>
+
+<p>
 This can be achieved by a single transducer or array sending a single
 beam that is stepwise rotated, either mechanically or electronically.
-<br>
-A very small footprint can be achieved by a mechanical probe, sending
-only one beam, but being mechanically rotated by a motor. Finally with
-a slightly larger footprint, a phased array with electronic focusing
-and steering, can generate a beam sweeping at an angle similar to the
-mechanical probe. Beamforming by phased array, also enables focusing of
-the ultrasound beam as shown. Focusing can also be performed in a
-mechanical probe, by a concentric arrangement of several ring shaped
-transducers, an annular array. This will focus the beam in both
-transverse directions at the same time, as indicated in fig. 7A.
-<br>
-The next line in the image is then formed by a slight angular rotation
-, making the beam sweep across a sector:
-<br>
+</p>
+
+<p>
+A very small footprint can be achieved by a mechanical probe, sending only one beam, but being mechanically rotated by a motor. Finally with a slightly larger footprint, a phased array with electronic focusing and steering, can generate a beam sweeping at an angle similar to the mechanical probe. Beamforming by phased array, also enables focusing of the ultrasound beam as shown. Focusing can also be performed in a mechanical probe, by a concentric arrangement of several ring shaped transducers, an annular array. This will focus the beam in both transverse directions at the same time, as indicated in fig. 7A.
+</p>
+
+<p>
+The next line in the image is then formed by a slight angular rotation, making the beam sweep across a sector:
+</p>
+
 <table cellpadding="2" cellspacing="2">
-  <tbody>
-    <tr>
-      <td>
-        <img src="./UltrasoundBasics/mechanical_web.gif" style="width: 262px; height: 298px;">
-        <br></td>
-      <td>
-        <img style="width: 560px; height: 506px;" src="./UltrasoundBasics/Sector A sector width.gif">
-        <br></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;">
-        <small>
-          <span style="font-weight: bold;">
-            <span style="font-weight: bold;"></span>
-          </span>
-          By
-making the ultrasound beam sweep over a sector, the image can be made
-to build up an image, consisting of multiple B-mode lines.
-          <br></small>
-      </td>
-      <td style="vertical-align: top;">
-        <small>
-          <span style="font-weight: bold;">c.</span>
-          In principle, the image is built
-up line by line, by emitting the pulse, waiting for the reflected
-echoes before tilting the beam and emitting the next pulse.
-        </small>
-        <small>
-          Resulting
-in an image being built up with a whole frame taking the time for
-emitting the total number of pulses corresponding to the total number
-of lines in the image.
-        </small>
-      </td>
-    </tr>
-  </tbody>
+  <tr>
+    <td>
+      <img src="./UltrasoundBasics/mechanical_web.gif" />
+    </td>
+    <td>
+      <img src="./UltrasoundBasics/Sector A sector width.gif" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <small>
+By making the ultrasound beam sweep over a sector, the image can be made to build up an image, consisting of multiple B-mode lines.
+      </small>
+    </td>
+    <td>
+      <small>
+In principle, the image is built up line by line, by emitting the pulse, waiting for the reflected echoes before tilting the beam and emitting the next pulse. Resulting in an image being built up with a whole frame taking the time for emitting the total number of pulses corresponding to the total number of lines in the image.
+      </small>
+    </td>
+  </tr>
 </table>
-<br>
-This means that as a pulse is sent out, the transducer has to wait for
-the returning echoes, before a new pulse can be sent out, generating
-the next line in the image.
-<br>
+
+<p>
+This means that as a pulse is sent out, the transducer has to wait for the returning echoes, before a new pulse can be sent out, generating the next line in the image.
+</p>
+
 <table border="0" cellpadding="2" cellspacing="2">
-  <tbody>
-    <tr>
-      <td>
-        <img src="./UltrasoundBasics/laxmm_1.gif" style="width: 314px; height: 211px;"></td>
-      <td>
-        <img src="./UltrasoundBasics/Fig 6.gif" style="width: 368px; height: 296px;"></td>
-    </tr>
-  </tbody>
+  <tr>
+    <td>
+      <img src="./UltrasoundBasics/laxmm_1.gif" />
+    </td>
+    <td>
+      <img src="./UltrasoundBasics/Fig 6.gif" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <small>
+2D echocardiography. A line is sent out, and as all echoes along the beam are received, the picture along the beam is retained, and a new beam is sent out in the neighboring region. building up the next line in the image. one full sweep of the beam will then build up a complete image; i.e one frame. A cine-loop is then a sequence of frames; i.e. a movie.
+      </small>
+    </td>
+    <td>
+      <small>
+The present technology is sufficient to build up a picture wit sufficient depth and resolution with about 50 frames per second (FPS), which gives a good temporal resolution for 2D visualisation of normal heart action ( about 70 beats per min.). However, the eye has a resolution of about 25 frames per second, so there may seem to be excess information. But off-line replay may be done at reduced frame rate, thus enabling the eye to utilise a higher temporal resolution.
+      </small>
+    </td>
+  </tr>
 </table>
-<small>
-  2D echocardiography. A line is sent out, and as all echoes along
-the beam are received, the picture along the beam is retained, and a
-new beam is sent out in the neighboring region. building up the next
-line in the image.&nbsp; one full sweep of the beam will then build up
-a complete image; i.e one frame. A cine-loop is then a sequence of
-frames; i.e. a movie.
-</small>
-<br>
-The present technology is sufficient to&nbsp; build up a picture wit
-sufficient depth and resolution with about 50 frames per second (FPS),
-which gives a good temporal resolution for 2D visualisation of normal
-heart action ( about 70 beats per min.). However, the eye has a
-resolution of about 25 frames per second, so there may seem to be
-excess information. But off-line replay may be done at reduced frame
-rate, thus enabling the eye to utilise a higher temporal resolution.
-<br>
-<h4>
-  <a name="Beamforming"></a>
-  Beamforming
-  <br></h4>
+
+<a name="Beamforming"></a>
+<h4>Beamforming</h4>
+
 <table border="0" cellpadding="2" cellspacing="2">
-  <tbody>
     <tr>
       <td>
-        <img src="./UltrasoundBasics/mechanical_web.gif" style="width: 262px; height: 298px;">
-        <br></td>
+        <img src="./UltrasoundBasics/mechanical_web.gif">
+      </td>
       <td>
-        <img style="width: 406px; height: 287px;" src="./UltrasoundBasics/Phazed.JPG">
-        <br></td>
-      <td>
-        <br></td>
-      <td>
-        <br></td>
+        <img src="./UltrasoundBasics/Phazed.JPG">
+      </td>
     </tr>
     <tr>
-      <td style="vertical-align: top;">
+      <td>
         <small>
           <span style="font-weight: bold;">Fig. 7A.</span>
-          Mechanical transducer. The
-sector is formed by rotating a single transducer or array of
-transducers mechanically, firing one pulse in each direction and
-then&nbsp; waiting for the return pulse before rotating the transducer
-one step. In this beam there is electronic focusing as well, by an
-annular array.
-        </small>
-        <br></td>
-      <td style="vertical-align: top;">
+Mechanical transducer. The sector is formed by rotating a single transducer or array of transducers mechanically, firing one pulse in each direction and then waiting for the return pulse before rotating the transducer one step. In this beam there is electronic focusing as well, by an annular array. </small>
+        </td>
+      <td>
         <small>
           <span style="font-weight: bold;">B.</span>
-          Electronic transducer in a phased
-array. By stimulating the transducers in a rapid sequence , the
-ultrasound will be sent out in an interference pattern. According to
-Huygens principle, the wavefront will behave as a single beam, thus the
-beam is formed by all transducers in the array, and the direction is
-determined by the time sequence of the pulses sent to the array. Thus,
-the beam can be electronically steeredand will then sweep stepwise over
-the sector in the same way as the mechanical transducer in A, sending a
-beam in one direction at a time.
+Electronic transducer in a phased array. By stimulating the transducers in a rapid sequence , the ultrasound will be sent out in an interference pattern. According to Huygens principle, the wavefront will behave as a single beam, thus the beam is formed by all transducers in the array, and the direction is determined by the time sequence of the pulses sent to the array. Thus, the beam can be electronically steeredand will then sweep stepwise over the sector in the same way as the mechanical transducer in A, sending a beam in one direction at a time.
         </small>
-        <br></td>
-      <td style="vertical-align: top;">
-        <small>
-          <span style="font-weight: bold;"></span>
-        </small>
-        <br></td>
-      <td style="vertical-align: top;">
-        <small>
-          <span style="font-weight: bold;"></span>
-          &nbsp;
-        </small>
-        <br></td>
+      </td>
     </tr>
-  </tbody>
 </table>
-<br>
-<h4>
-  <a name="focus"></a>
-  Beam focusing:
-</h4>
-<br>
+
+<a name="focus"></a>
+<h4>Beam focusing</h4>
+
 <table border="0" cellpadding="2" cellspacing="2">
-  <tbody>
-    <tr>
-      <td>
-        <img src="./UltrasoundBasics/focus.JPG" style="width: 213px; height: 356px;"></td>
-      <td>
-        <img style="width: 282px; height: 368px;" src="./UltrasoundBasics/Ultrasound beam.JPG"></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;">
-        <small>
-          Dynamic focusing. The
-same principle of phase steering can be applied to make a concave
-wavefront, resulting in focusing&nbsp; of the beam with its narrowest
-part&nbsp; a distance from the probe. Combining&nbsp; the steering in B
-and C will result in a focussed beam that sweeps across the sector, as
-in the moving image above.
-          <br></small>
-      </td>
-      <td style="vertical-align: top;">
-        <small>
-          Resulting Ultrasound beam
-as shown by a computer simulation, focusing due to the concave
-wavefront created by the dynamic focusing.
-          <span style="font-weight: bold;">
-            The wavelength is exaggerated for
-illustration purposes.
-          </span>
-          Image Courtesy of Hans Torp.
-        </small>
-      </td>
-    </tr>
-  </tbody>
+  <tr>
+    <td>
+      <img src="./UltrasoundBasics/focus.JPG" />
+    </td>
+    <td>
+      <img src="./UltrasoundBasics/Ultrasound beam.JPG" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <small>
+Dynamic focusing. The same principle of phase steering can be applied to make a concave wavefront, resulting in focusing of the beam with its narrowest part a distance from the probe. Combining the steering in B and C will result in a focussed beam that sweeps across the sector, as in the moving image above.
+      </small>
+    </td>
+    <td>
+      <small>
+Resulting Ultrasound beam as shown by a computer simulation, focusing due to the concave wavefront created by the dynamic focusing. <span style="font-weight: bold;"> The wavelength is exaggerated for illustration purposes.</span> Image Courtesy of Hans Torp.
+      </small>
+    </td>
+  </tr>
 </table>
-<br>
-Focusing is illustrated above. In a mechanical probe, there may be
-several transducers, arranged in a circular array, focusing the beam in
-a manner analogous to that shown in fig. 7c. In a circular array,
-however, the focusing can be done in all directions transverse to the
-beam direction, i.e. in the imaging plane and transverse to the plane,
-while a linear array can only focus in one direction, in the imaging
-plane.
-<br>
+
+<p>
+Focusing is illustrated above. In a mechanical probe, there may be several transducers, arranged in a circular array, focusing the beam in a manner analogous to that shown in fig. 7c. In a circular array, however, the focusing can be done in all directions transverse to the beam direction, i.e. in the imaging plane and transverse to the plane, while a linear array can only focus in one direction, in the imaging plane.
+</p>
+
 <table border="0" cellpadding="2" cellspacing="2">
-  <tbody>
-    <tr align="center">
-      <td style="vertical-align: top;">
-        <img src="./UltrasoundBasics/annular focussing.jpg" style="width: 493px; height: 187px;">
-        <br>
-        <div style="text-align: left;">
-          <small>
-            <span style="font-weight: bold;"></span>
-            Annular focusing in all directions
-both in plane and transverse to the plane.
-          </small>
-          <br></div>
-      </td>
-      <td style="vertical-align: top;">
-        <img src="./UltrasoundBasics/linear focussing.jpg" style="width: 493px; height: 216px;">
-        <br>
-        <div style="text-align: left;">
-          <small>
-            <span style="font-weight: bold;"></span>
-            Linear focusing in the imaging plane
-only.
-          </small>
-        </div>
-      </td>
-    </tr>
-  </tbody>
+  <tr>
+    <td>
+      <img src="./UltrasoundBasics/annular focussing.jpg" />
+    </td>
+    <td>
+      <img src="./UltrasoundBasics/linear focussing.jpg" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <small>
+Annular focusing in all directions both in plane and transverse to the plane.
+      </small>
+    </td>
+    <td>
+     <small>
+Linear focusing in the imaging plane only.
+     </small>
+    </td>
+  </tr>
 </table>
-<br>
+
+<p>
 A matrix array, can focus in both directions at the same plane.
-<br>
-The focusing increases the concentration of the energy at the depths
-where the beam is focussed, so the energy in each part of the tissue
-has to be calculated according to both wavelength, transmission and
-focusing to ensure that the
-<a href="http://folk.ntnu.no/stoylen/strainrate/Ultrasound/#Attenuation">absorbed energy</a>
-stays within safe limits.
-<br>
-<h4>
-  <a name="Lateral"></a>
-  Lateral resolution
-</h4>
-<br>
-The apparent width of the scatterer in the image is more or less given
-by the lateral resolution of the beam. (The thickness in the axial
-direction is determined by the depth resolution, i.e. the pulse length
-as discussed
-<a href="http://folk.ntnu.no/stoylen/strainrate/Ultrasound/#Depth_res">above</a>
-). In addition, two echoes
-within one beam, will only be separated by the difference in depth.
-<br>
+</p>
+
+<p>
+The focusing increases the concentration of the energy at the depths where the beam is focussed, so the energy in each part of the tissue has to be calculated according to both wavelength, transmission and focusing to ensure that the <a href="#attenuation">absorbed energy</a> stays within safe limits.
+</p>
+
+<a name="lateral"></a>
+<h4>Lateral resolution</h4>
+
+<p>
+The apparent width of the scatterer in the image is more or less given by the lateral resolution of the beam. (The thickness in the axial direction is determined by the depth resolution, i.e. the pulse length as discussed <a href="http://folk.ntnu.no/stoylen/strainrate/Ultrasound/#Depth_res">above</a>). In addition, two echoes within one beam, will only be separated by the difference in depth.
+<p>
+
 <table border="0" cellpadding="2" cellspacing="2">
-  <tbody>
     <tr>
       <td>
-        <img style="width: 236px; height: 371px;" src="./UltrasoundBasics/latres.GIF"></td>
+        <img src="./UltrasoundBasics/latres.GIF" />
+      </td>
       <td>
-        <img style="width: 249px; height: 318px;" src="./UltrasoundBasics/smear1b.GIF"></td>
+        <img src="./UltrasoundBasics/smear1b.GIF" />
+      </td>
       <td>
-        <img style="width: 249px; height: 318px;" src="./UltrasoundBasics/smear2.GIF"></td>
+        <img src="./UltrasoundBasics/smear2.GIF" />
+      </td>
     </tr>
     <tr>
-      <td style="vertical-align: top;">
+      <td>
         <small>
-          The lateral resolution of
-a beam is dependent on the focal depth, the wavelength and&nbsp; probe
-diameter (aperture) of the ultrasound probe.
-          <br>(Reproduced from Hans Torp by permission)</small>
-      </td>
-      <td style="vertical-align: top;">
-        <small>
-          Two points in a sector
-that is to be scanned.
+The lateral resolution of a beam is dependent on the focal depth, the wavelength and probe diameter (aperture) of the ultrasound probe.
         </small>
       </td>
-      <td style="vertical-align: top;">
+      <td>
         <small>
-          The ultrasound scan will
-smear the points out according to the lateral resolution in each beam.
+Two points in a sector that is to be scanned.
+        </small>
+      </td>
+      <td>
+        <small>
+The ultrasound scan will smear the points out according to the lateral resolution in each beam.
         </small>
       </td>
     </tr>
-  </tbody>
 </table>
-<br>
+
 <table border="0" cellpadding="2" cellspacing="2">
-  <tbody>
-    <tr>
-      <td>
-        <img style="width: 224px; height: 467px;" src="./UltrasoundBasics/Scatterer.GIF">
-        <br></td>
-      <td>
-        <img style="width: 224px; height: 467px;" src="./UltrasoundBasics/Scattererb.GIF">
-        <br></td>
-      <td>
-        <img style="width: 224px; height: 467px;" src="./UltrasoundBasics/Scattererc.GIF">
-        <br></td>
-      <td>
-        <img style="width: 224px; height: 467px;" src="./UltrasoundBasics/Scattererd.GIF">
-        <br></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;">
-        <small>
-          <span style="font-weight: bold;">
-            Thus a small scatterer will appear to be
-"smeared out", and the apparent size in the image is determined by the
-beam width and pulse length.
-          </span>
-          &nbsp;
-          <span style="font-weight: bold;">
-            As the pulse length is less than the beam
-width, the object will
-            <br>&nbsp;be "smeared out" most in the lateral direction.</span>
-        </small>
-        <br></td>
-      <td style="vertical-align: top;">
-        <small>
-          <span style="font-weight: bold;">
-            Two scatterers at the same depth, separated
-laterally by less than the beam width, will appear as one.
-          </span>
-        </small>
-        <br></td>
-      <td style="vertical-align: top;">
-        <small style="font-weight: bold;">
-          Two
-scatterers at different depths will appear separate&nbsp; if separated
-by more than the pulse length.
-        </small>
-        <br></td>
-      <td style="vertical-align: top; text-align: left;">
-        <small>
-          <span style="font-weight: bold;">
-            But, if separated both laterally and in
-depth, they will appear as being in the same line, if lateral
-separation is within the beam.
-          </span>
-        </small>
-        <br></td>
-    </tr>
-  </tbody>
+  <tr>
+    <td>
+      <img src="./UltrasoundBasics/Scatterer.GIF" />
+    </td>
+    <td>
+      <img src="./UltrasoundBasics/Scattererb.GIF" />
+    </td>
+    <td>
+      <img src="./UltrasoundBasics/Scattererc.GIF" />
+    </td>
+    <td>
+      <img src="./UltrasoundBasics/Scattererd.GIF" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <small>
+Thus a small scatterer will appear to be "smeared out", and the apparent size in the image is determined by the beam width and pulse length. As the pulse length is less than the beam width, the object will be "smeared out" most in the lateral direction.
+      </small>
+    </td>
+    <td>
+      <small>
+Two scatterers at the same depth, separated laterally by less than the beam width, will appear as one.
+      </small>
+    </td>
+    <td>
+      <small>
+Two scatterers at different depths will appear separate if separated by more than the pulse length.
+      </small>
+    </td>
+    <td>
+      <small>
+But, if separated both laterally and in depth, they will appear as being in the same line, if lateral separation is within the beam. 
+      </small>
+    </td>
+  </tr>
 </table>
-<br>
+
+<p>
 Thus:
-<br>
+  <ul>
+    <li>
+      The larger the aperture, the higher the resolution of a line. However, the crucial limitation is the ability to place the aperture between the ribs. Too big probe footprint will reduce the effective aperture again, resulting in reduced resolution.
+    </li>
+    <li>
+The shorter the wavelength (the higher the frequency), the better the resolution. The limitation for the frequency is the required <a href="http://folk.ntnu.no/stoylen/strainrate/Ultrasound/#Attenuation"> depth penetration </a>.
+    </li>
+  </ul>
+</p>
+
+<a name="line_density"></a>
+<h4>Line density</h4>
+
+<p>
+The width of the echo will be determined by the beam width, and thus the distance between the beams (most ultrasound scanners today will intrapolate between beams if the distance between the beams is greater than the beam width). Ideally, the distance between the beam width should be the same as the beam width at the focal depth, for maximal resolution, thus lateral resolution of a beam determining the <span style="text-decoration: underline;">line density</span>. This means that the line density would be suited to the beam width. This, however, holds only for a linear array.
+</p>
+
 <ul>
   <li>
-    The larger the aperture, the higher the resolution of a line.
-However, the crucial limitation is the ability to place the aperture
-between the ribs. Too big probe footprint will reduce the effective
-aperture again, resulting in reduced resolution.
+    In a sector angle, the line density falls with distance from the probe, as the lines diverge.
   </li>
-  <li>
-    The shorter the wavelength (the higher the frequency), the better
-the resolution. The limitation for the frequency is the required
-    <a href="http://folk.ntnu.no/stoylen/strainrate/Ultrasound/#Attenuation">
-      depth
-penetration
-    </a>
-    .
-  </li>
 </ul>
-<br>
-<h4>
-  <a name="line_density"></a>
-  Line density
-  <br></h4>
-The width of the echo will be determined by the beam width, and thus
-the distance between the beams (most ultrasound scanners today will
-intrapolate between beams if the distance between the beams is greater
-than the beam width). Ideally, the distance between the beam width
-should be the same as the beam width at the focal depth, for maximal
-resolution, thus lateral resolution of a beam determining the
-<span style="font-weight: bold; text-decoration: underline;">line density</span>
-.
-This means that the line density would be suited to the beam width.
-This, however, holds only for a linear array.
-<br>
-<ul>
-  <li>
-    In a sector angle, the line density falls with distance from the
-probe, as the lines diverge.
-    <br></li>
-</ul>
-However, as the beam width also increases at depths greater than the
-focal depth, the ideal line density for a sector probe is the one
-where&nbsp; beam
-<span style="text-decoration: underline;">
-  distances
-are equal to the beam width at the focal depth
-</span>
-. This will give
-the best lateral resolution. A line density that is so high as to make
-lines overlap, will not result in increased lateral resolution. A line
-density that leaves gaps between the lines, will have less than optimal
-lateral resolution as determined by the probe aperture and focal depth.
-<br>
-But as the time it takes to build each line in the image for any given
-depth that is desired,
-<span style="text-decoration: underline;">
-  the
-number of beams in an image limits the frame rate
-</span>
-. And if a
-greater sector width is desired without reducing the frame rate, the
-line density is reduced (same number of lines over a wider angle).
-<br>
-Thus,&nbsp; the line density itself is limited by other factors as well:
-<br>
-<ul>
-  <li>
-    Frame rate (including the depth).
-    <br></li>
-  <li>
-    Sector width. Increasing sector width has to be compensated
-either by lower frame rate&nbsp; or by lower line density (keeping the
-same number of lines in a wider sector) as shovn
-    <a href="http://folk.ntnu.no/stoylen/strainrate/Ultrasound/#Beam_number">below</a>
-    .
-And in addition, as the sector width is increasing by depth, the line
-density falls correspondingly.
-    <br></li>
-</ul>
-Due to these factors, the line density often falls below the
-theoretically desirable described above, and
-<span style="text-decoration: underline;">
-  the line density, not the probe
-size and wavelength becomes the limiting factor
-</span>
-for the lateral
-resolution.
-<br>
+
+<p>
+However, as the beam width also increases at depths greater than the focal depth, the ideal line density for a sector probe is the one where beam <span style="text-decoration: underline;">distances are equal to the beam width at the focal depth</span> . This will give the best lateral resolution. A line density that is so high as to make lines overlap, will not result in increased lateral resolution. A line density that leaves gaps between the lines, will have less than optimal lateral resolution as determined by the probe aperture and focal depth.
+</p>
+
+<p>
+But as the time it takes to build each line in the image for any given depth that is desired, <span style="text-decoration: underline;"> the number of beams in an image limits the frame rate </span>. And if a greater sector width is desired without reducing the frame rate, the line density is reduced (same number of lines over a wider angle). 
+</p>
+
+<p>
+Thus, the line density itself is limited by other factors as well:
+  <ul>
+    <li>
+Frame rate (including the depth).
+    </li>
+    <li>
+Sector width. Increasing sector width has to be compensated either by lower frame rate or by lower line density (keeping the same number of lines in a wider sector) as shown <a href="#beam_number">below</a>. And in addition, as the sector width is increasing by depth, the line density falls correspondingly.
+    </li>
+  </ul>
+</p>
+
+<p>
+Due to these factors, the line density often falls below the theoretically desirable described above, and <span style="text-decoration: underline;"> the line density, not the probe size and wavelength becomes the limiting factor</span> for the lateral resolution.
+</p>
+
 <table border="0" cellpadding="2" cellspacing="2">
-  <tbody>
-    <tr>
-      <td>
-        <img style="width: 989px; height: 302px;" src="./UltrasoundBasics/latres_linedensity.GIF">
-        <br></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;">
-        <small style="font-weight: bold;">
-          Two
-different lateral resolutions, the speckles can be seen to be
-"smeared". In this case the loss of resolution in the right image is
-due to lower line density . By rights the image should appear as split
-in different lines as indicated in the middle, as each beam is
-separated, line density being less than optimal relative to the beam
-width. Instead the image is interpolated beween lines. This reduction
-in line density is done to achieve a higher frame rate, as illustrated
-          <a href="http://folk.ntnu.no/stoylen/strainrate/Ultrasound/#TGC_and_FR_latres">below</a>
-          .
-        </small>
-        <br></td>
-    </tr>
-  </tbody>
+  <tr>
+    <td>
+      <img src="./UltrasoundBasics/latres_linedensity.GIF" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <small>
+Two different lateral resolutions, the speckles can be seen to be "smeared". In this case the loss of resolution in the right image is due to lower line density . By rights the image should appear as split in different lines as indicated in the middle, as each beam is separated, line density being less than optimal relative to the beam width. Instead the image is interpolated beween lines. This reduction in line density is done to achieve a higher frame rate, as illustrated <a href="#tgc_and_fr_latres">below</a>.
+      </small>
+    </td>
+  </tr>
 </table>
-<br>
-So a distinction should be made between the lateral
-<span style="font-style: italic;">beam</span>
-resolution, given by the
-fundamental properties of the system, and the
-<span style="font-style: italic;">image</span>
-resolution that is a
-compromise between the requirements of frame rate, angle width and
-depth.
-<br>
+
+<p>
+So a distinction should be made between the lateral <span style="font-style: italic;">beam</span> resolution, given by the fundamental properties of the system, and the <span style="font-style: italic;">image</span> resolution that is a compromise between the requirements of frame rate, angle width and depth.
+</p>
+
+<p>
 The discussion may be extended, yaking all issues into consideration:
-<br>
+</p>
+
 <table border="0" cellpadding="2" cellspacing="2">
-  <tbody>
-    <tr>
-      <td colspan="5" rowspan="1" style="vertical-align: top;">
-        <div style="text-align: center;">
-          <img style="width: 909px; height: 426px;" src="./UltrasoundBasics/Layer.GIF">
-          <br></div>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top; font-weight: bold;">
-        <small>
-          A:
-          <a href="http://folk.ntnu.no/stoylen/strainrate/Ultrasound/#Lateral">Beam width</a>
-          . Speckles (true speckles: black) are
-smeared out across the whole beam width ( Apparent speckles dark grey,
-top). This means that with this beam width the speckles from to
-different layers cannot be differentiated, and layer specific motion
-cannot be tracked.
-          <br></small>
-      </td>
-      <td style="vertical-align: top; font-weight: bold;">
-        <small>
-          B:
-          <a href="http://folk.ntnu.no/stoylen/strainrate/Ultrasound/#line_density">Line density.</a>
-          Only the lines in the
-ultrasound beams (black) are detected, and can be tracked, beams
-between lines are not detected or tracked. The spaces between lines
-cannot be seen in the final image due to image
-          <a href="http://folk.ntnu.no/stoylen/strainrate/Ultrasound/#line_density">
-            lateral
-smoothing
-          </a>
-          .
-          <br></small>
-      </td>
-      <td style="vertical-align: top; font-weight: bold;">
-        <small>
-          C:&nbsp;
-Divergence of lines in the depth due to the sector image will both
-increase beam width and decrease line density in the far field. this
-may result in the line density and width being adequate (in this
-example for two layer tracking) in the near field, but inadequate in
-the far field, situation there being analoguous to A.
-          <br></small>
-      </td>
-      <td style="vertical-align: top; font-weight: bold;">
-        <small>
-          D:&nbsp;
-          <a href="http://folk.ntnu.no/stoylen/strainrate/Ultrasound/#focus">Focussing.</a>
-          The beams being focussed at a
-certain depth mau mean that line density may be inadequate at the focus
-depth. Thus speckles in some layers may be missed. IN general, the
-default setting will usually give the best line density at the focus
-depth, so unless frame rate is increased, this problem may be minor.
-Howewever, line density will decrease ifalso if sector width is
-increased, there is a given number of lines for a given frame rate and
-depth. In any case, in the far field, the beams will be broader, and
-the beam width will be more like A and C.
-          <br></small>
-      </td>
-      <td style="vertical-align: top; font-weight: bold;">
-        <small>
-          E:
-Focussing may even result in beams overlapping int the far field. A
-speckle in the overlap zone may be smeared out across
-          <span style="text-decoration: underline;">
-            <span style="font-style: italic;">two</span>
-          </span>
-          beams.
-          <br></small>
-      </td>
-    </tr>
-  </tbody>
+  <tr>
+    <td colspan="5" rowspan="1">
+      <img src="./UltrasoundBasics/Layer.GIF" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <small>
+A: <a href="http://folk.ntnu.no/stoylen/strainrate/Ultrasound/#Lateral">Beam width</a>. Speckles (true speckles: black) are smeared out across the whole beam width ( Apparent speckles dark grey, top). This means that with this beam width the speckles from to different layers cannot be differentiated, and layer specific motion cannot be tracked. 
+      </small>
+    </td>
+    <td>
+      <small>
+B: <a href="http://folk.ntnu.no/stoylen/strainrate/Ultrasound/#line_density">Line density.</a> Only the lines in the ultrasound beams (black) are detected, and can be tracked, beams between lines are not detected or tracked. The spaces between lines cannot be seen in the final image due to image <a href="http://folk.ntnu.no/stoylen/strainrate/Ultrasound/#line_density">lateral smoothing</a>. 
+      </small>
+    </td>
+    <td>
+      <small>
+C: Divergence of lines in the depth due to the sector image will both increase beam width and decrease line density in the far field. this may result in the line density and width being adequate (in this example for two layer tracking) in the near field, but inadequate in the far field, situation there being analoguous to A.
+      </small>
+    </td>
+    <td>
+      <small>
+D: <a href="http://folk.ntnu.no/stoylen/strainrate/Ultrasound/#focus">Focussing.</a> The beams being focussed at a certain depth mau mean that line density may be inadequate at the focus depth. Thus speckles in some layers may be missed. IN general, the default setting will usually give the best line density at the focus depth, so unless frame rate is increased, this problem may be minor. Howewever, line density will decrease ifalso if sector width is increased, there is a given number of lines for a given frame rate and depth. In any case, in the far field, the beams will be broader, and the beam width will be more like A and C.
+      </small>
+    </td>
+    <td>
+      <small>
+E: Focussing may even result in beams overlapping int the far field. A speckle in the overlap zone may be smeared out across <span style="text-decoration: underline;"> <span style="font-style: italic;">two</span> </span> beams. 
+      </small>
+    </td>
+  </tr>
 </table>
-<br>
-&nbsp;
-<br>
+
+
+<p>
 Thus, the line density can be increased by
-<br>
-<ol>
-  <li>
-    Reducing the sector width (gives higher line density by spreading
-the lines over a smaller angle)
-    <br></li>
-  <li>
-    Reducing frame rate (enables time for builing more lines between
-frames)
-    <br></li>
-  <li>
-    Reducing depth (enables a higher line density for a given frame
-rate, as the shorter lines takes shorter time to build).
-    <br></li>
-</ol>
+  <ol>
+    <li>
+  Reducing the sector width (gives higher line density by spreading the lines over a smaller angle)
+    </li>
+    <li>
+  Reducing frame rate (enables time for builing more lines between frames)
+    </li>
+    <li>
+  Reducing depth (enables a higher line density for a given frame rate, as the shorter lines takes shorter time to build).
+    </li>
+  </ol>
+</p>
+
 This is discussed in detail below:
 <br>
 <h4>
@@ -1518,15 +1228,15 @@ effect
 or 2D B-mode data, sufficient frame rate is important to
 avoid
 <a href="http://folk.ntnu.no/stoylen/strainrate/Howto/Pitfalls.html#sampling">undersampling</a>
-.&nbsp;
+.
 In
-Doppler, the frame rate is also important in the&nbsp;
+Doppler, the frame rate is also important in the
 <a href="http://folk.ntnu.no/stoylen/strainrate/Ultrasound/index.html#Nykvist">
   Nykvist
 phenomenon.
 </a>
 <br>
-The temporal resolution&nbsp; is limited by the sweep speed of the
+The temporal resolution is limited by the sweep speed of the
 beam. And the sweep speed is limited by the speed of sound, as the echo
 from the deepest part of the image has to return before the next pulse
 is sent out ad a different angle in the neighboring beam.
@@ -1544,23 +1254,23 @@ below.
   <tbody>
     <tr>
       <td>
-        <img style="width: 187px; height: 546px;" src="./UltrasoundBasics/depth.gif">
-        <br></td>
+        <img src="./UltrasoundBasics/depth.gif">
+        </td>
       <td>
-        <img style="width: 184px; height: 530px;" src="./UltrasoundBasics/depth2.gif">
-        <br></td>
+        <img src="./UltrasoundBasics/depth2.gif">
+        </td>
     </tr>
     <tr>
-      <td style="vertical-align: top;">
+      <td>
         <small>
           <span style="font-weight: bold;"></span>
-          As the depth&nbsp; of the sector
+          As the depth of the sector
 determines the time before next pulse can be sent out, higher depth
 results in longer time for building each line, and thus longer time for
 building the sector from a given number of lines, i.e. lower frame rate.
         </small>
-        <br></td>
-      <td style="vertical-align: top;">
+        </td>
+      <td>
         <small>
           <span style="font-weight: bold;"></span>
           Thus reducing the desired depth of
@@ -1569,13 +1279,13 @@ time for building each line, shorter time for building the same number
 of lines, i.e. higher frame rate. In this case, the depth has been
 halved, and the time for building a line is also halved.
         </small>
-        <br></td>
+        </td>
     </tr>
   </tbody>
 </table>
 <br>
 For a depth of 15 cm, this means that the time for building one line
-will be 2 x 0.15 m / 1540 m/s =&nbsp; 0.19 ms. The frame rate is then
+will be 2 x 0.15 m / 1540 m/s = 0.19 ms. The frame rate is then
 given by the depth and the
 <a href="http://folk.ntnu.no/stoylen/strainrate/Ultrasound/#Beam_number">number of lines</a>
 ,
@@ -1602,14 +1312,14 @@ practice, when studying the ventricles, the atria should be excluded.
   <tbody>
     <tr>
       <td>
-        <img style="width: 560px; height: 506px;" src="./UltrasoundBasics/Sector B.gif">
-        <br></td>
+        <img src="./UltrasoundBasics/Sector B.gif">
+        </td>
       <td>
-        <img style="width: 560px; height: 506px;" src="./UltrasoundBasics/Sector B2.gif">
-        <br></td>
+        <img src="./UltrasoundBasics/Sector B2.gif">
+        </td>
     </tr>
     <tr style="font-weight: bold;" align="center">
-      <td colspan="2" rowspan="1" style="vertical-align: top;">
+      <td colspan="2" rowspan="1" >
         <small>
           In
 this case, in the image to the left, the depth has been halved,
@@ -1628,16 +1338,16 @@ density.
   <br></h5>
 <br>
 The sweep speed can also be increased by reducing the number of
-beams&nbsp; for a full sector. Reducing the number of lines in the
+beams for a full sector. Reducing the number of lines in the
 image will reduce the time for building up the whole image. This can be
 achieved by either decreasing the sector angle (width), but keeping the
 line density, i.e. reducing the field of view but keeping lateral
 resolution. Decreasing the line density, but keeping the same sector
-angle&nbsp; will achieve the&nbsp; same increase in frame rate,
-but&nbsp; reduce lateral resolution.&nbsp;
+angle will achieve the same increase in frame rate,
+but reduce lateral resolution.
 <br>
 <div style="text-align: center;">
-  <img style="width: 560px; height: 506px;" src="./UltrasoundBasics/Sector A.gif">
+  <img src="./UltrasoundBasics/Sector A.gif">
   <br>
   <small>
     <span style="font-weight: bold;">Fig.7a.</span>
@@ -1650,20 +1360,20 @@ given depth, sector width and line density determines the frame rate.
   <tbody>
     <tr>
       <td>
-        <img style="width: 560px; height: 506px;" src="./UltrasoundBasics/Sector A sector width.gif">
-        <br></td>
+        <img src="./UltrasoundBasics/Sector A sector width.gif">
+        </td>
       <td>
-        <img style="width: 560px; height: 506px;" src="./UltrasoundBasics/Sector A line density.gif">
-        <br></td>
+        <img src="./UltrasoundBasics/Sector A line density.gif">
+        </td>
     </tr>
     <tr>
-      <td style="vertical-align: top;">
+      <td>
         <small>
           <span style="font-weight: bold;">b.</span>
         </small>
         <small>
           Reducing sector
-width, but maintaining the&nbsp;
+width, but maintaining the
         </small>
         <small>line density</small>
         ,
@@ -1676,14 +1386,14 @@ unchanged
           ,
 at the cost of field of view.
         </small>
-        <br></td>
-      <td style="vertical-align: top;">
+        </td>
+      <td>
         <small>
           <span style="font-weight: bold;">c.</span>
         </small>
         <small>
           Reducing
-the&nbsp; line density instead and maintaining sector width, results in
+the line density instead and maintaining sector width, results in
 lower number of lines, i.e. lateral resolution, and gives the same
 increase in frame rate.
         </small>
@@ -1700,14 +1410,14 @@ the example
 <a href="http://folk.ntnu.no/stoylen/strainrate/Ultrasound/#Depth">above</a>
 for a depth of 12 cm (givig at
 time for building one line of 15 ms), with 64 lines, the time for a
-full sector is 64 x 0.19 ms = 12.5 ms, and the frame rate is&nbsp; 1000
+full sector is 64 x 0.19 ms = 12.5 ms, and the frame rate is 1000
 / (12.5) = 80.
 <br>
 <a name="TGC_and_FR_latres"></a>
 This is shown in the example below:
 <br>
 <div style="text-align: center;">
-  <img style="width: 989px; height: 302px;" src="./UltrasoundBasics/FR.GIF">
+  <img src="./UltrasoundBasics/FR.GIF">
   <br>
   <div style="text-align: left;">
     <br>
@@ -1720,17 +1430,17 @@ reducing the number of lines; i.e. the line density. This can be seen
 as an increasing width of the speckles in the image with increasing
 frame rate, resulting in a lateral blurring of the image. The first
 step from 34 to 56 seems to retain an acceptable image quality,
-indicating that the line density was&nbsp; redundant&nbsp; at the
-lowest frame rate.&nbsp; ( In fact, it may seem that the image in the
+indicating that the line density was redundant at the
+lowest frame rate. ( In fact, it may seem that the image in the
 middle has the best quality, as the left image seems more grainy. But
 the graininess is the real appearance of the echoes, while the more
 homogeneous appearance in the middle and the left is due to smearing).
 However, as line density decreases toward the bottom of the sector (by
 the divergence of the lines), the effect is mos clearly seen here, i.e.
-in the atrial walls, the mitral ring and valve.&nbsp; In the image to
-the right, the endocardial definition is lost.&nbsp; As it is the
+in the atrial walls, the mitral ring and valve. In the image to
+the right, the endocardial definition is lost. As it is the
 echoes that are smeared, the effect will result in an apparent
-decreased cavity size.&nbsp;
+decreased cavity size.
         <br>
         These images also illustrates the drawback of
         <a href="http://folk.ntnu.no/stoylen/strainrate/Ultrasound/#Attenuation">
@@ -1756,11 +1466,11 @@ multiple line acquisition (MLA), and is illustrated below:
   <tbody>
     <tr>
       <td>
-        <img style="width: 560px; height: 506px;" src="./UltrasoundBasics/Sector A.gif">
-        <br></td>
+        <img src="./UltrasoundBasics/Sector A.gif">
+        </td>
       <td>
-        <img style="width: 560px; height: 506px;" src="./UltrasoundBasics/Sector A 4mla.gif">
-        <br></td>
+        <img src="./UltrasoundBasics/Sector A 4mla.gif">
+        </td>
     </tr>
   </tbody>
 </table>
@@ -1800,7 +1510,7 @@ seen
 </h3>
 <p>
   3D ultrasound increases complexity a lot, resulting in a new set
-of&nbsp; additional challenges.
+of additional challenges.
   <br></p>
 <p>
   The number of crystals need to be increased, typically from between
@@ -1822,7 +1532,7 @@ channels. .
   <br></p>
 <p>
   The number of lines also increase by the square of the number for
-2D, given the same line density, meaning that&nbsp; each plane shall
+2D, given the same line density, meaning that each plane shall
 have the same number of lines, and a full volume then shall be n=built
 by the same number of planes. This means that given 64 lines per plane,
 the number of planes should be 64, which means a total of 64 x 64 =
@@ -1843,11 +1553,11 @@ is illustrated below.
   <tbody>
     <tr>
       <td>
-        <img style="width: 461px; height: 453px;" src="./UltrasoundBasics/2Dsector.gif">
-        <br></td>
+        <img src="./UltrasoundBasics/2Dsector.gif">
+        </td>
       <td>
-        <img style="width: 490px; height: 526px;" src="./UltrasoundBasics/3D volume.gif">
-        <br></td>
+        <img src="./UltrasoundBasics/3D volume.gif">
+        </td>
     </tr>
     <tr>
       <td valign="top">
@@ -1856,7 +1566,7 @@ though each line (and the sector) has a</b>  <b>definite thickness, this
 is usually not considered in 2D imaging, except in beamforming for
 image quality.</b> 
         </small>
-        <br></td>
+        </td>
       <td valign="top">
         <small>
           <b>
@@ -1869,7 +1579,7 @@ proportoion. The time for a full volume is then equal to the square of
 the number of lines in each plane.
           </b>
         </small>
-        <br></td>
+        </td>
     </tr>
   </tbody>
 </table>
@@ -1913,10 +1623,10 @@ resolution. The principle is illustrated below.
   <tbody>
     <tr>
       <td colspan="2" rowspan="1" style="vertical-align: top; text-align: center;">
-        <img style="width: 919px; height: 288px;" src="./UltrasoundBasics/Shadows.JPG"></td>
+        <img src="./UltrasoundBasics/Shadows.JPG"></td>
     </tr>
     <tr>
-      <td colspan="2" rowspan="1" style="vertical-align: top;">
+      <td colspan="2" rowspan="1" >
         <small style="font-weight: bold;">
           Illustration of effects of shadows on an
 ultrasound beam. Left: no shadow. Middle, a shadow distant from the
@@ -1924,7 +1634,7 @@ beam (e.g. a calcification or the lung seen at a distance), resulting
 in a shadow with no image below it. Left a shadow close to the
 transducer surface (e.g. lung edge or rib) will result in a narrow beam
 (reduced apparent aperture) which will not be seen as a shadow in the
-picture, but rather a reduced lateral resolution.&nbsp; (Original
+picture, but rather a reduced lateral resolution. (Original
 simulation
 image to the left courtesy of Hans Torp, modifications by me.) The
 effect of the depth of the origin of
@@ -1935,9 +1645,9 @@ arrows.
     </tr>
     <tr>
       <td>
-        <img style="width: 426px; height: 289px;" src="./UltrasoundBasics/shadowb.gif"></td>
-      <td style="vertical-align: top;">
-        <img style="width: 426px; height: 289px;" src="./UltrasoundBasics/near shadowb.gif"></td>
+        <img src="./UltrasoundBasics/shadowb.gif"></td>
+      <td>
+        <img src="./UltrasoundBasics/near shadowb.gif"></td>
     </tr>
     <tr>
       <td style="vertical-align: top; text-align: left;">
@@ -1946,19 +1656,19 @@ arrows.
           <span style="font-weight: bold;">
             shadow originating at a depth of ca 3 cm,
 as can seen by the visible structures of the chest wall closer to the
-probe.&nbsp; The shadow is probably due to the edge of the lung.&nbsp;
+probe. The shadow is probably due to the edge of the lung.
 Right; a small repositioning of the probe solves the problem.
           </span>
         </small>
       </td>
-      <td style="vertical-align: top;">
+      <td>
         <small>
           <span style="font-weight: bold;">Left</span>
         </small>
         <small>
           <span style="font-weight: bold;">
             shadow originating close to the chest wall
-(&lt; 1 cm), probably the edge of a costa.&nbsp; It can be seen as a
+(&lt; 1 cm), probably the edge of a costa. It can be seen as a
 shadow, but the main effect is loss of lateral resolution in the
 shadow, and again a small repositioning of the probe solves the problem
 as seen to the right.
@@ -1968,22 +1678,22 @@ as seen to the right.
     </tr>
     <tr>
       <td>
-        <img style="width: 426px; height: 289px;" src="./UltrasoundBasics/Image39.gif"></td>
+        <img src="./UltrasoundBasics/Image39.gif"></td>
       <td>
-        <img style="width: 426px; height: 289px;" src="./UltrasoundBasics/Effective appertur1.gif"></td>
+        <img src="./UltrasoundBasics/Effective appertur1.gif"></td>
     </tr>
     <tr>
-      <td style="vertical-align: top;">
+      <td>
         <small>
           <span style="font-weight: bold;">
             more pronounced drop out of the anterior
 wall in this 2-chamber view due to a lung shadow distant from the
 probe. However, the lateral resolution may be seen to be reduced at the
-basal part of the&nbsp; border between the picture and the shadow.
+basal part of the border between the picture and the shadow.
           </span>
         </small>
       </td>
-      <td style="vertical-align: top;">
+      <td>
         <small>
           <span style="font-weight: bold;">
             Reduced lateral resolution due to costal
@@ -1998,12 +1708,12 @@ the left in the image, where resolution is poorest.
     </tr>
     <tr>
       <td>
-        <img style="width: 592px; height: 288px;" src="./UltrasoundBasics/Shadows2.JPG"></td>
+        <img src="./UltrasoundBasics/Shadows2.JPG"></td>
       <td>
-        <img style="width: 425px; height: 289px;" src="./UltrasoundBasics/split2.gif"></td>
+        <img src="./UltrasoundBasics/split2.gif"></td>
     </tr>
     <tr>
-      <td style="vertical-align: top;">
+      <td>
         <small>
           <span style="font-weight: bold;">
             If the near shadow is in the centre of the
@@ -2012,7 +1722,7 @@ two apparent apertures. The effect on the image is shown below.
           </span>
         </small>
       </td>
-      <td style="vertical-align: top;">
+      <td>
         <small>
           <span style="font-weight: bold;">
             Split image due to two virtual appertures,
@@ -2100,10 +1810,10 @@ image of an apparent stationary structure deeper down.
     <tr>
       <td>
         <img src="./UltrasoundBasics/Ffig4a.JPG" style="width: 217px; height: 277px;">
-        <br></td>
+        </td>
       <td>
         <img src="./UltrasoundBasics/Ffig4b.gif" style="width: 343px; height: 285px;">
-        <br></td>
+        </td>
     </tr>
   </tbody>
 </table>
@@ -2115,7 +1825,7 @@ twice between a stationary structure in the body wall and the surface
 (thick line), causing the reflected pulse to arrive the transducer
 three times as late as if it hadn't bounced (dotted, thick line). This
 is then interpreted as the reflector being located three times it's
-true depth. Right, the appearance&nbsp; in grey scale image, see the
+true depth. Right, the appearance in grey scale image, see the
 stationary echo in the lateral wall (arrows).
   </span>
   <br>
@@ -2136,11 +1846,11 @@ dense shadows, as in the example below:
   <tbody>
     <tr>
       <td>
-        <img style="width: 487px; height: 396px;" src="./UltrasoundBasics/Image477.gif">
-        <br></td>
+        <img src="./UltrasoundBasics/Image477.gif">
+        </td>
     </tr>
     <tr>
-      <td style="vertical-align: top;">
+      <td>
         <small>
           <span style="font-weight: bold;">
             By first glance, this image seems to have
@@ -2180,7 +1890,7 @@ Doppler in the
       measurements
 section
     </a>
-    , and on speckle trackingin the measurements section&nbsp;
+    , and on speckle trackingin the measurements section
     <a href="http://folk.ntnu.no/stoylen/strainrate/measurements.html#Limitations_seg_strain">here</a>
     and
     <a href="http://folk.ntnu.no/stoylen/strainrate/measurements.html#Limitations_of_ST">here</a>
@@ -2217,13 +1927,13 @@ interference as illustrated below.
   <tbody>
     <tr>
       <td>
-        <img style="width: 411px; height: 386px;" src="./UltrasoundBasics/Beam with side_b.GIF">
-        <br></td>
+        <img src="./UltrasoundBasics/Beam with side_b.GIF">
+        </td>
       <td>
-        <img style="width: 261px; height: 386px;" src="./UltrasoundBasics/sidelobes 1.GIF"></td>
+        <img src="./UltrasoundBasics/sidelobes 1.GIF"></td>
     </tr>
     <tr>
-      <td style="vertical-align: top;">
+      <td>
         <small>
           <span style="font-weight: bold;">
             Simulated beam with focusing, showing
@@ -2231,8 +1941,8 @@ interference pattern dispersing some of the beam to the sides. (image
 courtesy of Hans Torp).
           </span>
         </small>
-        <br></td>
-      <td style="vertical-align: top;">
+        </td>
+      <td>
         <small>
           <big>
             <small>
@@ -2251,15 +1961,15 @@ the main beam.
 </table>
 <br>
 <div style="text-align: center;">
-  <img style="width: 264px; height: 386px;" src="./UltrasoundBasics/sidelobes 2.GIF"></div>
-As echoes&nbsp;
+  <img src="./UltrasoundBasics/sidelobes 2.GIF"></div>
+As echoes
 <small></small>
 from a scatterer in the side lobe
 pathway is perceived coming from the main beam, this will result in a
 false echo, apparent from the main beam..
 <br>
 <div style="text-align: center;">
-  <img style="width: 806px; height: 386px;" src="./UltrasoundBasics/sidelobes 3.GIF">
+  <img src="./UltrasoundBasics/sidelobes 3.GIF">
   <br></div>
 AS the beam with side lobes sweeps back and forth a cross the sector,
 <big></big>
@@ -2267,7 +1977,7 @@ each echo from the scatterer in both the main beam and the side
 lobes will generate the false echo in the position of the main beam.
 <br>
 <div style="text-align: center;">
-  <img style="width: 258px; height: 386px;" src="./UltrasoundBasics/sidelobes 4.GIF">
+  <img src="./UltrasoundBasics/sidelobes 4.GIF">
   <br></div>
 This again will result in the echo being smeared out across the sector,
 <big></big>
@@ -2318,14 +2028,14 @@ resulting in a smeared out echo across a large part of the sector
         <tbody>
           <tr>
             <td>
-              <img style="width: 426px; height: 291px;" src="./UltrasoundBasics/Sidelob2b.jpg">
-              <br></td>
+              <img src="./UltrasoundBasics/Sidelob2b.jpg">
+              </td>
             <td>
-              <img style="width: 426px; height: 289px;" src="./UltrasoundBasics/Sidelob3.gif">
-              <br></td>
+              <img src="./UltrasoundBasics/Sidelob3.gif">
+              </td>
           </tr>
           <tr>
-            <td style="vertical-align: top;">
+            <td>
               <small>
                 <span style="font-weight: bold;">
                   Side lobes originating from the fusion line
@@ -2333,8 +2043,8 @@ of the aortic cusps, seen to extend into both the LV cavity and the
 aortic root cavity (arrows).
                 </span>
               </small>
-              <br></td>
-            <td style="vertical-align: top;">
+              </td>
+            <td>
               <small>
                 <span style="font-weight: bold;">
                   As opposed to
@@ -2345,7 +2055,7 @@ this case the echo intensity of the fusion line decreases as the valve
 opens, and thus the intensity of the side lobes too) .
                 </span>
               </small>
-              <br></td>
+              </td>
           </tr>
         </tbody>
       </table>
@@ -2361,7 +2071,7 @@ echo as shown below.
           <span style="font-weight: bold;">
             An image riddled with side
 lobes. Again they can be seen to move in the axial direction with the
-structures they are originating from.&nbsp; (The echo in the middle of
+structures they are originating from. (The echo in the middle of
 the right ventricle cavity is an ICD lead, and not an artifact.)
           </span>
         </small>
@@ -2381,22 +2091,22 @@ below:
           <tbody>
             <tr>
               <td>
-                <img style="width: 363px; height: 398px;" src="./UltrasoundBasics/LVplanes1b.GIF">
-                <br></td>
+                <img src="./UltrasoundBasics/LVplanes1b.GIF">
+                </td>
               <td>
-                <img style="width: 400px; height: 410px;" src="./UltrasoundBasics/LVplanes1bb.GIF">
-                <br></td>
+                <img src="./UltrasoundBasics/LVplanes1bb.GIF">
+                </td>
             </tr>
             <tr>
-              <td style="vertical-align: top;">
+              <td>
                 <small>
                   <span style="font-weight: bold;">
                     Apical position of the probe. The two
 orthogonal planes can be seen to bisect the apex.
                   </span>
                 </small>
-                <br></td>
-              <td style="vertical-align: top;">
+                </td>
+              <td>
                 <small>
                   <span style="font-weight: bold;">
                     Foreshortening by erroneous placement of
@@ -2407,7 +2117,7 @@ not the apex.
 shows an ellipsoid shape.
                   </span>
                 </small>
-                <br></td>
+                </td>
             </tr>
           </tbody>
         </table>
@@ -2473,7 +2183,7 @@ all segments. Left: correct placement of the probe as seen by the
 slighty longer ventricle, shows poorer visibility, but the akinetic
 apicolateral part of the wall is evident, showing how foreshortening
 may almost totally mask any abnormality in the apex (Although some
-asynchrony may be seen).&nbsp;
+asynchrony may be seen).
             </b>
           </small>
           <br></div>
@@ -2513,7 +2223,7 @@ wavelength content in the signal, as assessed by Fourier analysis in
 the received signal.
     <br>
     <div style="text-align: center;">
-      <img style="width: 444px; height: 370px;" src="./UltrasoundBasics/Non linearb.GIF">
+      <img src="./UltrasoundBasics/Non linearb.GIF">
       <br>
       <small>
         Non-linear propagation. The upper panel shows the waveform of a
@@ -2542,14 +2252,14 @@ resolution (almost).
         <tbody>
           <tr>
             <td>
-              <img style="width: 351px; height: 368px;" src="./UltrasoundBasics/fundvsharm.GIF">
-              <br></td>
+              <img src="./UltrasoundBasics/fundvsharm.GIF">
+              </td>
             <td>
-              <img style="width: 474px; height: 368px;" src="./UltrasoundBasics/Harmonic 1.GIF">
-              <br></td>
+              <img src="./UltrasoundBasics/Harmonic 1.GIF">
+              </td>
           </tr>
           <tr>
-            <td style="vertical-align: top;">
+            <td>
               <small>
                 Fourier analysis of the
 resulting signal in native frequency (left) and second harmonic mode
@@ -2562,7 +2272,7 @@ better signal-to-noise ratio.
                 <span style="font-weight: bold;">(image courtesy of Hans Torp).</span>
               </small>
             </td>
-            <td style="vertical-align: top;">
+            <td>
               <small>
                 Energy distribution of
 the signal from cavity (lower curve) and septum (upper curve), showing
@@ -2601,8 +2311,8 @@ frequency and will be reduced in second harmonic imaging.
         <tbody>
           <tr>
             <td>
-              <img style="width: 426px; height: 289px;" src="./UltrasoundBasics/Image2harm.gif">
-              <br></td>
+              <img src="./UltrasoundBasics/Image2harm.gif">
+              </td>
             <td>
               <small>
                 <big>
@@ -2614,7 +2324,7 @@ frequency and will be reduced in second harmonic imaging.
             <td>
               <small>
                 <big>
-                  <small style="font-weight: bold;">The same image in&nbsp;</small>
+                  <small style="font-weight: bold;">The same image in</small>
                 </big>
               </small>
               <small>
@@ -2637,7 +2347,7 @@ frequency and will be reduced in second harmonic imaging.
                   <small style="font-weight: bold;">
                     (right) mode, showing the improved
 signal-to-noise ratio in harmonic imaging, especially in rducing noise
-from the cavity.&nbsp; (Thanks to Eirik Nestaas for correcting my
+from the cavity. (Thanks to Eirik Nestaas for correcting my
 left-right confusion in this image text)
                     <br></small>
                 </big>
@@ -2675,7 +2385,7 @@ harmonic imaging also leads to:
       </div>
       <br></div>
     <div style="text-align: center;">
-      <img style="width: 420px; height: 288px;" src="./UltrasoundBasics/2harmsidelobe.JPG">
+      <img src="./UltrasoundBasics/2harmsidelobe.JPG">
       <br></div>
     <small>
       <span style="font-weight: bold;">
@@ -2706,7 +2416,7 @@ be discussed
       Speckle formation:
     </h4>
     The gray scale image is seen to consist of a speckled pattern. The
-pattern is not the actual image of&nbsp; the scatterers in the tissue
+pattern is not the actual image of the scatterers in the tissue
 itself, but the interference pattern generated by the reflected
 ultrasound:
     <br>
@@ -2715,13 +2425,13 @@ ultrasound:
         <tr>
           <td>
             <img src="./UltrasoundBasics/interferens2.jpg" style="width: 342px; height: 240px;">
-            <br></td>
+            </td>
           <td>
             <img src="./UltrasoundBasics/interferens speckle.jpg" style="width: 344px; height: 240px;">
-            <br></td>
+            </td>
         </tr>
         <tr>
-          <td style="vertical-align: top;">
+          <td>
             <small>
               Interference pattern.
 Here is simulated two wave sources or scatterers at the far field
@@ -2732,16 +2442,16 @@ crest crosses a though. This can be seen by throwing two stones
 simultaneously in still water . The speckle pattern can be seen in
 front of the scatterers, towards the probe.
             </small>
-            <br></td>
-          <td style="vertical-align: top;">
+            </td>
+          <td>
             <small>
               Irregular interference
 pattern. This is generated by more scatterers somewhat randomly
-distributed. The speckle pattern is thus random too.&nbsp; Again there
+distributed. The speckle pattern is thus random too. Again there
 may be a considerable distance between the speckles and the scatterers
 generating the pattern.
             </small>
-            <br></td>
+            </td>
         </tr>
       </tbody>
     </table>
@@ -2751,7 +2461,7 @@ generating the pattern.
       Speckle tracking
     </h4>
     <div style="text-align: center;">
-      <img style="width: 1024px; height: 244px;" src="./UltrasoundBasics/motion1.JPG">
+      <img src="./UltrasoundBasics/motion1.JPG">
       <br>
       <small>
         <span style="font-weight: bold;">
@@ -2760,7 +2470,7 @@ humpback has an unique (speckle) pattern on the underside of the tail
 (and flukes). Thus each individual can be identified by its speckle
 pattern. Photographs at different times and places can thus track the
 wandering of each individual all over the area it wanders, without
-recourse to anything else than the pattern.&nbsp; - Speckle tracking!
+recourse to anything else than the pattern. - Speckle tracking!
 This is thus a method with low frame rate, giving mainly the extent of
 wandering over a long time period (the sampling interval). To measure
 swimming velocity, a Doppler sonar would have been useful.
@@ -2792,7 +2502,7 @@ regions of the myocardium by their different random speckle pattern.
 different speckle patterns, which is due to the randomness of the
 interference. This creates an unique pattern for any selected region
 that can identify this region and hence, the displacement of the region
-in the next&nbsp; frame.
+in the next frame.
         </small>
         <br>
         <span style="font-weight: bold;">2.</span>
@@ -2805,13 +2515,13 @@ can be demonstrated by M-mode:
             <tr>
               <td>
                 <img src="./UltrasoundBasics/2Dspeckle.jpg" style="width: 306px; height: 297px;">
-                <br></td>
+                </td>
               <td>
                 <img src="./UltrasoundBasics/ReconstrMMspeckle.jpg" style="width: 577px; height: 301px;">
-                <br></td>
+                </td>
             </tr>
             <tr>
-              <td colspan="2" rowspan="1" style="vertical-align: top;">
+              <td colspan="2" rowspan="1" >
                 <small>
                   An
 M-mode along the septum demonstrates how the speckles is shown as
@@ -2844,34 +2554,34 @@ be tracked from frame to frame.
             <tr>
               <td>
                 <img src="./UltrasoundBasics/speckle 5.jpg" style="width: 291px; height: 216px;">
-                <br></td>
+                </td>
               <td>
                 <img src="./UltrasoundBasics/speckle 1.JPG" style="width: 207px; height: 227px;">
-                <br></td>
+                </td>
               <td>
                 <img src="./UltrasoundBasics/track.jpg" style="width: 279px; height: 261px;">
-                <br></td>
+                </td>
             </tr>
             <tr>
-              <td style="vertical-align: top;">
+              <td>
                 <small>
                   Speckle tracking. Real
 time M-mode demonstrates how the speckle pattern follows the myocardial
 motion. (Remark how this image is not grainy, due to the high frame
 rate of real time M-mode).
                 </small>
-                <br></td>
-              <td style="vertical-align: top;">
+                </td>
+              <td>
                 <small>
                   Defining a kernel in the
 myocardium will define a speckle pattern within (red). Within a defined
 search area ( blue), the new position of the kernel in the next frame
 (green) can be recognised by finding the same speckle pattern in a new
-position. The movement of the kernel&nbsp; (thick blue arrow) can then
+position. The movement of the kernel (thick blue arrow) can then
 be measured.
                 </small>
-                <br></td>
-              <td style="vertical-align: top;">
+                </td>
+              <td>
                 <small>
                   Speckle tracking search
 algorithm. The kernel is defined in the original frame at t=0 (red
@@ -2879,7 +2589,7 @@ square). In the next frame, at t=t, the algorithm defines a search area
 (white square), and the search is conducted in all directions for the
 matching kernel.
                 </small>
-                <br></td>
+                </td>
             </tr>
           </tbody>
         </table>
@@ -2892,7 +2602,7 @@ identifying the kernel with the best match in the next frame.
         <br>
         <div style="text-align: center;">
           <br>
-          <img style="width: 587px; height: 400px;" src="./UltrasoundBasics/ST.gif">
+          <img src="./UltrasoundBasics/ST.gif">
           <br>
           <small>
             <span style="font-weight: bold;">
@@ -2927,12 +2637,12 @@ intervals will be to great.
         <a href="http://folk.ntnu.no/stoylen/strainrate/mathemathics/index.html#speckle">here</a>
         .
         <br>
-        &nbsp;
+        
         <br>
-        In principle, pure speckle tracking&nbsp; is direction independent, and
+        In principle, pure speckle tracking is direction independent, and
 can track crosswise. However, lateral resolution is important in
 delineating the speckles in the lateral direction. If the lateral
-resolution is low,&nbsp; the interpolation will result in a "smeared"
+resolution is low, the interpolation will result in a "smeared"
 picture, with speckles that are nor so easily tracked in the lateral
 direction. In addition the lateral resolution decreases in depth with
 sector probes.
@@ -2942,13 +2652,13 @@ sector probes.
             <tr>
               <td>
                 <img src="./UltrasoundBasics/ttrack.gif" style="width: 296px; height: 296px;">
-                <br></td>
+                </td>
               <td>
                 <img src="./UltrasoundBasics/longtrack.gif" style="width: 296px; height: 296px;">
-                <br></td>
+                </td>
             </tr>
             <tr>
-              <td style="vertical-align: top;">
+              <td>
                 <small>
                   LOngitudinal speckle
 tracking in apical 4 chamber view. The resulting tracking of the
@@ -2960,7 +2670,7 @@ out apicolateral, this ROI tracks less than perfect, giving too low
 strain both in LA and MA segments.
                 </small>
               </td>
-              <td style="vertical-align: top;">
+              <td>
                 <small>
                   <span style="font-weight: bold;"></span>
                   Speckle tracking can be applied
@@ -3002,7 +2712,7 @@ tracking, as discussed more in detail in the
         .
         <br>
         <div style="text-align: center;">
-          <img style="width: 512px; height: 328px;" src="./UltrasoundBasics/Kernel slippage.JPG">
+          <img src="./UltrasoundBasics/Kernel slippage.JPG">
           <br>
           <small style="font-weight: bold;">
             Drift in ultrasound. As speckles
@@ -3055,7 +2765,7 @@ some of themotion seen in the image may be due to an advanced algorithm
 using information from other parts of the image:
         <br>
         <div style="text-align: center;">
-          <img style="width: 481px; height: 451px;" src="./UltrasoundBasics/False speckle tracking.gif">
+          <img src="./UltrasoundBasics/False speckle tracking.gif">
           <br>
           <small>
             <span style="font-weight: bold;">
@@ -3171,7 +2881,7 @@ measuring displacement, velocity, strain and strain rate as described
             <tr>
               <td>
                 <img src="./UltrasoundBasics/Doppler.jpeg" style="width: 155px; height: 196px;">
-                <br></td>
+                </td>
               <td>
                 <h2>
                   <a name="The_Doppler_effect"></a>
@@ -3182,21 +2892,21 @@ measuring displacement, velocity, strain and strain rate as described
               </td>
               <td>
                 <img src="./UltrasoundBasics/Doppler2.jpg" style="width: 181px; height: 198px;">
-                <br></td>
+                </td>
             </tr>
             <tr>
               <td>
                 <span style="font-weight: bold;">
                   Christian Andreas Doppler
                   <br>(1803 - 1853)</span>
-                <br></td>
-              <td style="vertical-align: top;">
-                <br></td>
+                </td>
+              <td>
+                </td>
               <td>
                 <span style="font-weight: bold;">
                   My cat Doppler
                   <br>
-                  (2004 -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  (2004 -
                   <br></span>
               </td>
             </tr>
@@ -3204,7 +2914,7 @@ measuring displacement, velocity, strain and strain rate as described
         </table>
         <p>
           The Doppler effect was discovered by Christian Andreas Doppler (1803
-- 1853), and shows how the frequency of an emitted&nbsp; wave changes
+- 1853), and shows how the frequency of an emitted wave changes
 with the velocity of the emitter or observer. The theory was presented
 in the royal Bohemian society of Science in 25th of May1842 (5
 listeners at the occasion!), and published in 1843 (
@@ -3216,9 +2926,9 @@ against the background (parallax effect) to the velocity of the earth
 in its orbit (instead of the effect of Earth's position in orbit on the
 angle of observation). Further, Doppler attributed the differences in
 colour of different stars to be due to the Doppler effect, assuming all
-stars to be white.&nbsp; Finally, he theoretised over the effect of the
-motion&nbsp; of double stars that rotate around each other, assuming
-a&nbsp; Doppler effect&nbsp; from the motion.&nbsp; The changes in
+stars to be white. Finally, he theoretised over the effect of the
+motion of double stars that rotate around each other, assuming
+a Doppler effect from the motion. The changes in
 wavelength from the Doppler effect, however, is too small to be
 observed.
           <br></p>
@@ -3239,7 +2949,7 @@ the extension to reflected waves is explained in more detail
           <a href="http://folk.ntnu.no/stoylen/strainrate/mathemathics/index.html#Doppler">here</a>
           . As a work of
 theoretical physics, it is thus extremely important. In addition, it
-has become of practical importance, as&nbsp; the basis for the
+has become of practical importance, as the basis for the
 astronomical measurement of the velocity of galaxies by the red shift
 of the spectral lines, in Doppler radar, Doppler laser and Doppler
 ultrasound.
@@ -3258,7 +2968,7 @@ stationary musicians, and a half note lower as the train receded.
         <p>
           (This can be observed in everyday phenomena such as the sound of
 f.i. an ambulance siren, the pitch (frequency) is higher when the
-ambulance is coming towards the observer, hanging as it passes,&nbsp;
+ambulance is coming towards the observer, hanging as it passes,
 and lower as it goes away.
         </p>
         <h2>
@@ -3277,7 +2987,7 @@ and lower as it goes away.
           <br></p>
         <p style="text-align: center;">
           <img src="./UltrasoundBasics/Dopplertog.gif" style="width: 645px; height: 377px;">
-          &nbsp;
+          
           <b>
             <br></b>
         </p>
@@ -3296,7 +3006,7 @@ the motion, and increased in the opposite direction. As the distance
 between the wave crests is equal to the wavelength, wavelength
 decreases (i.e. sound frequency increases) in front of the engine, and
 increases (sound frequency decreases) behind it. This effect can be
-heard, as the pitch of the train whistle&nbsp; is higher coming towards
+heard, as the pitch of the train whistle is higher coming towards
 a listener than moving away, changing as it passes. The effect on the
 pitch of the train whistle was published directly, but later than
 Doppler and Buys Ballot.
@@ -3307,10 +3017,10 @@ Doppler and Buys Ballot.
           <br></p>
         <div style="text-align: left;">
           If the sound source is stationary, the
-effect on&nbsp; moving observer is similar. The train will meet the
+effect on moving observer is similar. The train will meet the
 wave crest with shorter intervals, as the train moves into the incoming
 sound. In ultrasound, the wave is sent from a stationary transducer,
-the moving blood or muscle is&nbsp; firstly moving towards the
+the moving blood or muscle is firstly moving towards the
 transducer and then following the reflected wave towards the
 transducer, thus the Doppler shift is approximately twice as great. In
 the case of reflected ultrasound, the Doppler shift is:
@@ -3361,7 +3071,7 @@ the different frequencies, as well as the amplitude for each spectrum.
 As shown above, the frequency is related to the different velocities.
                 <br>
                 <div style="text-align: center;">
-                  <img style="width: 821px; height: 463px;" src="./UltrasoundBasics/Spektralanalyse 1.JPG">
+                  <img src="./UltrasoundBasics/Spektralanalyse 1.JPG">
                   <br>
                   <div style="text-align: left;">
                     <small>
@@ -3386,9 +3096,9 @@ the reverberations. The blood signal can be removed both by reducing
 the gain, and by applying a low pas filter. For detailed explanation
 see
                       <a href="http://folk.ntnu.no/stoylen/strainrate/Ultrasound/#Tissue_Doppler">below.</a>
-                      &nbsp; Applied by me from
+                       Applied by me from
 Angelsen
-BA Ultrasound&nbsp; imaging (
+BA Ultrasound imaging (
                       <a href="http://folk.ntnu.no/stoylen/strainrate/References.html#r117">117</a>
                       )
                     </small>
@@ -3398,7 +3108,7 @@ BA Ultrasound&nbsp; imaging (
                 In the heart, the velocities are variable with time. Thus the velocity,
 or frequency shift is a function of time. At the same time, the
 amplitude is a function of the velocities, as the velocities will
-be&nbsp; concentrated in a narrow band.&nbsp; To display this, an
+be concentrated in a narrow band. To display this, an
 approach similar to the M-mode can be applied. Amplitude is displayed
 as brightness, in a manners similar to B.mode, while Frequency /
 Velocity are displayed on the y - axis and time on the x - axis. This
@@ -3408,11 +3118,11 @@ results in the typical Doppler flow velocity curves:
                   <tbody>
                     <tr>
                       <td>
-                        <img style="width: 314px; height: 211px;" src="./UltrasoundBasics/LVOT1.JPG">
-                        <br></td>
+                        <img src="./UltrasoundBasics/LVOT1.JPG">
+                        </td>
                       <td>
-                        <img style="width: 314px; height: 211px;" src="./UltrasoundBasics/Mitralflow1.JPG">
-                        <br></td>
+                        <img src="./UltrasoundBasics/Mitralflow1.JPG">
+                        </td>
                     </tr>
                   </tbody>
                 </table>
@@ -3438,7 +3148,7 @@ a certain width. In the blood, this partly reflects the spread of
 velocities between the multiple scatterers in the blood, as shown below:
                 <br>
                 <div style="text-align: center;">
-                  <img style="width: 477px; height: 326px;" src="./UltrasoundBasics/spectrumb.jpg">
+                  <img src="./UltrasoundBasics/spectrumb.jpg">
                   <br>
                   <small>
                     <span style="font-weight: bold;">
@@ -3474,13 +3184,13 @@ velocity measurement according to the Doppler equation. but also in the
 bandwidth as shown below.
                 <br>
                 <div style="text-align: center;">
-                  <img style="width: 382px; height: 264px;" src="./UltrasoundBasics/Transit time.JPG">
+                  <img src="./UltrasoundBasics/Transit time.JPG">
                   <br>
                   <small>
-                    As can be seen, the direction of the motion&nbsp; of the
+                    As can be seen, the direction of the motion of the
 scatterer in relation to the direction of the pulse, may influence the
 number of oscillations that are actually used for measurement. Thus, a
-high&nbsp; insonation angle is equivalent to a virtual shortening of
+high insonation angle is equivalent to a virtual shortening of
 the pulse length, and results in a wider bandwidth (spectrum).
                   </small>
                   <br></div>
@@ -3509,7 +3219,7 @@ transducer is used both for transmitting and receiving.
 compared to the ultrasound frequency. This makes it problematic to
 estimate the Doppler shift from a single pulse, without increasing the
 pulse length too far. A velocity of 100 cm/s with a ultrasound
-frequency of 3.5 MHz results in a maximum Doppler shift of&nbsp; 2.3
+frequency of 3.5 MHz results in a maximum Doppler shift of 2.3
 KHz. The solution to this problem is shooting multiple pulses in the
 same direction and produce a new signal with one sample from each
 pulse, the Doppler curve from this signal will be a new curve with the
@@ -3518,7 +3228,7 @@ of pulses is considered one pulse in the sampling frequency sense).
                 <br>
                 The pulsed modus results in a practical limit on the maximum velocity
 that can be measured. In order to measure velocity at a certain depth,
-the next pulse cannot be sent out before the signal is returned.&nbsp;
+the next pulse cannot be sent out before the signal is returned.
 The Doppler shift is thus sampled once for every pulse that is
 transmitted, and the sampling frequency is thus equal to the pulse
 repetition frequency (PRF). Frequency aliasing occurs at a Doppler
@@ -3551,7 +3261,7 @@ analogy:
 between the sampling frequency and the observed velocity. If you sample
 at a certain frequency, the direction of the motion becomes ambiguous,
 more frequent sampling will give the correct direction, less
-frequent&nbsp; sampling results in an apparent motion in the opposite
+frequent sampling results in an apparent motion in the opposite
 direction. This can be observed with a stroboscopic light, for instance
 illuminating the flow of water, or with old fashioned wagon wheels in
 old moves which often seem to revolve slowly backwards when the wagon
@@ -3564,7 +3274,7 @@ moves forwards.
         <table border="1" cellpadding="2" cellspacing="2">
           <tbody>
             <tr align="center">
-              <td colspan="4" rowspan="1" style="vertical-align: top;">
+              <td colspan="4" rowspan="1" >
                 <h3>Constant rotation velocity, decreasing sampling frequency:</h3>
                 <div style="text-align: left;">
                   The easiest is to show how
@@ -3573,36 +3283,36 @@ circles rotate with the same rotation velocity clockwise. The sampling
 frequency is reduced from left to right. It can be seen that the red
 dots is at the same positions when they are seen to move.
                   <br></div>
-                <br></td>
+                </td>
             </tr>
             <tr>
               <td>
                 <img src="./UltrasoundBasics/Nykvist_a.gif" style="width: 136px; height: 136px;">
-                <br></td>
+                </td>
               <td>
                 <img src="./UltrasoundBasics/Nykvist_b.gif" style="width: 136px; height: 136px;">
-                <br></td>
+                </td>
               <td>
                 <img src="./UltrasoundBasics/Nykvist_c.gif" style="width: 136px; height: 136px;">
-                <br></td>
+                </td>
               <td>
                 <img src="./UltrasoundBasics/Nykvist_d.gif" style="width: 136px; height: 136px;">
-                <br></td>
+                </td>
             </tr>
             <tr>
-              <td style="vertical-align: top;">
+              <td>
                 <small>
-                  <span style="font-weight: bold;">a:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8:1</span>
+                  <span style="font-weight: bold;">a: 8:1</span>
                   <br>
                   <span style="font-weight: bold;">
                     8 samples per rotation, the red
 point is seen in eight positions during the rotation.
                   </span>
                 </small>
-                <br></td>
-              <td style="vertical-align: top;">
+                </td>
+              <td>
                 <small>
-                  <span style="font-weight: bold;">b:&nbsp;&nbsp;&nbsp;&nbsp; 4:1</span>
+                  <span style="font-weight: bold;">b: 4:1</span>
                   <br>
                   <span style="font-weight: bold;">
                     4 samples per rotation, the red
@@ -3612,23 +3322,23 @@ point is seen to rotate just as fast, but is only seen in four positions
               </td>
               <td style="vertical-align: top; font-weight: bold;">
                 <small>
-                  c:&nbsp;&nbsp;&nbsp;
+                  c:
 2:1
                   <br>
                   2 samples per rotation, i.e. the sampling frequency is exactly half the
 rotation frequency. Here, the red dot is only seen in two positions,
 (but it is evident that it is in the same positions at the same time as
-in a and b). However,&nbsp; it is impossible to decide which way it is
+in a and b). However, it is impossible to decide which way it is
 rotating. This is the Nykvist limit; sampling rate = 1/2 rotation rate.
                   <br></small>
               </td>
-              <td style="vertical-align: top;">
+              <td>
                 <small>
-                  <span style="font-weight: bold;">d:&nbsp;&nbsp;&nbsp; 1.5:1</span>
+                  <span style="font-weight: bold;">d: 1.5:1</span>
                   <br>
                   <span style="font-weight: bold;">
                     1.5 samples per
-rotation,or&nbsp; one sample per three quarter rotation, making it seem
+rotation,or one sample per three quarter rotation, making it seem
 that the red dot is rotating counter clockwise. Again, the dot is in
 the same position at the same time as in a and b.
                   </span>
@@ -3636,7 +3346,7 @@ the same position at the same time as in a and b.
               </td>
             </tr>
             <tr align="center">
-              <td colspan="4" rowspan="1" style="vertical-align: top;">
+              <td colspan="4" rowspan="1" >
                 <h3>
                   <br></h3>
                 <h3>
@@ -3649,27 +3359,27 @@ velocity. In the images below, the frames are seen to shift
 simultaneously, but the positions of the red dots are different due to
 the different rotational velocity.
                   <br></div>
-                <br></td>
+                </td>
             </tr>
             <tr>
               <td>
                 <img src="./UltrasoundBasics/Nykvist_e.gif" style="width: 136px; height: 136px;">
-                <br></td>
+                </td>
               <td>
                 <img src="./UltrasoundBasics/Nykvist_f.gif" style="width: 136px; height: 136px;">
-                <br></td>
+                </td>
               <td>
                 <img src="./UltrasoundBasics/Nykvist_g.gif" style="width: 136px; height: 136px;">
-                <br></td>
+                </td>
               <td>
                 <img src="./UltrasoundBasics/Nykvist_h.gif" style="width: 136px; height: 136px;">
-                <br></td>
+                </td>
             </tr>
             <tr>
-              <td style="vertical-align: top;">
+              <td>
                 <small>
                   <span style="font-weight: bold;">
-                    a:&nbsp;&nbsp;&nbsp; 1:8
+                    a: 1:8
                     <br></span>
                   One rotation per 8 samples. The sampling catches the red
 dot in 8 positions during one rotation.
@@ -3677,10 +3387,10 @@ dot in 8 positions during one rotation.
                     <br></span>
                 </small>
               </td>
-              <td style="vertical-align: top;">
+              <td>
                 <small>
                   <span style="font-weight: bold;">
-                    b:&nbsp;&nbsp;&nbsp; 1:4
+                    b: 1:4
                     <br></span>
                   Rotation velocity twice that i a; one rotation per four
 samples, the sampling catches the red dot only in four positions
@@ -3695,18 +3405,18 @@ one
                     <br></span>
                 </small>
               </td>
-              <td style="vertical-align: top;">
+              <td>
                 <small>
-                  <span style="font-weight: bold;">c: &nbsp; 1:2</span>
+                  <span style="font-weight: bold;">c:  1:2</span>
                   <br>
                   Rotation velocity four times a; one rotation per two samples, this
 catches the red dot in only two positions, giving directional ambiguity
 as above.
                   <br></small>
               </td>
-              <td style="vertical-align: top;">
+              <td>
                 <small>
-                  <span style="font-weight: bold;">d: &nbsp; 1:1,5</span>
+                  <span style="font-weight: bold;">d:  1:1,5</span>
                   <br>
                   Rotation velocity six times a; one rotation per 1,5 samples, or 3/4
 rotation per sample, giving an apparent counter clockwise rotation.
@@ -3716,9 +3426,9 @@ rotation per sample, giving an apparent counter clockwise rotation.
           </tbody>
         </table>
         <p class="MsoNormal">
-          Sampling from increasing depth will&nbsp; increase
+          Sampling from increasing depth will increase
 the time for the pulse returning, thus increasing the sampling interval
-and decrease the sampling&nbsp; frequency.&nbsp; The Nykvist limit thus
+and decrease the sampling frequency. The Nykvist limit thus
 decreases with depth. This means that pulsed Doppler has depth
 resolution, but this leads to a limit to the velocities that can be
 measured.
@@ -3727,8 +3437,8 @@ measured.
           <a name="Nykvist2"></a>
           The Nyquist limit is
 dependent on the depth (D) of the sampling volume. The larger distance
-from the probe, the&nbsp; longer time for the pulse to pass to the
-desired depth and back, and the&nbsp; lower the Nyquist limit. The time
+from the probe, the longer time for the pulse to pass to the
+desired depth and back, and the lower the Nyquist limit. The time
 for the return of the pulse is:
         </p>
         <p style="text-align: center;" class="MsoNormal">
@@ -3798,11 +3508,11 @@ achieve a sufficient depth resolution.
           <tbody>
             <tr>
               <td>
-                <img style="width: 446px; height: 304px;" src="./UltrasoundBasics/AI3.JPG">
-                <br></td>
+                <img src="./UltrasoundBasics/AI3.JPG">
+                </td>
               <td>
-                <img style="width: 446px; height: 304px;" src="./UltrasoundBasics/AI.JPG">
-                <br></td>
+                <img src="./UltrasoundBasics/AI.JPG">
+                </td>
             </tr>
           </tbody>
         </table>
@@ -3842,16 +3552,16 @@ echo, and thus it will result in a partial depth ambiguity.
           <tbody>
             <tr>
               <td>
-                <img style="width: 375px; height: 425px;" src="./UltrasoundBasics/HPRF2.GIF"></td>
+                <img src="./UltrasoundBasics/HPRF2.GIF"></td>
               <td>
-                <img style="width: 357px; height: 434px;" src="./UltrasoundBasics/HPRFa.JPG">
-                <br></td>
+                <img src="./UltrasoundBasics/HPRFa.JPG">
+                </td>
             </tr>
             <tr>
-              <td style="vertical-align: top;">
+              <td>
                 <small>
                   <span style="font-weight: bold;">
-                    The principle of HPRF.&nbsp; Pulses are
+                    The principle of HPRF. Pulses are
 transmitted with three times the frequency that is necessary to allow
 the echo from the furthest depth to return. Thus, the echo of pulse 1
 will return from level 3 at the same time as the echo of pulse 2 from
@@ -3860,21 +3570,21 @@ determine whether a signal is from level 1, 2 or 3.
                   </span>
                 </small>
               </td>
-              <td style="vertical-align: top;">
+              <td>
                 <small>
                   <span style="font-weight: bold;">
                     HPRF pulsed Doppler recording (right). with
 one sample volume in mid ventricle and one in the mitral ostium. The
 recording shows a systolic dynamic gradient (due to inotropic
 stimulation with dobutamine), as well as an ordinary mitral inflow
-curve.&nbsp; There is no way in the pulsed recording to determine which
+curve. There is no way in the pulsed recording to determine which
 velocities that originate from which sample volume (except from
 á priori knowledge, of course, a dynamic gradient like this is
 usually mid ventricular, and the mitral inflow in the annulus is easily
-recognised).&nbsp;
+recognised).
                   </span>
                 </small>
-                <br></td>
+                </td>
             </tr>
           </tbody>
         </table>
@@ -3905,7 +3615,7 @@ in the possibility to analyse the Doppler shift in terms of the phase
 shift between the pulses. The phase shift analysis is based on the
 principle that when pulse 2 hits a moving scatterer, the scatterer will
 have moved a little away from, or towards the probe, and the return
-pulse 2 will then be in&nbsp; a different phase from pulse 1. The
+pulse 2 will then be in a different phase from pulse 1. The
 distance the scatterer has moved, is of course a function of the
 velocity of the scatterer and the time between pulses given by the
 pulse repetition frequency, thus:
@@ -3934,7 +3644,7 @@ result in a
                 Nykvist
 limit of 19.8 at a depth of 15 cm
               </a>
-              .&nbsp;
+              .
             </div>
           </div>
           <br>
@@ -3942,36 +3652,36 @@ limit of 19.8 at a depth of 15 cm
             <tbody>
               <tr>
                 <td>
-                  <img style="width: 302px; height: 237px;" src="./UltrasoundBasics/phase shift1bb.GIF">
-                  <br></td>
+                  <img src="./UltrasoundBasics/phase shift1bb.GIF">
+                  </td>
                 <td>
-                  <img style="width: 275px; height: 241px;" src="./UltrasoundBasics/phase shift2bb.GIF">
-                  <br></td>
+                  <img src="./UltrasoundBasics/phase shift2bb.GIF">
+                  </td>
                 <td>
-                  <img style="width: 265px; height: 241px;" src="./UltrasoundBasics/phase shift3bb.GIF">
-                  <br></td>
+                  <img src="./UltrasoundBasics/phase shift3bb.GIF">
+                  </td>
               </tr>
               <tr>
-                <td style="vertical-align: top;">
+                <td>
                   <small>
                     <span style="font-weight: bold;">
                       Two pulses sent toward a scatterer with a
-time delay&nbsp; t2 - t1 = 1/PRF. Given that the scatterer has a
+time delay t2 - t1 = 1/PRF. Given that the scatterer has a
 velocity, it will have moved a distance, d, that is a function of the
-velocity and the time (d = v x t).&nbsp; Thus, pulse 2 travels a longer
+velocity and the time (d = v x t). Thus, pulse 2 travels a longer
 (or shorter) distance equal to d with the speed of sound, c, before it
-is reflected.&nbsp;
+is reflected.
                     </span>
                   </small>
                 </td>
-                <td style="vertical-align: top;">
+                <td>
                   <small>
                     <span style="font-weight: bold;">
                       During the time pulse2 has travelled the
 distance d to the new position of the scatterer and back to the point
-of the reflection of pulse 1, i.e. a distance 2d&nbsp; pulse 1 has
+of the reflection of pulse 1, i.e. a distance 2d pulse 1 has
 travelled the same distance away from the reflection point. (The
-scatterer will have travelled further, but this is not relevant).&nbsp;
+scatterer will have travelled further, but this is not relevant).
 Thus the diasplacement of the waveform of pulse 2 relative to pulse 1,
 is 2d.
                     </span>
@@ -3983,7 +3693,7 @@ is 2d.
                     <span style="font-weight: bold;"></span>
                   </small>
                 </td>
-                <td style="vertical-align: top;">
+                <td>
                   <small>
                     <span style="font-weight: bold;">
                       By sampling the two pulses simultaneously
@@ -3992,7 +3702,7 @@ at two timepoints, as shown in the previous illustration,
                         the
 phase of each pulse can be determined
                       </a>
-                      . The phase analysis&nbsp; of
+                      . The phase analysis of
 the relative positions of all four points is done by autocorrelation, a
 quick (and dirty?) method that allows online computation.
                     </span>
@@ -4057,14 +3767,14 @@ acceptable frame rate is a feasible solution as shown below.
             <tbody>
               <tr>
                 <td>
-                  <img style="width: 389px; height: 347px;" src="./UltrasoundBasics/Package aqcuisition.GIF">
-                  <br></td>
+                  <img src="./UltrasoundBasics/Package aqcuisition.GIF">
+                  </td>
                 <td>
-                  <img style="width: 388px; height: 350px;" src="./UltrasoundBasics/Sector CFM.GIF">
-                  <br></td>
+                  <img src="./UltrasoundBasics/Sector CFM.GIF">
+                  </td>
               </tr>
               <tr>
-                <td style="vertical-align: top;">
+                <td>
                   <small>
                     <span style="font-weight: bold;">
                       Principle of package acquisition. Time
@@ -4077,17 +3787,17 @@ and is given by the frame rate (FR), the time interval being 1/FR. This
 decides the temporal resolution of the CFM.
                     </span>
                   </small>
-                  <br></td>
-                <td style="vertical-align: top;">
+                  </td>
+                <td>
                   <small style="font-weight: bold;">
                     CFM
 sector superposed on a B-mode sector. By reducing sector size, line
 density and sampling frequency, the CFM image can achieve an acceptable
-frame rate.&nbsp; This is feasible because the region of interest for
+frame rate. This is feasible because the region of interest for
 the flow is usually only a part of the ROI for The B-mode, ,flow being
 intracavitary as shown below.
                   </small>
-                  <br></td>
+                  </td>
               </tr>
             </tbody>
           </table>
@@ -4141,12 +3851,12 @@ the Doppler shifted signal, i.e. the blood flow.
             <tbody>
               <tr>
                 <td>
-                  <img style="width: 426px; height: 291px;" src="./UltrasoundBasics/powerDoppler.jpg"></td>
+                  <img src="./UltrasoundBasics/powerDoppler.jpg"></td>
                 <td>
-                  <img style="width: 368px; height: 296px;" src="./UltrasoundBasics/cfm4ch.gif"></td>
+                  <img src="./UltrasoundBasics/cfm4ch.gif"></td>
               </tr>
               <tr>
-                <td style="vertical-align: top;">
+                <td>
                   <small>
                     <span style="font-weight: bold;">
                       Power Doppler image of the renal
@@ -4161,7 +3871,7 @@ show the amplitude.
                       <br></span>
                   </small>
                 </td>
-                <td style="vertical-align: top;">
+                <td>
                   <small>
                     <span style="font-weight: bold;">
                       Colour flow showing a large mitral
@@ -4209,14 +3919,14 @@ reduced frame rate.
                   <br>
                   <br>
                   <br>
-                  <img style="width: 368px; height: 296px;" src="./UltrasoundBasics/Flowa.gif">
-                  <br></td>
+                  <img src="./UltrasoundBasics/Flowa.gif">
+                  </td>
                 <td>
-                  <img style="width: 416px; height: 402px;" src="./UltrasoundBasics/HPRF apexdelay_c.JPG">
-                  <br></td>
+                  <img src="./UltrasoundBasics/HPRF apexdelay_c.JPG">
+                  </td>
               </tr>
               <tr>
-                <td colspan="2" rowspan="1" style="vertical-align: top;">
+                <td colspan="2" rowspan="1" >
                   <small>
                     <span style="font-weight: bold;">
                       Recording from a patient with apical
@@ -4229,11 +3939,11 @@ hypertrophic cardiomyopathy.
 a delayed, separate ejection from the apex due to delayed relaxation.
 There is an ordinary mitral inflow (red), but no filling of the apex in
 the early phase (E-wave), while the late phase (A-wave) can be seen to
-fill the apex.&nbsp; Left,&nbsp; a combined image in HPRF and&nbsp;
-colour M-mode.&nbsp; The PRF is adjusted to place two samples at thr
+fill the apex. Left, a combined image in HPRF and
+colour M-mode. The PRF is adjusted to place two samples at thr
 mitral annulus and in the mid ventricle just at the outlet of the apex.
-The mitral filling&nbsp; is shown by the green arrows,&nbsp; and the
-late filling of the apex is marked by the blue arrow.&nbsp; In
+The mitral filling is shown by the green arrows, and the
+late filling of the apex is marked by the blue arrow. In
 addition, theere is a dynamic mid ventricular gradient shown by the red
 arrow, with aliasing in the ejection signal in colur Doppler. The
 delayed ejection from the apex is marked by the yellow arrow
@@ -4248,11 +3958,11 @@ delayed ejection from the apex is marked by the yellow arrow
                   </small>
                   <small>
                     <span style="font-weight: bold;">
-                      .&nbsp; The utility of the different
+                      . The utility of the different
 methods is evident: HPRF (or cw Doppler) for timing and velocity
 measurement, but with depth ambiguity, colour M-mode for timing and
 location of the different jets, direction being displayed by the
-colour.&nbsp;
+colour.
                     </span>
                   </small>
                   <small>
@@ -4262,7 +3972,7 @@ colour.&nbsp;
               </tr>
             </tbody>
           </table>
-          &nbsp;
+          
           <small>
             <big></big>
           </small>
@@ -4314,7 +4024,7 @@ and not image adjustment, and thus cannot be compensated afterwards.
 This is illustrated below:
           <br></p>
         <p style="text-align: center;" class="MsoNormal">
-          <img style="width: 1024px; height: 241px;" src="./UltrasoundBasics/GainPV.JPG">
+          <img src="./UltrasoundBasics/GainPV.JPG">
           <small>
             <span style="font-weight: bold;">
               Effect on B-mode gain on colour Doppler
@@ -4355,13 +4065,13 @@ absolutely necessary).
             <tr>
               <td>
                 <img src="./UltrasoundBasics/TVIfilter1.jpg" style="width: 500px; height: 331px;">
-                <br></td>
+                </td>
               <td>
                 <img src="./UltrasoundBasics/TVIfilter1b.jpg" style="width: 477px; height: 326px;">
-                <br></td>
+                </td>
             </tr>
             <tr>
-              <td colspan="2" rowspan="1" style="vertical-align: top;">
+              <td colspan="2" rowspan="1" >
                 <small>
                   The
 diagram to the left shows the placement of flow and tissue signals on
@@ -4375,18 +4085,18 @@ the passing blood, resulting in high intensity signals giving a
 saturation of the Doppler spectrum. A typical flow curve from the right
 ventricular outflow tract is shown to the left, with the valve click.
                 </small>
-                <br></td>
+                </td>
             </tr>
             <tr>
               <td>
                 <img src="./UltrasoundBasics/TVIfilter2.jpg" style="width: 500px; height: 331px;">
-                <br></td>
+                </td>
               <td>
                 <img src="./UltrasoundBasics/TVIfilter2b.jpg" style="width: 477px; height: 326px;">
-                <br></td>
+                </td>
             </tr>
             <tr>
-              <td colspan="2" rowspan="1" style="vertical-align: top;">
+              <td colspan="2" rowspan="1" >
                 <small>
                   Application
 of a high pass filter (low velocity reject) shown schematically to the
@@ -4395,72 +4105,72 @@ Velocities lower than the limits of the green bar (showing the range of
 the filter) are removed seen in the dark zone in the middle of the
 spectrum. The setting rejects velocities at blood intensities below 15
 - 20 cm/s, which is too high for normal flow velocities as in this
-instance, although may often be useful&nbsp; in continuous wave Doppler
+instance, although may often be useful in continuous wave Doppler
 recordings of high velocities in jets.
                 </small>
-                <br></td>
+                </td>
             </tr>
             <tr>
               <td>
                 <img src="./UltrasoundBasics/TVIfilter3.jpg" style="width: 500px; height: 331px;">
-                <br></td>
+                </td>
               <td>
                 <img src="./UltrasoundBasics/TVIfilter3b.jpg" style="width: 477px; height: 326px;"></td>
             </tr>
             <tr>
-              <td colspan="2" rowspan="1" style="vertical-align: top;">
+              <td colspan="2" rowspan="1" >
                 <small>
                   The
 filter is adjustable and is here reduced to 10 cm/s
                 </small>
-                <br></td>
+                </td>
             </tr>
             <tr>
               <td>
                 <img src="./UltrasoundBasics/TVIfilter4.jpg" style="width: 500px; height: 331px;">
-                <br></td>
+                </td>
               <td>
                 <img src="./UltrasoundBasics/TVIfilter4b.jpg" style="width: 477px; height: 326px;">
-                <br></td>
+                </td>
             </tr>
             <tr>
-              <td colspan="2" rowspan="1" style="vertical-align: top;">
+              <td colspan="2" rowspan="1" >
                 <small>
                   Further
 reduction in the filter below 10 cm/s results in high intensity signals
 becoming visible, especially in early diastole. This is tissue signals
 from the mitral ring.
                 </small>
-                <br></td>
+                </td>
             </tr>
             <tr>
               <td>
                 <img src="./UltrasoundBasics/TVIfilter1.jpg" style="width: 500px; height: 331px;">
-                <br></td>
+                </td>
               <td>
                 <img src="./UltrasoundBasics/TVIfilter5b.jpg" style="width: 477px; height: 326px;">
-                <br></td>
+                </td>
             </tr>
             <tr>
-              <td colspan="2" rowspan="1" style="vertical-align: top;">
+              <td colspan="2" rowspan="1" >
                 <small>
                   Fully
 removing the filter results in a dense band of high intensity tissue
 signals around the baseline. The signal is difficult to analyse, as it
 has so high amplitude that the display is saturated.
                 </small>
-                <br></td>
+                </td>
             </tr>
             <tr>
               <td>
                 <img src="./UltrasoundBasics/TVIfilter6.jpg" style="width: 500px; height: 331px;">
-                <br></td>
+                </td>
               <td>
                 <img src="./UltrasoundBasics/TVIfilter6b.jpg" style="width: 477px; height: 326px;">
-                <br></td>
+                </td>
             </tr>
             <tr>
-              <td colspan="2" rowspan="1" style="vertical-align: top;">
+              <td colspan="2" rowspan="1" >
                 <small>
                   Decreasing
 the scale and gain (shown as all signals being illustrated in lighter
@@ -4470,18 +4180,18 @@ velocity curve of the ring, still taken with an ordinary Doppler. The
 flow signal, having a much lower amplitude, is removed simply by
 reducing the gain.
                 </small>
-                <br></td>
+                </td>
             </tr>
             <tr>
               <td>
                 <img src="./UltrasoundBasics/TVIfilter7.jpg" style="width: 500px; height: 331px;">
-                <br></td>
+                </td>
               <td>
                 <img src="./UltrasoundBasics/TVIfilter7b.jpg" style="width: 477px; height: 326px;">
-                <br></td>
+                </td>
             </tr>
             <tr>
-              <td colspan="2" rowspan="1" style="vertical-align: top;">
+              <td colspan="2" rowspan="1" >
                 <small>
                   All
 modern ultrasound machines today has separate applications for tissue
@@ -4489,7 +4199,7 @@ Doppler which optimises the signal for this purpose, among other things
 by applying a low pass filter that removes most of the flow velocities.
 This results in a cleaner signal.
                 </small>
-                <br></td>
+                </td>
             </tr>
           </tbody>
         </table>
@@ -4536,8 +4246,8 @@ to visualise entirely.
               Thus, in colour
 tissue Doppler, the main function is to get data for post processing,
 either for semi quantitative analysis in curved anatomical M-mode as
-shown below, or to extract quantitative data&nbsp; as velocity or
-deformation curves.&nbsp; The advantage over pulsed Doppler, is the
+shown below, or to extract quantitative data as velocity or
+deformation curves. The advantage over pulsed Doppler, is the
 near simultaneity of the data over the sector, being important in
 comparing regional motion from different segments of the wall. In
 colour flow,
@@ -4576,19 +4286,19 @@ the frame rate of the 2D tissue Doppler.
           <tbody>
             <tr>
               <td>
-                <img style="width: 423px; height: 340px;" src="./UltrasoundBasics/fig 16k.gif">
-                <br></td>
+                <img src="./UltrasoundBasics/fig 16k.gif">
+                </td>
               <td>
-                <img style="width: 527px; height: 356px;" src="./UltrasoundBasics/CAMM.jpg">
-                <br></td>
+                <img src="./UltrasoundBasics/CAMM.jpg">
+                </td>
             </tr>
             <tr>
-              <td style="vertical-align: top;">
+              <td>
                 <span style="font-size: 12pt;" lang="EN-GB">
                   <small>
                     <span style="font-weight: bold;">
                       Velocity and
-strain rate imaging of the same (normal) left ventricle.&nbsp;
+strain rate imaging of the same (normal) left ventricle.
                     </span>
                   </small>
                 </span>
@@ -4618,14 +4328,14 @@ stopped and scrolled.
                   </small>
                 </span>
               </td>
-              <td style="vertical-align: top;">
+              <td>
                 <small>
                   <span style="font-weight: bold;">
                     Curved anatomical M-mode (CAMM). A line is
 drawn from apex to base, and velocity data over time are sampled along
 the line and displayed in colour along a straight line. The numbers on
 the curve and the M-mode are included for reference and corresponds to
-the numbers on the B-mode image.&nbsp; This example shows the septum
+the numbers on the B-mode image. This example shows the septum
 from the apex to base along one axis, and one heart cycle along the
 other, in a two - dimensional space - time plot.
                   </span>
@@ -4658,7 +4368,7 @@ numerical for all varieties of colour doppler, as described
 be extracted fom any point in the image as shown below.
           <br></p>
         <p style="text-align: center;">
-          <img style="width: 446px; height: 304px;" src="./UltrasoundBasics/Fig2a.jpg"></p>
+          <img src="./UltrasoundBasics/Fig2a.jpg"></p>
         <p style="text-align: center;">
           <small>
             <span style="font-weight: bold;">
@@ -4698,13 +4408,13 @@ Doppler, the insonation angle is small. Despite this, the spectrum has
 a certain width, indicating a spectrum of velocities:
         <br>
         <div style="text-align: center;">
-          <img style="width: 330px; height: 195px;" src="./UltrasoundBasics/pwTDI spectrum.JPG">
+          <img src="./UltrasoundBasics/pwTDI spectrum.JPG">
           <br></div>
         <div style="text-align: center;">
           <small>
             <span style="font-weight: bold;">
               Spectrum
-width in tissue Doppler.&nbsp; Image courtesy of H Dalen.
+width in tissue Doppler. Image courtesy of H Dalen.
             </span>
           </small>
           <br></div>
@@ -4730,7 +4440,7 @@ similar to the tissue Doppler values obtained by autocorrelation
 Doppler reconstructed from IQ data.
         <br>
         <div style="text-align: center;">
-          <img style="width: 593px; height: 400px;" src="./UltrasoundBasics/Pwdoppler1.JPG">
+          <img src="./UltrasoundBasics/Pwdoppler1.JPG">
           <br>
           <small>
             <span style="font-weight: bold;">
@@ -4764,7 +4474,7 @@ of Svein Arne Aase,
 point was chosen:
         <br>
         <div style="text-align: center;">
-          <img style="width: 570px; height: 400px;" src="./UltrasoundBasics/Pwdoppler2.JPG">
+          <img src="./UltrasoundBasics/Pwdoppler2.JPG">
           <br>
           <small>
             <span style="font-weight: bold;">
@@ -4773,7 +4483,7 @@ from the mitral ring (reconstructed from RF data). Peak velocity of the
 ring displacement can be identified. B: This corresponds to the maximal
 slope of the M-mode line at the same time point. C: The M-mode in the
 same time window from the RF data. This gives a far better resolution
-in space and slope.&nbsp; D: In the RF M-mode the steepest sloe was
+in space and slope. D: In the RF M-mode the steepest sloe was
 identified automatically. This will be a reference for the maximal
 velocity.
             </span>
@@ -4852,13 +4562,13 @@ correlation between methods, and a more or less constant offset (
         ).
         <br>
         <div style="text-align: center;">
-          <img style="width: 808px; height: 244px;" src="./UltrasoundBasics/Modal spectral vs color.JPG">
+          <img src="./UltrasoundBasics/Modal spectral vs color.JPG">
           <br>
           <small>
             <span style="font-weight: bold;">
               Left: spectral tissue Doppler,
 illustrating the width of the spectrum. The modal (average) velocity
-curve is indicated in black.&nbsp; Right, colour tissue
+curve is indicated in black. Right, colour tissue
               <br>
               Doppler from the same location in the same patient, obtained by
 autocorrelation, giving average values directly. Peak values correspond
@@ -4873,7 +4583,7 @@ setting. Increased gain setting increases the peak values (
         ) as illustrated below:
         <br>
         <div style="text-align: center;">
-          <img style="width: 629px; height: 356px;" src="./UltrasoundBasics/Gain.JPG">
+          <img src="./UltrasoundBasics/Gain.JPG">
           <br></div>
         <div style="text-align: center;">
           <small>
@@ -4895,7 +4605,7 @@ velocity, if peak values are used, they should be obtained and analysed
 by the lowest readable gain setting.
                 <br>
                 On the other hand, filtering of the colour tissue Doppler reduces peak
-values, and will also increase the&nbsp; difference between the methods
+values, and will also increase the difference between the methods
 (
                 <a href="http://folk.ntnu.no/stoylen/strainrate/References.html#r145">145</a>
                 ). Autocorrelation with high
@@ -4929,14 +4639,14 @@ mechanism for the formation of reverberations are explained
                 <tr>
                   <td>
                     <br>
-                    <img style="width: 473px; height: 292px;" src="./UltrasoundBasics/UFR clutter.JPG">
-                    <br></td>
+                    <img src="./UltrasoundBasics/UFR clutter.JPG">
+                    </td>
                   <td>
-                    <img style="width: 450px; height: 333px;" src="./UltrasoundBasics/UFR spectral clutter.JPG">
-                    <br></td>
+                    <img src="./UltrasoundBasics/UFR spectral clutter.JPG">
+                    </td>
                 </tr>
                 <tr>
-                  <td style="vertical-align: top;">
+                  <td>
                     <small>
                       <big>
                         <small>
@@ -4965,7 +4675,7 @@ modified from (
                       <span style="font-weight: bold;"></span>
                     </small>
                   </td>
-                  <td style="vertical-align: top;">
+                  <td>
                     <small>
                       <span style="font-weight: bold;">
                         Clutter filtering may reduce the problem,
@@ -4979,7 +4689,7 @@ is substantially higher. Image modified from (
                         ).
                       </span>
                     </small>
-                    <br></td>
+                    </td>
                 </tr>
               </tbody>
             </table>
@@ -5013,22 +4723,22 @@ vulnerable to reverberations than B-mode, as explained
                 <tr>
                   <td>
                     <a name="rev_video"></a>
-                    <img style="width: 515px; height: 350px;" src="./UltrasoundBasics/Rever6_25012013.gif">
-                    <br></td>
+                    <img src="./UltrasoundBasics/Rever6_25012013.gif">
+                    </td>
                   <td>
-                    <img style="width: 491px; height: 352px;" src="./UltrasoundBasics/rev04b.jpg">
-                    <br></td>
+                    <img src="./UltrasoundBasics/rev04b.jpg">
+                    </td>
                 </tr>
                 <tr>
-                  <td style="vertical-align: top;">
+                  <td>
                     <small>
                       <span style="font-weight: bold;">
                         Reverberations in the septum of a normal
-ventricle. The colour bands are&nbsp; stationary
+ventricle. The colour bands are stationary
                       </span>
                     </small>
-                    <br></td>
-                  <td style="vertical-align: top;">
+                    </td>
+                  <td>
                     <small>
                       <span style="font-weight: bold;">
                         In pulsed wave tissue Doppler, the clutter
@@ -5037,7 +4747,7 @@ velocity curves can be seen as entirely separate from the clutter line,
 and thus peak velocities can still be masured.
                       </span>
                     </small>
-                    <br></td>
+                    </td>
                 </tr>
               </tbody>
             </table>
@@ -5054,33 +4764,33 @@ artifacts, as illustrated below.
                 <br></big>
             </small>
             <div style="text-align: center;">
-              <img style="width: 426px; height: 289px;" src="./UltrasoundBasics/reverb2.JPG">
+              <img src="./UltrasoundBasics/reverb2.JPG">
               <br></div>
             <table cellpadding="2" cellspacing="2">
               <tbody>
                 <tr>
                   <td colspan="1" rowspan="1" style="vertical-align: top; text-align: center;">
                     <br>
-                    <img style="width: 742px; height: 300px;" src="./UltrasoundBasics/modal reverb.JPG">
-                    <br></td>
+                    <img src="./UltrasoundBasics/modal reverb.JPG">
+                    </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1" style="vertical-align: top;">
+                  <td colspan="1" rowspan="1" >
                     <small>
                       <span style="font-weight: bold;">
                         A patient with a stationary reverberation
 in the basal lateral wall (left), with the sampling point for both pw
-and colour Doppler is indicated. .&nbsp; The pw spectral Doppler
+and colour Doppler is indicated. . The pw spectral Doppler
 (middle) can be seen to be broadened, comprising all velocities between
 peak and zero. This is due to stationary pixels due to the artifact,
 but a sufficient number of pixels with normal velocity (and a number of
-pixels in between).&nbsp; Averaging the spectrum will result in too low
-values, as the lowest values are due to artifact.&nbsp; The
+pixels in between). Averaging the spectrum will result in too low
+values, as the lowest values are due to artifact. The
 autocorrelation values (right) are likewise average values, thus too
 low.
                       </span>
                     </small>
-                    <br></td>
+                    </td>
                 </tr>
               </tbody>
             </table>
@@ -5097,7 +4807,7 @@ we see the difference in peak values:
             <div style="text-align: center;">
               <small>
                 <big>
-                  <img style="width: 996px; height: 316px;" src="./UltrasoundBasics/rev02g.JPG" height="316" width="996">
+                  <img src="./UltrasoundBasics/rev02g.JPG" height="316" width="996">
                   <br>
                   <small>
                     <span style="font-weight: bold;">
@@ -5172,7 +4882,7 @@ to 1200 FPS in 2D imaging. this is the extreme example of exchanging
 spatial for temporal resolution.
               <br></p>
             <p style="text-align: center;">
-              <img style="width: 439px; height: 348px;" src="./UltrasoundBasics/Two beam.JPG">
+              <img src="./UltrasoundBasics/Two beam.JPG">
               <br>
               <small>
                 <span style="font-weight: bold;">Few beams give high frame rate.</span>
@@ -5225,13 +4935,13 @@ is in fact calculated by linear regression of all pixel velocities
 within the delta x, to reduce noise.):
             <br>
             <div style="text-align: center;">
-              <img style="width: 168px; height: 48px;" src="./UltrasoundBasics/formel07.JPG">
+              <img src="./UltrasoundBasics/formel07.JPG">
               <br>
               <div style="text-align: left;">
                 This is a different algorithm from the
 velocity gradient, but it can be proved (here) that the two formulas
-result in the same ratio. The distance&nbsp;
-                <img style="width: 19px; height: 17px;" src="./UltrasoundBasics/deltax.JPG">
+result in the same ratio. The distance
+                <img src="./UltrasoundBasics/deltax.JPG">
                 is called
 the offset distance or strain length.
                 <br></div>
@@ -5240,9 +4950,9 @@ the offset distance or strain length.
               <tbody>
                 <tr>
                   <td>
-                    <img style="width: 266px; height: 266px;" src="./UltrasoundBasics/fig 10a.JPG">
+                    <img src="./UltrasoundBasics/fig 10a.JPG">
                     <br>
-                    <img style="width: 139px; height: 50px;" src="./UltrasoundBasics/formel06.JPG">
+                    <img src="./UltrasoundBasics/formel06.JPG">
                     <br>
                     <div style="text-align: left;">
                       <big>
@@ -5251,9 +4961,9 @@ the offset distance or strain length.
                       <br></div>
                   </td>
                   <td>
-                    <img style="width: 266px; height: 266px;" src="./UltrasoundBasics/fig 10b.JPG">
+                    <img src="./UltrasoundBasics/fig 10b.JPG">
                     <br>
-                    <img style="width: 168px; height: 48px;" src="./UltrasoundBasics/formel07.JPG">
+                    <img src="./UltrasoundBasics/formel07.JPG">
                     <br>
                     <div style="text-align: left;">
                       <big>
@@ -5283,7 +4993,7 @@ gradient, where v
                               <span style="font-weight: bold;">
                                 are two different velocities measured at
 points 1 and 2, and L the instantaneous length of the segment between
-those points. The velocity gradient is given in the formula.&nbsp; b,
+those points. The velocity gradient is given in the formula. b,
 strain rate measured by tissue Doppler, as the velocities of a segment
 with fixed length as shown by the formula. It can be proven that these
 two approaches yield the same result.
@@ -5291,7 +5001,7 @@ two approaches yield the same result.
                               <br>
                               <big>
                                 <br>
-                                Thus:&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                                Thus:  
                                 <br></big>
                             </big>
                           </big>
@@ -5313,7 +5023,7 @@ two approaches yield the same result.
                             <big>
                               <big>
                                 <big>
-                                  <img style="width: 306px; height: 48px;" src="./UltrasoundBasics/formel08.JPG">
+                                  <img src="./UltrasoundBasics/formel08.JPG">
                                   <br></big>
                               </big>
                             </big>
@@ -5331,10 +5041,10 @@ two approaches yield the same result.
                   Strain rate by linear regression
                 </h4>
                 Instead of measuring just the velocities at the ends of the offset
-distance;&nbsp;
-                <img style="width: 50px; height: 16px;" src="./UltrasoundBasics/formel09.JPG">
-                or&nbsp;
-                <img style="width: 97px; height: 15px;" src="./UltrasoundBasics/formel10.JPG">
+distance;
+                <img src="./UltrasoundBasics/formel09.JPG">
+                or
+                <img src="./UltrasoundBasics/formel10.JPG">
                 respectively, the velocity gradient /
 strain rate can be calculated as the slope of the regression line of
 all velocities along the offset distance as described originally (
@@ -5346,12 +5056,12 @@ in velocity measurements, as the value is an average of more
 measurements.
                 <br>
                 <div style="text-align: center;">
-                  <img style="width: 422px; height: 325px;" src="./UltrasoundBasics/regression3.GIF">
+                  <img src="./UltrasoundBasics/regression3.GIF">
                   <br></div>
                 <br>
                 <small>
-                  Strain rate calculated over an offset&nbsp; (strain length)
-of&nbsp; 12 mm (L). "True" strain rate at the end points are v1 = 0 and
+                  Strain rate calculated over an offset (strain length)
+of 12 mm (L). "True" strain rate at the end points are v1 = 0 and
 v2 = 1.2 cm s
                   <sup>-1</sup>
                   giving a strain rate of -1.0 s
@@ -5405,7 +5115,7 @@ as well as for rotation (
                 <a href="http://folk.ntnu.no/stoylen/strainrate/References.html#r125">125</a>
                 ).
                 <br>
-                &nbsp;One way of using this approach, is to place defined ROI in the
+                One way of using this approach, is to place defined ROI in the
 myocardium at the segmental borders and measure
                 <a href="http://folk.ntnu.no/stoylen/strainrate/measurements.html#segmental">segmental strain and strain rate</a>
                 directly by changes in segment length. This is true segmental strain
@@ -5417,21 +5127,21 @@ rate, and angle independent measures, eliminating the
                   <tbody>
                     <tr>
                       <td>
-                        <img style="width: 316px; height: 207px;" src="./UltrasoundBasics/speckle 2.jpg">
-                        <br></td>
+                        <img src="./UltrasoundBasics/speckle 2.jpg">
+                        </td>
                       <td>
-                        <img style="width: 315px; height: 206px;" src="./UltrasoundBasics/speckle 3.jpg">
-                        <br></td>
+                        <img src="./UltrasoundBasics/speckle 3.jpg">
+                        </td>
                     </tr>
                     <tr>
-                      <td style="vertical-align: top;">
+                      <td>
                         <small>
-                          Kernel displacement&nbsp;
+                          Kernel displacement
 Displacement curve obtained by tracking through a whole heart cycle
 shown to the right, derived velocity curve shown below.
                         </small>
                       </td>
-                      <td style="vertical-align: top;">
+                      <td>
                         <small>
                           From two different
 kernels, the relative displacement and hence, strain as well as strain
@@ -5444,19 +5154,19 @@ rate can be derived.
                         <br>
                         <br>
                         <br>
-                        <img style="width: 173px; height: 205px;" src="./UltrasoundBasics/speckle 4.jpg"></td>
+                        <img src="./UltrasoundBasics/speckle 4.jpg"></td>
                       <td>
-                        <img style="width: 296px; height: 296px;" src="./UltrasoundBasics/ttrack.gif"></td>
+                        <img src="./UltrasoundBasics/ttrack.gif"></td>
                     </tr>
                     <tr>
-                      <td style="vertical-align: top;">
+                      <td>
                         <small>
                           With kernels at all
 segmental borders, segmental motion and deformation can be tracked, as
 shown to the right.
                         </small>
                       </td>
-                      <td style="vertical-align: top;">
+                      <td>
                         <small>
                           And the length variations
 of the segments between the kernels kan be followed through the heart
@@ -5483,7 +5193,7 @@ placing a kernel in an area of drop out or reverberation.
                 <br>
                 <a name="Euler_SR_from_Lagr_S"></a>
                 It is important to be aware that
-strain measured by speckle tracking&nbsp; is
+strain measured by speckle tracking is
                 <a href="http://folk.ntnu.no/stoylen/strainrate/mathemathics/index.html#strain">Lagrangian strain</a>
                 directly. Derivation yields Lagrangian strain rate, while tissue
 Doppler yields Eulerian strain rate. Commercially, it has been
@@ -5502,8 +5212,8 @@ segment length change, the Eulerian strain rate can be derived by the
 simple conversion:
                 <br>
                 <div style="text-align: center;">
-                  <img style="width: 112px; height: 40px;" src="./UltrasoundBasics/SR euler fra lagr.GIF">
-                  &nbsp;
+                  <img src="./UltrasoundBasics/SR euler fra lagr.GIF">
+                  
                   <br></div>
                 <br>
                 This, however, is not as simple as it looks. As can be seen from the
@@ -5552,12 +5262,12 @@ combinations for more efficient tracking as described
                   <tbody>
                     <tr>
                       <td>
-                        <img style="width: 416px; height: 344px;" src="./UltrasoundBasics/Fig 16c.gif"></td>
+                        <img src="./UltrasoundBasics/Fig 16c.gif"></td>
                       <td>
-                        <img style="width: 360px; height: 494px;" src="./UltrasoundBasics/Fig16b.jpg"></td>
+                        <img src="./UltrasoundBasics/Fig16b.jpg"></td>
                     </tr>
                     <tr>
-                      <td style="vertical-align: top;">
+                      <td>
                         <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;" lang="EN-GB">
                           <small>
                             <span style="font-weight: bold;">
@@ -5583,7 +5293,7 @@ stopped and scrolled.
                           </small>
                         </span>
                       </td>
-                      <td style="vertical-align: top;">
+                      <td>
                         <small>
                           <span style="font-weight: bold;">
                             Combined strain rate image with one
@@ -5592,7 +5302,7 @@ from the septum and below that the strain rate (yellow) and strain
 curves from one point in septum.
                           </span>
                         </small>
-                        <br></td>
+                        </td>
                     </tr>
                   </tbody>
                 </table>
@@ -5620,8 +5330,8 @@ different relations between curves is explained in detail in
                   <tbody>
                     <tr>
                       <td>
-                        <img style="width: 446px; height: 304px;" src="./UltrasoundBasics/Fig2a.jpg">
-                        <br></td>
+                        <img src="./UltrasoundBasics/Fig2a.jpg">
+                        </td>
                       <td>
                         <br>
                         <br>
@@ -5632,11 +5342,11 @@ different relations between curves is explained in detail in
                             Integration
                             <br>of velocity</small>
                           <br></div>
-                        <img style="width: 33px; height: 30px;" src="./UltrasoundBasics/arrow_right.JPG">
-                        <br></td>
-                      <td style="vertical-align: top;">
-                        <img style="width: 446px; height: 304px;" src="./UltrasoundBasics/Fig2b.jpg">
-                        <br></td>
+                        <img src="./UltrasoundBasics/arrow_right.JPG">
+                        </td>
+                      <td>
+                        <img src="./UltrasoundBasics/Fig2b.jpg">
+                        </td>
                     </tr>
                     <tr>
                       <td style="vertical-align: top; text-align: left;">
@@ -5645,19 +5355,19 @@ different relations between curves is explained in detail in
                           Velocity traces may be considered
 the raw data. All other modalities are integrated or derived from this.
 Here normal function is shown at normal basal velocity (6 cm/s), as
-well as normal decrease from base to apex.&nbsp; This decrease is
+well as normal decrease from base to apex. This decrease is
 evident by visual assessment alone, as the distance between the curves.
 The distance between the curves then is a direct visual assessment of
-strain rate.&nbsp; Strain rate curves can be obtained by spatial
+strain rate. Strain rate curves can be obtained by spatial
 derivation of velocity:
                           <br></small>
                         <div style="text-align: center;">
-                          <img style="width: 30px; height: 33px;" src="./UltrasoundBasics/arrow_down.JPG">
+                          <img src="./UltrasoundBasics/arrow_down.JPG">
                           <br></div>
                       </td>
                       <td>
-                        <br></td>
-                      <td style="vertical-align: top;">
+                        </td>
+                      <td>
                         <small>
                           <span style="font-weight: bold;"></span>
                           Displacement curves obtained by
@@ -5666,14 +5376,14 @@ motion. In principle, strain could be obtained by spatial derivation of
 displacement, although not used:
                           <br></small>
                         <div style="text-align: center;">
-                          <img style="width: 30px; height: 33px;" src="./UltrasoundBasics/arrow_down.JPG">
+                          <img src="./UltrasoundBasics/arrow_down.JPG">
                           <br></div>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <img style="width: 446px; height: 304px;" src="./UltrasoundBasics/Fig2c.jpg">
-                        <br></td>
+                        <img src="./UltrasoundBasics/Fig2c.jpg">
+                        </td>
                       <td>
                         <br>
                         <br>
@@ -5684,18 +5394,18 @@ displacement, although not used:
                           <small>
                             Integration
                             <br>
-                            of strain&nbsp; rate
+                            of strain rate
                             <br>
-                            <img style="width: 33px; height: 30px;" src="./UltrasoundBasics/arrow_right.JPG">
+                            <img src="./UltrasoundBasics/arrow_right.JPG">
                             <br></small>
                         </div>
                       </td>
                       <td>
-                        <img style="width: 445px; height: 303px;" src="./UltrasoundBasics/Fig2d.jpg">
-                        <br></td>
+                        <img src="./UltrasoundBasics/Fig2d.jpg">
+                        </td>
                     </tr>
                     <tr>
-                      <td style="vertical-align: top;">
+                      <td>
                         <small>
                           <span style="font-weight: bold;"></span>
                           The strain rate curves are the
@@ -5705,9 +5415,9 @@ however, are noisy, shown in this unfiltered image, the increase in
 random noise is a consequence of derivation.
                           <br></small>
                       </td>
-                      <td style="vertical-align: top;">
-                        <br></td>
-                      <td style="vertical-align: top;">
+                      <td>
+                        </td>
+                      <td>
                         <small>
                           <span style="font-weight: bold;"></span>
                           Strain is regional deformation. This
@@ -5718,7 +5428,7 @@ can be obtained both by
                         <small>(not used at present) and</small>
                         <small>
                           temporal
-integration of strain rate (used).&nbsp;
+integration of strain rate (used).
                           <br></small>
                       </td>
                     </tr>
@@ -5761,14 +5471,14 @@ as shown previously (
               <tbody>
                 <tr>
                   <td>
-                    <img style="width: 433px; height: 275px;" src="./UltrasoundBasics/fundamental vs harmonic TVI.JPG">
-                    <br></td>
+                    <img src="./UltrasoundBasics/fundamental vs harmonic TVI.JPG">
+                    </td>
                   <td>
-                    <img style="width: 326px; height: 274px;" src="./UltrasoundBasics/SR unwraps aliasing.JPG">
-                    <br></td>
+                    <img src="./UltrasoundBasics/SR unwraps aliasing.JPG">
+                    </td>
                 </tr>
                 <tr>
-                  <td style="vertical-align: top;">
+                  <td>
                     <small>
                       <span style="font-weight: bold;">
                         Colour M-mode (CAMM) of tissue velocities
@@ -5779,8 +5489,8 @@ can be seen in native
 aliasing both in the S' wave, and the e' wave (double).
                       </span>
                     </small>
-                    <br></td>
-                  <td style="vertical-align: top;">
+                    </td>
+                  <td>
                     <small>
                       <span style="font-weight: bold;">
                         Colour tissue Doppler curved M-mode in
@@ -5788,7 +5498,7 @@ harmonic imaging, velocity plot (above), strain rate (below). As can be
 seen there is heavy aliasing in the
                         <br>velocity plot, but no aliasing in strain rate imaging.</span>
                     </small>
-                    <br></td>
+                    </td>
                 </tr>
               </tbody>
             </table>
@@ -5830,7 +5540,7 @@ can be done by speckle tracking (
             <small>
               Image showing the speckle
 tracking from both modalities. The kernels are shown as the small,
-round, yellow circles.&nbsp; The longitudinal search area along the
+round, yellow circles. The longitudinal search area along the
 ultrasound beam by tissue Doppler is shown in red. The lateral search
 area by speckle tracking is shown in white.
               <br></small>
