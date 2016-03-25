@@ -3,37 +3,19 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Базовые принципы ультразвуковых, эхокардиографических и Допплеровских исследований</title>
-
-  <style media="screen" type="text/css">
-    body {
-      background-color: rgb(255, 255, 255);
-      width: 1280px;
-      margin: 0 auto;
-    }
-
-    p {
-      display: block;
-      text-indent: 20px;
-    }
-
-    img {
-      display: block;
-      margin: 10 auto;    
-    }
-  </style>
+  <title>Получение изображения</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 
-<img src="./UltrasoundBasics/dmf_sirkmedbilde_innholdstopp_eng.gif" width="720" />
-<h2 style="text-align: center;">
-    <b>Базовые принципы ультразвуковых, эхокардиографических и Допплеровских исследований</b>
-</h2>
+<div id="header">
+<img src="./UltrasoundBasics/ntnu_logo.gif" />
+<h2>Базовые принципы ультразвуковых, эхокардиографических и Допплеровских исследований</h2>
+<h4>by Asbjørn Støylen, dr. med.</h4>
+</div>
 
-<h4 style="text-align: center;">
-    <b>by Asbjørn Støylen, dr. med.</b>
-</h4>
+<div id="content">
 
 <a name="imaging"></a>
 <h3>Глава 2</h3>
@@ -50,19 +32,12 @@
 Различные структуры отражают разное количество излучаемой энергии, и, таким образом, отраженный сигнал в зависимости от глубины будет иметь разные амплитуды, как показано ниже. Время между двями импульсами зависит от требования к максимальной глубине проникновения сигнала.
 </p>
 
-<p style="text-align: center;">
-<img src="./UltrasoundBasics/Amode.gif" style="width: 479px; height: 218px;" />
-</p>
+<img src="./UltrasoundBasics/Amode.gif" />
+<img src="./UltrasoundBasics/Amode1.JPG" />
 
-<p style="text-align: center;">
-<img src="./UltrasoundBasics/Amode1.JPG" style="width: 479px; height: 218px;" />
-</p>
-
-<p>
-<small>
-<span style="font-weight: bold;">Рис. 2.</span>
+<p class="image-description">
+<b>Рис. 2.</b>
 Схематическое представление отражения ультразвукового импульса, излучаемого из зонда (probe) P, и отраженного в точках a, b и c. Часть энергии импульса отражается от рассеивателя в точке a, остальное передается; часть возвращается из точки b и остальное из точки c. Когда сигнал возвращается в зонд P, отраженный импульс дает информацию о двух измерениях: амплитуда отраженного сигнала, и время, необходимое для возвращения, которое зависит от расстояния до зонда. Количество энергии, отраженное в каждой точке, представлено на схеме как амплитуда. Когда измерения получены, объект-рассеиватель отображается в виде амплитуды и его положеия в пространстве. Таким образом, входящий импульс их точки a - это полная амплитуда сигнала, выпущенного зондом P. В b, входящий испульс - это импульс, который прошел сквозь объект a, и так далее.
-</small>
 </p>
 
 <p>
@@ -427,5 +402,6 @@ Same image with increased reject (top) showing reduction in cavity noise, but al
 All commercial equipment today has a <span style="text-decoration: underline;">time gain compensation (TGC)</span>, increasing the gain of the reflected signals with increasing time from the transmitted pulse. This is equivalent to increasing the gain with increasing depth. However, this is not a perfect solution, as the noise is constant with depth, while the reflected signals become weaker, and with TGC, the noise will be gained as well as the signal, and the signal-to-noise ratio will decrease, thus the resulting signal will end up as a grey blur at a certain depth. This effect can be seen <a href="#TGC_and_FR_latres">below</a>. Before <a href="#Harmonic">harmonic imaging</a>, the TGC was adjustable, relying on the operator to optimise the visibility. AS the greater part of cavity noise is removed by the harmonic imaging, most modern equipment has automated TGC, but retains the possibility of manual adjustment.
 </p>
 
+</div>
 </body>
 </html>
