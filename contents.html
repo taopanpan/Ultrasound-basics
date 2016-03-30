@@ -8,13 +8,13 @@
 </head>
 
 <body>
-<div id="header">
+<div id="content">
+<div id="content-header">
 <img src="./UltrasoundBasics/ntnu_logo.gif" />
 <h2>Базовые принципы ультразвуковых, эхокардиографических и Допплеровских исследований</h2>
 <h4>by Asbjørn Støylen, dr. med.</h4>
 </div>
-
-<div id="content">
+<div id="content-body">
 
 <h4>Аннотация</h4>
 
@@ -23,91 +23,92 @@
 </p>
 
 <h4>Содержание</h4>
-<ul>
+<ul class="no-style">
   <li><a href="ultrasound.html#ultrasound">Глава 1: Ультразвук</a></li>
-  <ul>
-    <li><a href="ultrasound.html#ultrasound_params">Характеристики ультразвука</a></li>
-    <li><a href="ultrasound.html#generation">Генерация ультразвука</a></li>
-    <li><a href="ultrasound.html#ultrasound_data">Данные УЗИ</a></li>
+  <ul class="no-style">
+    <li><a href="ultrasound.html#ultrasound_params">[1.1] Характеристики ультразвука</a></li>
+    <li><a href="ultrasound.html#generation">[1.2] Генерация ультразвука</a></li>
+    <li><a href="ultrasound.html#ultrasound_data">[1.3] Данные УЗИ</a></li>
   </ul>
 
   <li><a href="imaging.html#imaging">Глава 2: Получение изображения с помощью ультразвука</a></li>
-  <ul>
-    <li><a href="imaging.html#reflection">Отражение и рассеивание</a></li>
-    <li><a href="imaging.html#absorption">Поглощение</a></li>
-    <li><a href="imaging.html#powerMI">Сила ультразвука / Механический индекс</a></li>
-    <li><a href="imaging.html#attenuation">Затухание</a></li>
-    <li><a href="imaging.html#gain">Усиление</a></li>
-    <li><a href="imaging.html#tgc">Усиление сигнала по времени (TGC)</a></li>
-    <li><a href="imaging.html#compr_rej">Сжатие и шумоподавление</a></li>
-    <li><a href="modes.html#m-mode">M-режим</a></li>
-    <ul>
-      <li><a href="modes.html#depth_res">Разрешение по глубине. Пропускная способность</a></li>
+  <ul class="no-style">
+    <li><a href="imaging.html#reflection">[2.1] Отражение и рассеивание сигнала</a></li>
+    <li><a href="imaging.html#absorption">[2.2] Поглощение сигнала</a></li>
+    <li><a href="imaging.html#powerMI">[2.3] Сила ультразвука / Механический индекс</a></li>
+    <li><a href="imaging.html#attenuation">[2.4] Затухание сигнала</a></li>
+    <li><a href="imaging.html#gain">[2.5] Усиление сигнала</a></li>
+    <li><a href="imaging.html#tgc">[2.6] Усиление сигнала по времени (TGC)</a></li>
+    <li><a href="imaging.html#compr_rej">[2.7] Сжатие и шумоподавление</a></li>
+    <li><a href="modes.html#m-mode">[2.8] M-режим</a></li>
+    <ul class="no-style">
+      <li><a href="modes.html#depth_res">[2.8.1] Разрешение по глубине. Пропускная способность</a></li>
     </ul>
-    <li><a href="modes.html#2d">Two-Dimensional (2D) imaging</a></li>
-    <ul>
-      <li><a href="modes.html#beamforming">Формирование луча сигнала</a></li>
-      <li><a href="modes.html#focus">Фокусиоровка луча</a></li>
-      <li><a href="modes.html#lateral">Боковое разрешение</a></li>
-      <ul>
-        <li><a href="modes.html#line_density">Линейная плотность</a></li>
-      </ul>
-      <li><a href="modes.html#temporal">Временное разрешение</a></li>
-      <ul>
-        <li><a href="modes.html#depth">Глубина</a></li>
-        <li><a href="modes.html#beam_number">Ширина сектора и линейная плотность</a></li>
-        <li><a href="modes.html#mla">Многоканальный сбор (MLA)</a></li>
-      </ul>
-      <li><a href="modes.html#3d">3D сканирование</a></li>
+    <li><a href="modes.html#2d">[2.9] Two-Dimensional (2D) imaging</a></li>
+    <ul class="no-style">
+      <li><a href="modes.html#beamforming">[2.9.1] Формирование луча сигнала</a></li>
+      <li><a href="modes.html#focus">[2.9.2] Фокусиоровка луча</a></li>
+      <li><a href="modes.html#lateral">[2.9.3] Боковое разрешение</a></li>
+      <li><a href="modes.html#line_density">[2.9.5] Линейная плотность</a></li>
+      <li><a href="modes.html#temporal">[2.9.6] Временное разрешение</a></li>
+      <li><a href="modes.html#depth">[2.9.7] Глубина</a></li>
+      <li><a href="modes.html#beam_number">[2.9.8] Ширина сектора и линейная плотность</a></li>
+      <li><a href="modes.html#mla">[2.9.9] Многоканальный сбор (MLA)</a></li>
+      <li><a href="modes.html#3d">[2.9.10] 3D сканирование</a></li>
     </ul>
-    <li><a href="artifacts.html#shadow">Артефакты</a></li>
-    <ul>
-      <li><a href="artifacts.html#shadow">Тень</a></li>
-      <li><a href="artifacts.html#reverb">Ревербация</a></li>
-      <li><a href="artifacts.html#sidelobes">Боковые лепестки</a></li>
-      <li><a href="artifacts.html#foreshortening">Ракурс</a></li>
+    <li><a href="artifacts.html#shadow">[2.10] Артефакты</a></li>
+    <ul class="no-style">
+      <li><a href="artifacts.html#shadow">[2.10.1] Тень</a></li>
+      <li><a href="artifacts.html#reverb">[2.10.2] Ревербация</a></li>
+      <li><a href="artifacts.html#sidelobes">[2.10.3] Боковые лепестки</a></li>
+      <li><a href="artifacts.html#foreshortening">[2.10.4] Ракурс</a></li>
     </ul>
-    <li><a href="artifacts.html#harmonic">Нелинейное распростарнение волны и гармоническое отображение</a></li>
-    <li><a href="artifacts.html#speckle">Формирование зернистости</a></li>
-    <ul>
-      <li><a href="artifacts.html#speckletrack">Отслеживание зернистости</a></li>
-    </ul>
+    <li><a href="artifacts.html#harmonic">[2.11] Нелинейное распростарнение волны и гармоническое отображение</a></li>
+    <li><a href="artifacts.html#speckle">[2.12] Формирование и отслеживание зернистости</a></li>
   </ul>
 
   <li><a href="doppler.html#doppler">Глава 3: Эффект Допплера</a></li>
-  <ul>
-    <li><a href="doppler.html#spectral">Спектральный анализ</a></li>
-    <ul>
-      <li><a href="doppler.html#width">Ширина спектра</a></li>
+  <ul class="no-style">
+    <li><a href="doppler.html#spectral">[3.1] Спектральный анализ</a></li>
+    <li><a href="doppler.html#width">[3.2] Ширина спектра</a></li>
+    <li><a href="doppler.html#pw_and_cw">[3.3] Импульсная и неприрывно-волновая Допплерография</a></li>
+    <ul class="no-style">
+      <li><a href="doppler.html#nykvist">[3.3.1] Феномен Найквиста</a></li>
+      <li><a href="doppler.html#hprf">[3.3.2] HPRF</a></li>
+      <li><a href="doppler.html#colour_doppler">[3.3.3] Цветная Допплерография</a></li>
+      <li><a href="doppler.html#colour_flow">[3.3.4] Цветной поток</a></li>
     </ul>
-    <li><a href="doppler.html#pw_and_cw">Импульсная и неприрывно-волновая Допплерография</a></li>
-    <ul>
-      <li><a href="doppler.html#nykvist">Феномен Найквиста</a></li>
-      <li><a href="doppler.html#hprf">HPRF</a></li>
-      <li><a href="doppler.html#colour_doppler">Цветная Допплерография</a></li>
-      <ul>
-        <li><a href="doppler.html#colour_flow">Цветной поток</a></li>
-      </ul>
+    <li><a href="tissue_doppler.html#tissue_doppler">[3.4] Допплерография тканей</a></li>
+    <ul class="no-style">
+      <li><a href="tissue_doppler.html#ctdi">[3.4.1] Цветная Допплерография тканей</a></li>
+      <li><a href="tissue_doppler.html#camm">[3.4.2] Искревленный анатомический M-режим (CAMM)</a></li>
+      <li><a href="tissue_doppler.html#velocity_traces">[3.4.3] Графики скоростей</a></li>
+      <li><a href="tissue_doppler.html#peak_values">[3.4.4] Measurement of peak values in relation to the Doppler spectrum</a></li>
+      <li><a href="tissue_doppler.html#reverb_in_TDI">[3.4.5] Ревербации в Допплерографии тканей</a></li>
+      <li><a href="tissue_doppler.html#uft_tdi">[3.4.6] Сверхчастотная Допплерография тканей (UFR-TDI)</a></li>
+      <li><a href="tissue_doppler.html#strain_rate">[3.4.7] Strain rate imaging by tissue Doppler</a></li>
+      <li><a href="tissue_doppler.html#linear_regression">[3.4.8] Strain rate by linear regression</a></li>
+      <li><a href="tissue_doppler.html#strain_speckle">[3.4.9] Strain by speckle tracking</a></li>
+      <li><a href="tissue_doppler.html#relations">[3.4.10] Relation between velocity, displacement, strain and strain rate</a></li>
+      <li><a href="tissue_doppler.html#harmonic_tdi">[3.4.11] Harmonic tissue Doppler</a></li>
     </ul>
-    <li><a href="tissue_doppler.html#tissue_doppler">Допплерография тканей</a></li>
-    <ul>
-      <li><a href="tissue_doppler.html#ctdi">Цветная Допплерография тканей</a></li>
-      <li><a href="tissue_doppler.html#camm">Искревленный анатомический M-режим (CAMM)</a></li>
-      <li><a href="tissue_doppler.html#velocity_traces">Графики скоростей</a></li>
-      <li><a href="tissue_doppler.html#peak_values">Measurement of peak values in relation to the Doppler spectrum</a></li>
-      <li><a href="tissue_doppler.html#reverb_in_TDI">Ревербации в Допплерографии тканей</a></li>
-      <li><a href="tissue_doppler.html#uft_tdi">Сверхчастотная Допплерография тканей (UFR-TDI)</a></li>
-      <li><a href="tissue_doppler.html#strain_rate">Strain rate imaging by tissue Doppler</a></li>
-      <ul>
-        <li><a href="tissue_doppler.html#linear_regression">Strain rate by linear regression</a></li>
-      </ul>
-      <li><a href="tissue_doppler.html#strain_speckle">Strain by speckle tracking</a></li>
-      <li><a href="tissue_doppler.html#relations">Relation between velocity, displacement, strain and strain rate</a></li>
-      <li><a href="tissue_doppler.html#harmonic_tdi">Harmonic tissue Doppler</a></li>
-    </ul>
-    <li><a href="tissue_doppler.html#speckletvi">Tracking by combined speckle tracking and tissue Doppler</a></li>
+    <li><a href="tissue_doppler.html#speckletvi">[3.5] Tracking by combined speckle tracking and tissue Doppler</a></li>
   </ul>
 </ul>
+
+</div>
+
+<div id="pages">
+  <div id="pages-internal">
+    <div class="page-selected">C</div>
+    <a class="page-link" href="ultrasound.html">1</a>
+    <a class="page-link" href="imaging.html">2</a>
+    <a class="page-link" href="modes.html">3</a>
+    <a class="page-link" href="artifacts.html">4</a>
+    <a class="page-link" href="doppler.html">5</a>
+    <a class="page-link" href="tissue_doppler.html">6</a>
+  <div>
+</div>
 
 </div>
 </body>
