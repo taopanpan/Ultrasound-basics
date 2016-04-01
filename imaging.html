@@ -88,7 +88,7 @@
 </ul>
 </p>
 
-<table cellpadding="10">
+<table>
 <tr>
   <td colspan="2" rowspan="1"> <img src="./UltrasoundBasics/Scatterers.GIF"> </td>
 </tr>
@@ -161,7 +161,7 @@
 Плотность ткани. Чем больше плотность, тем сильнее поглощение. Коеффициент поглощения изменяется так: жидкость <- жир <- мышцы <- фиброзная ткань <- кальцификаты и кости.
   </li>
   <li>
-Частота ультразвуковой волны. Чем больше частота, тем сильнее поглощение. В тканях человека усредненный коеффициент поглощения 1 дБ/см МГц. (Однако, эта величина только в одну сторону, при формировании изображения расстояние = 2*глубину). Поэтому, the desired depth to be imaged, sets the limit for how high frequency that can be used.&nbsp;As can be seen, penetration might be increased by increasing the transmitted energy, but this would increase the total absorbed energy as well, which has to stay below the safety limits.
+Частота ультразвуковой волны. Чем больше частота, тем сильнее поглощение. В тканях человека усредненный коеффициент поглощения 1 дБ/см МГц. (Однако, эта величина только в одну сторону, при формировании изображения расстояние = 2*глубину). Поэтому, желаемая глубина проникновения устанавливает ограничение на максимальное значение частоты волны. Как можно увидеть, глубина проникновения может быть увеличина только с увеличение количества переданной пациенту энергии, но это также увеличит общее количество поглащенной энергии, что должно оставаться в безопасных пределах.
   </li>
 </ul>
 </p>
@@ -181,31 +181,23 @@
 <h4>Затухание сигнала</h4>
 
 <p>
-На основании вышесказанного, очевидно, что ультразвуковые волны затухают со временем, так как часть энергии отражается и рассеивается. Поэтому, in passing through tissue, the energy is attenuated due to the reflection that is necessary to build an image.
+На основании вышесказанного, очевидно, что ультразвуковые волны затухают со временем, так как часть энергии отражается и рассеивается. В то время как отражение сигнала используется для построения структур на изображении, <u>затухание</u> (attenuation) имеет другой эффект как показано ниже.
 </p>
 
-<p>
-<u>Затухание</u> (attenuation) will have effect on the image in other ways, as shown blow.
-</p>
-
-<table cellpadding="10">
+<table>
 <tr>
-  <td>
-    <img src="./UltrasoundBasics/attenuation.GIF">
-  </td>
-  <td>
-    <img src="./UltrasoundBasics/Ultrasound gallstones.JPG">
-  </td>
+  <td> <img src="./UltrasoundBasics/attenuation.GIF"> </td>
+  <td> <img src="./UltrasoundBasics/Ultrasound gallstones.JPG"> </td>
 </tr>
 <tr>
   <td>
     <p>
-Attenuation. Imaging of a homogeneous tissue, f.i. liver will change the apparent density behind structures with different attenuation.  Behind a structure with high reflexivity (e.g. a calcification), there will be high attenuation, (white; left). Hence, the sector behind receives less energy, and appears less dense (darker), the area behind may even be a full shadow. Behind a strcture with low reflexivity (e.g. a fluid) there is little attenuation (black; right), the tissue receives more energy and appears denser (brighter - "colouring") than the surrounding tissue.
+Imaging of a homogeneous tissue, f.i. liver will change the apparent density behind structures with different attenuation.  Behind a structure with high reflexivity (e.g. a calcification), there will be high attenuation, (white; left). Hence, the sector behind receives less energy, and appears less dense (darker), the area behind may even be a full shadow. Behind a strcture with low reflexivity (e.g. a fluid) there is little attenuation (black; right), the tissue receives more energy and appears denser (brighter - "colouring") than the surrounding tissue.
     </p>
   </td>
   <td>
     <p>
-Liver with a gallbladder in front, containing gallstones. The gallstones are dense, with a shadow behind. The rest of the gallbladdeer is fluid filled, thus the sector behind the fluid appears denser than the neighbouring tissue due to "colouring".
+Печень с желчным пузырем спереди, содержащим камни. Камни имеют плотную структуру с тенью позади. Остальная часть пузыря заполнена жидкостью. Таким образом, сектор за жидкостью выглядит более плотным чем соседние ткани из-за "окраски".
     </p>
   </td>
 </tr>
@@ -216,7 +208,7 @@ This is about 10% of the total energy loss. In addition, the ultrasound waves ar
 </p>
 
 <p>
-The attenuation is the limiting factor for the depth penetration of the beam, i.e. the depth to which the beam can be transmitted, and still give useful signals back. Basically, the shorter the wavelength, the higher the attenuation (and thus the shorter the depth penetration). The effective range can be said to be about 200 - 300 x λ. For practical medical purposes, the penetration for good imaging is about 10 - 20 cm at 3.5 MHz (adult cardiac), 5 - 10 cm at about 5 MHZ (pediatric cardiac), 2-5 cm at 7.5 MHz, 1-4 cm at 10 MHZ, the last two frequencies being in the vascular domain. However, one method to bypass some of the attenuation problem is by <a href="file:///Volumes/stoylen/strainrate/Ultrasound/index.html#Harmonic">harmonic imaging</a>. Thus the beam is transmitted at a certain frequency, and the received signal is analysed at twice that frequency (Fourier analysis). This increases the signal to noise ratio of the reflected signal, especially at the deepest parts of the image, without a similar loss of resolution.
+The attenuation is the limiting factor for the depth penetration of the beam, i.e. the depth to which the beam can be transmitted, and still give useful signals back. Basically, the shorter the wavelength, the higher the attenuation (and thus the shorter the depth penetration). The effective range can be said to be about 200 - 300 x λ. For practical medical purposes, the penetration for good imaging is about 10 - 20 cm at 3.5 MHz (adult cardiac), 5 - 10 cm at about 5 MHZ (pediatric cardiac), 2-5 cm at 7.5 MHz, 1-4 cm at 10 MHZ, the last two frequencies being in the vascular domain. However, one method to bypass some of the attenuation problem is by <a href="artifacts.html#harmonic">harmonic imaging</a>. Thus the beam is transmitted at a certain frequency, and the received signal is analysed at twice that frequency (Fourier analysis). This increases the signal to noise ratio of the reflected signal, especially at the deepest parts of the image, without a similar loss of resolution.
 </p>
 
 <a name="gain"></a>
@@ -232,27 +224,23 @@ signal and noise in the same manner.
 Gain can be done at acquisition, or in post processing.
 </p>
 
-<table border="0" cellpadding="2" cellspacing="2">
-  <tr>
-    <td>
-      <img src="./UltrasoundBasics/attenuation.jpg" />
-    </td>
-    <td src="./UltrasoundBasics/attenuation gain.jpg">
-      <img src="./UltrasoundBasics/attenuation gain.jpg" />
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <small>
+<table>
+<tr>
+  <td> <img src="./UltrasoundBasics/attenuation.jpg" /> </td>
+  <td> <img src="./UltrasoundBasics/attenuation gain.jpg" /> </td>
+</tr>
+<tr>
+  <td>
+    <p>
 Uncompensated image, showing decreasing signal intensity (and, hence, visibility) with depth, due to attenuation. 
-      </small>
-    </td>
-    <td>
-      <small>
+    </p>
+  </td>
+  <td>
+    <p>
 Increasing over all gain, will increase the amplitude of the signal, and the structures at the bottom of the sector becomes more visible. But the gain in the top of the sector are also increased, including the cavity noise, thus decreasing contast in this part of the image.
-      </small>
-    </td>
-  </tr>
+    </p>
+  </td>
+</tr>
 </table>
 
 <a name="tgc"></a>
@@ -262,125 +250,101 @@ Increasing over all gain, will increase the amplitude of the signal, and the str
 All commercial equipment today has a <u>time gain compensation (TGC)</u>. This increases the gain of the reflected signals with increasing time from the transmitted pulse; equivalent to increasing the gain with increasing depth. However, this is not a perfect solution, as the signal-to-noise ratio may decrease, if the noise does not decrease similarly with depth. However, it will give a better balance in the picture, and compensate for much of the attenuation effects. This is a pre processing function, and has to be set at acquisition.
 </p>
 
-<table border="0" cellpadding="2" cellspacing="2">
-  <tr>
-    <td><small><b>TGC controls.
-Basically, each slider controls gain selectively at a certain depth</b></small>:<br>
-    </td>
-    <td><small><b>In older models, the
-TGC should be set manually to achieve a balanced image</b></small>:<br>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <img src="./UltrasoundBasics/TGC1.jpg" />
-    </td>
-    <td>
-      <img src="./UltrasoundBasics/TGC2.jpg" />
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <img src="./UltrasoundBasics/attenuation.jpg">
-    </td>
-    <td>
-      <img src="./UltrasoundBasics/attenuation tgc.jpg">
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <small>
+<table>
+<tr>
+  <td>
+    <p>
+TGC controls.Basically, each slider controls gain selectively at a certain depth:
+    </p>
+  </td>
+  <td>
+    <p>
+In older models, the TGC should be set manually to achieve a balanced image:
+    </p>
+  </td>
+</tr>
+<tr>
+  <td> <img src="./UltrasoundBasics/TGC1.jpg" /> </td>
+  <td> <img src="./UltrasoundBasics/TGC2.jpg" /> </td>
+</tr>
+<tr>
+  <td> <img src="./UltrasoundBasics/attenuation.jpg"> </td>
+  <td> <img src="./UltrasoundBasics/attenuation tgc.jpg"> </td>
+</tr>
+<tr>
+  <td>
+    <p>
 Present models, however, have automatic TGC. Thus the default control setting should be neutral to achieve a balanced picture:
-      </small>
-    </td>
-    <td>
-      <small>
+    </p>
+  </td>
+  <td>
+    <p>
 Using manual setting by old habit will result in a double compensation, with too much gain in the bottom, too little in the top:
-      </small>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <img src="./UltrasoundBasics/TGC1.jpg" />
-    </td>
-    <td>
-      <img src="./UltrasoundBasics/TGC2.jpg" />
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <img src="./UltrasoundBasics/attenuation tgc.jpg" />
-    </td>
-    <td>
-      <img src="./UltrasoundBasics/double tgc.jpg" />
-    </td>
-  </tr>
+    </p>
+  </td>
+</tr>
+<tr>
+  <td> <img src="./UltrasoundBasics/TGC1.jpg" /> </td>
+  <td> <img src="./UltrasoundBasics/TGC2.jpg" /> </td>
+</tr>
+<tr>
+  <td> <img src="./UltrasoundBasics/attenuation tgc.jpg" /> </td>
+  <td> <img src="./UltrasoundBasics/double tgc.jpg" /> </td>
+</tr>
 </table>
 
 <a name="compr_rej"></a>
-<h4>Compress and reject:</h4>
+<h4>Compress and reject</h4>
 
 <p>
-Low amplitude signals can be filtered away, resulting in filtering out cavity noise, however at the price of risking to loose low amplitude signals (e.g. from valves.) by the <span style="text-decoration: underline">reject function.</span> Finally, the grey scale can be <span style="text-decoration: underline">compressed</span>, resulting in a steeper saturation curve. This means that the picture goes to full saturation (pure white) at a lower amplitude, while the brightness of low amplitude signals are reduced.
+Low amplitude signals can be filtered away, resulting in filtering out cavity noise, however at the price of risking to loose low amplitude signals (e.g. from valves.) by the <u>reject function.</u> Finally, the grey scale can be <u>compressed</u>, resulting in a steeper saturation curve. This means that the picture goes to full saturation (pure white) at a lower amplitude, while the brightness of low amplitude signals are reduced.
 </p>
 
 <p>
 It is important to realise that all these are post-processing functions that manipulates the image on the screen, without improving the signal quality itself, or the fundamental signal to noise ratio.
 </p>
 
-<table border="0" cellpadding="2" cellspacing="2">
-  <tr>
-    <td>
-      <img src="./UltrasoundBasics/default.jpg" />
-    </td>
-    <td>
-      <img src="./UltrasoundBasics/Gain and reject.GIF" />
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <small>
-Image with default gain, reject and compress settings 
-      </small>
-    </td>
-    <td>
-      <small>
-Principle of gain, reject and compress. All curves display brightness of the display in relation to the amplitude of the rejected signal. An ordinary gain curve is shown in black, using a linear brightness scale, displays the full range of amplitudes. Increasing gain (red curve), will increase all signals, including the weakest, as in the noise. The disadvantage, in addition to increasing noise, is that the strongest signals will be saturated, so details may disappear. Compress is shown as the blue curve. This results in a steeper brightness curve, resulting in less brightness of the weakest echoes, and more brightness of the strongest. Thus, weak echoes may disappear together with background noise, while strong echoes will be saturated, resulting in loss of detail.&nbsp; Finally reject is shown by the light grey zone, siply displaying all signals below a certain amplitude as black. (The black brightnes curve drops abruptly to zero at the reject limit (dark grey line).&nbsp; A combination of high gain and reject will give an effect fairly similar to the compress function.
-      </small>
-    </td> 
+<table>
+<tr>
+  <td> <img src="./UltrasoundBasics/default.jpg" /> </td>
+  <td> <img src="./UltrasoundBasics/Gain and reject.GIF" /> </td>
 </tr>
-  <tr>
-    <td>
-      <img src="./UltrasoundBasics/higain.jpg" />
-    </td>
-    <td>
-      <img src="./UltrasoundBasics/reject.jpg" />
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <img src="./UltrasoundBasics/logain.jpg" />
-    </td>
-    <td>
-      <img src="./UltrasoundBasics/compr.jpg" />
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <small>
+<tr>
+  <td>
+    <p>
+Image with default gain, reject and compress settings 
+    </p>
+  </td>
+  <td>
+    <p>
+Principle of gain, reject and compress. All curves display brightness of the display in relation to the amplitude of the rejected signal. An ordinary gain curve is shown in black, using a linear brightness scale, displays the full range of amplitudes. Increasing gain (red curve), will increase all signals, including the weakest, as in the noise. The disadvantage, in addition to increasing noise, is that the strongest signals will be saturated, so details may disappear. Compress is shown as the blue curve. This results in a steeper brightness curve, resulting in less brightness of the weakest echoes, and more brightness of the strongest. Thus, weak echoes may disappear together with background noise, while strong echoes will be saturated, resulting in loss of detail.&nbsp; Finally reject is shown by the light grey zone, siply displaying all signals below a certain amplitude as black. (The black brightnes curve drops abruptly to zero at the reject limit (dark grey line).&nbsp; A combination of high gain and reject will give an effect fairly similar to the compress function.
+    </p>
+  </td> 
+</tr>
+<tr>
+  <td> <img src="./UltrasoundBasics/higain.jpg" /> </td>
+  <td> <img src="./UltrasoundBasics/reject.jpg" /> </td>
+</tr>
+<tr>
+  <td> <img src="./UltrasoundBasics/logain.jpg" /> </td>
+  <td> <img src="./UltrasoundBasics/compr.jpg" /> </td>
+</tr>
+<tr>
+  <td>
+    <p>
 Same image with high gain (top) showing increased density of the endocardium, but loss of detail due to brightness saturation and a corresponding increase in cavity noise and low gain (bottom), showing reduction in cavity noise, but loss of detail (see endocardium in lateral wall).
-      </small>
-    </td>
-    <td>
-      <small>
+    </p>
+  </td>
+  <td>
+    <p>
 Same image with increased reject (top) showing reduction in cavity noise, but also with slight loss of detail (endocardium in lateral wall) and compress function (bottom) with less detail in the myocardium due to increased brightness.
-      </small>
-    </td>
-  </tr>
+    </p>
+  </td>
+</tr>
 </table>
 
 <p>
-All commercial equipment today has a <u>time gain compensation (TGC)</u>, increasing the gain of the reflected signals with increasing time from the transmitted pulse. This is equivalent to increasing the gain with increasing depth. However, this is not a perfect solution, as the noise is constant with depth, while the reflected signals become weaker, and with TGC, the noise will be gained as well as the signal, and the signal-to-noise ratio will decrease, thus the resulting signal will end up as a grey blur at a certain depth. This effect can be seen <a href="#TGC_and_FR_latres">below</a>. Before <a href="#Harmonic">harmonic imaging</a>, the TGC was adjustable, relying on the operator to optimise the visibility. AS the greater part of cavity noise is removed by the harmonic imaging, most modern equipment has automated TGC, but retains the possibility of manual adjustment.
+All commercial equipment today has a <u>time gain compensation (TGC)</u>, increasing the gain of the reflected signals with increasing time from the transmitted pulse. This is equivalent to increasing the gain with increasing depth. However, this is not a perfect solution, as the noise is constant with depth, while the reflected signals become weaker, and with TGC, the noise will be gained as well as the signal, and the signal-to-noise ratio will decrease, thus the resulting signal will end up as a grey blur at a certain depth. This effect can be seen <a href="#TGC_and_FR_latres">below</a>. Before <a href="artifacts.html#harmonic">harmonic imaging</a>, the TGC was adjustable, relying on the operator to optimise the visibility. AS the greater part of cavity noise is removed by the harmonic imaging, most modern equipment has automated TGC, but retains the possibility of manual adjustment.
 </p>
 
 </div>
